@@ -16,6 +16,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+
+	<?php include "src/const.php" // Часто изменяемые значения ?>
 
 	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_url') ?>/src/img/favicon/apple-icon-57x57.png">
@@ -51,10 +54,10 @@
 				<div class="line"></div>
 				<div class="right-block">
 					<div class="messenger-wrapper">
-						<a href="tel:+375445610640" class="phone">+375 (44) 561 06 40</a>
+						<a href="tel:<?=PHONE_HREF?>" class="phone"><?=PHONE?></a>
 						<div class="messengers">
-							<a href="#" class="telegram"><img src="<?php bloginfo('template_url') ?>/src/img/header/telegram.svg" alt="telegram"></a>
-							<a href="#" class="whatsapp"><img src="<?php bloginfo('template_url') ?>/src/img/header/whatsapp.svg" alt="whatsapp"></a>
+							<a href="<?=TELEGRAM_LINK?>" target="_blank" class="telegram"><img src="<?php bloginfo('template_url') ?>/src/img/header/telegram.svg" alt="telegram"></a>
+							<a href="<?=WHATSAPP_LINK?>" target="_blank" class="whatsapp"><img src="<?php bloginfo('template_url') ?>/src/img/header/whatsapp.svg" alt="whatsapp"></a>
 						</div>
 						<!-- /.messengers -->
 					</div>
@@ -100,9 +103,9 @@
 			<div class="social-wrapper">
 				<span class="title">Присоеденяйся!</span>
 				<div class="social">
-					<a href="#" class="vk"><img src="<?php bloginfo('template_url') ?>/src/img/header/vk.svg" alt="vk"></a>
-					<a href="#" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/header/inst.svg" alt="inst"></a>
-					<a href="#" class="facebook"><img src="<?php bloginfo('template_url') ?>/src/img/header/facebook.svg" alt="facebook"></a>
+					<a href="<?=VK?>" target="_blank" class="vk"><img src="<?php bloginfo('template_url') ?>/src/img/header/vk.svg" alt="vk"></a>
+					<a href="<?=INST?>" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/header/inst.svg" alt="inst"></a>
+					<a href="<?=FACEBOOK?>" target="_blank" class="facebook"><img src="<?php bloginfo('template_url') ?>/src/img/header/facebook.svg" alt="facebook"></a>
 				</div>
 			</div>
 			</div>

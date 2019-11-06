@@ -76,6 +76,15 @@ h5, .h5 {
     @include wrapper-full();
 }
 
+.link {
+    color: $primary;
+    display: inline-block;
+    transition: .3s;
+    &:hover {
+        filter: opacity(.7);
+    }
+}
+
 // Burger
 .burger {
     cursor: pointer;
@@ -217,7 +226,7 @@ header {
                 transform: scale(.8)!important;
             }
             @media (max-width: 1100px), (max-height: 729px) {
-                bottom: -15vh;
+                bottom: -10vh;
             }
             @media (max-width: 991px) {
                 display: none;
@@ -260,23 +269,6 @@ header {
                 bottom: -100%;
                 right: 0;
                 margin: -.2rem;
-                a {
-                    margin: .2rem;
-                    transition: .3s;
-                    img {
-                        transition: .6s;
-                    }
-                    &:hover {
-                        img {
-                            transform: rotate(360deg);
-                        }
-                    }
-                    &:active {
-                        img {
-                            transform: scale(.9);
-                        }
-                    }
-                }
             }
         }
     }
@@ -374,13 +366,166 @@ header {
         }
     }
 }
+// Messengers
+.messengers {
+    a {
+        margin: 0.2rem;
+        transition: .3s;
+        img {
+            transition: .6s;
+        }
+        &:hover {
+            img {
+                transform: rotate(360deg);
+            }
+        }
+        &:active {
+            img {
+                transform: scale(.9);
+            }
+        }
+    }
+}
+
+// Buttons
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10rem;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    &.btn-primary {
+        background-color: $primary;
+        font-weight: bold;
+        color: $black;
+        box-shadow: 0px 3px 4px rgba($primary, 0.75);
+        min-width: 18rem;
+        padding: 1.4rem 2rem;
+        &:hover {
+            box-shadow: 0px 3px 4px rgba($primary, 0.75),
+                    inset 0px -10px 15px 0 rgba($white,0.5);
+        }
+        &:active {
+            box-shadow: 0px 0px 4px rgba($primary, 0.75);
+        }
+        @include xs-block() {
+            min-width: 12rem;
+            font-size: 1.2rem;
+            padding: 1.2rem 1.6rem;
+        }
+    }
+}
 
 .test {
     height: 800px;
 }
 
 //footer
+footer {
+    padding: 1.5rem 0 5rem;
+    background-color: #303E45;
+    color: $white;
+    position: relative;
+    .mail,
+    .phone {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+    }
+    .messenger-wrapper {
+        display: flex;
+        align-items: center;   
+        .messengers {
+            margin: -.2rem 0;
+            margin-left: .5rem;
+        }
+    }
+    .social {
+        margin: 1rem -.5rem 2rem -.5rem;
+        a {
+            margin: .5rem;
+            img{
+                transition: .3s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                &:active {
+                    transform: scale(.9);
+                }
+            }
+        }
+    }
+    .small {
+        font-size: 1.2rem;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 1px;
+        width: 100%;
+        height: 120px;
+        background: url('../img/footer/wave.svg');
+        background-size: cover;
+        transform: translateY(-100%);
+    }
+    .title {
+        font-size: 2.8rem;
+        color: $primary;
+        font-weight: bold;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        @include md-block() {
+            font-size: 2.1rem;
+        }
+    }
+    .footer-row {
+        @include row-flex();
+        .column-1,
+        .column-2 {
+            @include col();
+            @include size(6);
+            @include size-sm(12);
+        }
+    }
+}
+//FORMS
+.input-wrapper {
+    input,
+    textarea {
+        width: 100%;
+        padding: 1.5rem 3rem;
+        color: #7C879C;
+        transition: .3s;
 
+        background: $input-color;
+        border: 2px solid #F2F3FA;
+        box-sizing: border-box;
+        border-radius: 5rem;
+        @include xs-block() {
+            padding: 1.4rem 1.8rem;
+        }
+        &:hover {
+            box-shadow: 0px 0px 5px $primary;
+        }
+        &:focus {
+            border-color: $primary;
+        }
+    }
+}
+.subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    margin: -1rem;
+    margin-bottom: 1rem;
+    .input-wrapper {
+        width: 100%;
+    }
+    .input-wrapper,
+    .btn {
+        margin: 1rem;
+    }
+}
 
 
 // Utilities
