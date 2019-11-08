@@ -33,7 +33,7 @@ get_header();
                 <div class="head">
                     <span class="date">20 ноября — 29 ноября</span>
                     <!-- /.date -->
-                    <div class="title">Исландия</div>
+                    <div class="h4">Исландия</div>
                 </div>
                 <!-- /.head -->
 
@@ -112,7 +112,7 @@ get_header();
                 <div class="head">
                     <span class="date">20 ноября — 29 ноября</span>
                     <!-- /.date -->
-                    <div class="title">Исландия</div>
+                    <div class="h4">Исландия</div>
                 </div>
                 <!-- /.head -->
 
@@ -190,7 +190,7 @@ get_header();
                 <div class="head">
                     <span class="date">20 ноября — 29 ноября</span>
                     <!-- /.date -->
-                    <div class="title">Исландия</div>
+                    <div class="h4">Исландия</div>
                 </div>
                 <!-- /.head -->
 
@@ -269,7 +269,7 @@ get_header();
                 <div class="head">
                     <span class="date">20 ноября — 29 ноября</span>
                     <!-- /.date -->
-                    <div class="title">Исландия</div>
+                    <div class="h4">Исландия</div>
                 </div>
                 <!-- /.head -->
 
@@ -348,7 +348,7 @@ get_header();
                 <div class="head">
                     <span class="date">20 ноября — 29 ноября</span>
                     <!-- /.date -->
-                    <div class="title">Исландия</div>
+                    <div class="h4">Исландия</div>
                 </div>
                 <!-- /.head -->
 
@@ -426,7 +426,7 @@ get_header();
                 <div class="head">
                     <span class="date">20 ноября — 29 ноября</span>
                     <!-- /.date -->
-                    <div class="title">Исландия</div>
+                    <div class="h4">Исландия</div>
                 </div>
                 <!-- /.head -->
 
@@ -501,6 +501,161 @@ get_header();
     <!-- /.container -->
 </div>
 <!-- /#poster.section -->
+
+<div class="section" id="gallery">
+    <div class="container">
+        <div class="section-title">
+            <div class="h2 decorations camera">Наши прошлые поездки</div>
+            <img class="wall-text lazy" data-src="<?php bloginfo('template_url') ?>/src/img/titles/gallery.svg" alt="Фото архив">
+        </div>
+        <!-- /.section-title -->
+
+        <div class="archive">
+            <div class="image-folder">
+                <div class="img-wrapper">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
+                </div>
+                <!-- /.img-wrapper -->
+                <div class="body">
+                    <div class="pair">
+                        <div class="title">
+                            <div class="date">Октябрь 2019</div>
+                            <div class="h4">Исландия - 1600 км. на джипах</div>
+                        </div>
+                        <!-- /.title -->
+                        <div class="phots-count">
+                            100 фото
+                        </div>
+                        <!-- /.phots-count -->
+                    </div>
+                    <!-- /.pair -->
+                </div>
+                <!-- /.body -->
+            </div>
+            <!-- /.image-folder -->
+
+            <div class="image-folder">
+                <div class="img-wrapper">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
+                </div>
+                <!-- /.img-wrapper -->
+                <div class="body">
+                    <div class="pair">
+                        <div class="title">
+                            <div class="date">Октябрь 2019</div>
+                            <div class="h4">Исландия - 1600 км. на джипах</div>
+                        </div>
+                        <!-- /.title -->
+                        <div class="phots-count">
+                            100 фото
+                        </div>
+                        <!-- /.phots-count -->
+                    </div>
+                    <!-- /.pair -->
+                </div>
+                <!-- /.body -->
+            </div>
+            <!-- /.image-folder -->
+
+            <div class="image-folder">
+                <div class="img-wrapper">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
+                </div>
+                <!-- /.img-wrapper -->
+                <div class="body">
+                    <div class="pair">
+                        <div class="title">
+                            <div class="date">Октябрь 2019</div>
+                            <div class="h4">Исландия - 1600 км. на джипах</div>
+                        </div>
+                        <!-- /.title -->
+                        <div class="phots-count">
+                            100 фото
+                        </div>
+                        <!-- /.phots-count -->
+                    </div>
+                    <!-- /.pair -->
+                </div>
+                <!-- /.body -->
+            </div>
+            <!-- /.image-folder -->
+
+            <div class="image-folder">
+                <div class="img-wrapper">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
+                </div>
+                <!-- /.img-wrapper -->
+                <div class="body">
+                    <div class="pair">
+                        <div class="title">
+                            <div class="date">Октябрь 2019</div>
+                            <div class="h4">Исландия - 1600 км. на джипах</div>
+                        </div>
+                        <!-- /.title -->
+                        <div class="phots-count">
+                            100 фото
+                        </div>
+                        <!-- /.phots-count -->
+                    </div>
+                    <!-- /.pair -->
+                </div>
+                <!-- /.body -->
+            </div>
+            <!-- /.image-folder -->
+
+            <div class="image-folder">
+                <div class="img-wrapper">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
+                </div>
+                <!-- /.img-wrapper -->
+                <div class="body">
+                    <div class="pair">
+                        <div class="title">
+                            <div class="date">Октябрь 2019</div>
+                            <div class="h4">Исландия - 1600 км. на джипах</div>
+                        </div>
+                        <!-- /.title -->
+                        <div class="phots-count">
+                            100 фото
+                        </div>
+                        <!-- /.phots-count -->
+                    </div>
+                    <!-- /.pair -->
+                </div>
+                <!-- /.body -->
+            </div>
+            <!-- /.image-folder -->
+
+            <div class="image-folder">
+                <div class="img-wrapper">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
+                </div>
+                <!-- /.img-wrapper -->
+                <div class="body">
+                    <div class="pair">
+                        <div class="title">
+                            <div class="date">Октябрь 2019</div>
+                            <div class="h4">Исландия - 1600 км. на джипах</div>
+                        </div>
+                        <!-- /.title -->
+                        <div class="phots-count">
+                            100 фото
+                        </div>
+                        <!-- /.phots-count -->
+                    </div>
+                    <!-- /.pair -->
+                </div>
+                <!-- /.body -->
+            </div>
+            <!-- /.image-folder -->
+
+        </div>
+        <!-- /.archive -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /#gallery.section -->
+
 <div class="test"></div>
 	
 <?php

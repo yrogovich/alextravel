@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,900&display=swap&subset=cyrillic");
 body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, input, textarea, p, blockquote, th, td {
   margin: 0;
@@ -108,6 +109,9 @@ h5, .h5 {
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 100%;
+  height: 100%;
+  width: 100%;
+  background-color: #F2F3FA;
 }
 
 .container {
@@ -204,19 +208,6 @@ img {
           transform: rotate(45deg);
 }
 
-.wave {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-}
-
-@media (max-height: 700px) {
-  .wave {
-    bottom: -5%;
-  }
-}
-
 header {
   padding-top: 2rem;
 }
@@ -229,6 +220,19 @@ header.main {
   color: #fff;
   z-index: 0;
   overflow: hidden;
+}
+
+header.main .wave {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (max-height: 700px) {
+  header.main .wave {
+    bottom: -5%;
+  }
 }
 
 header.main h1 {
@@ -655,6 +659,10 @@ header .social-wrapper .social a img:active {
   content: url("../img/poster-section/header-decor.svg");
 }
 
+.section-title .h2.decorations.camera:after {
+  content: url("../img/gallery-section/header-decor.svg");
+}
+
 .section-title .wall-text {
   position: absolute;
   top: 50%;
@@ -729,8 +737,6 @@ header .social-wrapper .social a img:active {
 .trips .trip .img-wrapper img {
   -webkit-transition: 2s cubic-bezier(0.65, 0.05, 0.36, 1);
   transition: 2s cubic-bezier(0.65, 0.05, 0.36, 1);
-  height: 100%;
-  width: 100%;
 }
 
 .trips .trip .head,
@@ -756,16 +762,6 @@ header .social-wrapper .social a img:active {
 .trips .trip .head,
 .trips .trip .body {
   border-bottom: 1px solid #F2F3FA;
-}
-
-.trips .trip .date {
-  font-size: 1.2rem;
-  color: #7C879C;
-}
-
-.trips .trip .title {
-  font-size: 1.8rem;
-  font-weight: bold;
 }
 
 .trips .trip .description {
@@ -874,6 +870,227 @@ header .social-wrapper .social a img:active {
   background-image: url("../img/global-icons/star-gray.svg");
 }
 
+.date {
+  font-size: 1.2rem;
+  color: #7C879C;
+}
+
+#poster {
+  padding-bottom: 33rem;
+}
+
+.h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.section {
+  position: relative;
+}
+
+.section:before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+#gallery {
+  padding: 5rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2AC2D4), color-stop(32.81%, rgba(42, 194, 212, 0))), #2AC2D4;
+  background: linear-gradient(180deg, #2AC2D4 0%, rgba(42, 194, 212, 0) 32.81%), #2AC2D4;
+}
+
+#gallery:before {
+  content: url("../img/gallery-section/wave.svg");
+  height: 280px;
+}
+
+#gallery .h2 {
+  color: #fff;
+}
+
+@media screen and (max-width: 780px) {
+  #gallery .section-title {
+    margin-top: -25rem;
+  }
+}
+
+.archive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.archive .image-folder {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(50% - 30px);
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 780px) {
+  .archive .image-folder {
+    width: calc(100% - 30px);
+  }
+}
+
+.archive .image-folder .img-wrapper {
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 250px;
+  position: relative;
+}
+
+.archive .image-folder .img-wrapper img {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.archive .image-folder .img-wrapper:before {
+  overflow: hidden;
+  content: url("../img/global-icons/see-galery.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 1;
+}
+
+.archive .image-folder .img-wrapper:after {
+  content: 'галлерею путешествия';
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  white-space: nowrap;
+}
+
+.archive .image-folder .img-wrapper:hover img {
+  -webkit-filter: brightness(0.8) blur(8px);
+          filter: brightness(0.8) blur(8px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.archive .image-folder .img-wrapper:hover:after, .archive .image-folder .img-wrapper:hover:before {
+  opacity: 1;
+}
+
+.archive .image-folder .body {
+  padding: 1rem 4rem;
+  padding-right: 2rem;
+  background-color: #fff;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+@media screen and (max-width: 780px) {
+  .archive .image-folder .body {
+    padding: 1rem 2rem;
+  }
+}
+
+.archive .image-folder .body .pair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -.5rem;
+}
+
+.archive .image-folder .body .pair .title,
+.archive .image-folder .body .pair .phots-count {
+  margin: .5rem;
+}
+
+.archive .image-folder .body .phots-count {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 780px) {
+  .archive .image-folder .body .phots-count {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .archive .image-folder .body .phots-count {
+    display: none;
+  }
+}
+
+.archive .image-folder .phots-count {
+  width: 7rem;
+  height: 7rem;
+  background-color: #F2F3FA;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  color: #AAB2C1;
+}
+
+.archive .image-folder .phots-count:before {
+  content: url("../img/global-icons/camera.svg");
+  display: block;
+}
+
 .test {
   height: 800px;
 }
@@ -882,7 +1099,6 @@ footer {
   padding: 1.5rem 0 5rem;
   background-color: #303E45;
   color: #fff;
-  position: relative;
 }
 
 footer .mail,
