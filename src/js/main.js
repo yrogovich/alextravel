@@ -9,7 +9,14 @@
         });
 
         // Lazyloading
-        $('.lazy').Lazy();
+        $('.lazy').Lazy({
+            effect: 'fadeIn',
+            effectTime: 1000,
+            threshold: 0,
+            onError: function(element) {
+                console.log('error loading ' + element.data('src'));
+            }
+        });
 
         //AOS
         AOS.init({

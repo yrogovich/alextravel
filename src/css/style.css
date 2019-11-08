@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,900|Yeseva+One&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,900&display=swap&subset=cyrillic");
 body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, input, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0;
@@ -94,6 +94,7 @@ body {
   font-size: 1.4rem;
   margin: 0;
   overflow-x: hidden;
+  color: #2E3747;
 }
 
 h2, .h2,
@@ -145,6 +146,10 @@ h5, .h5 {
 .link:hover {
   -webkit-filter: opacity(0.7);
           filter: opacity(0.7);
+}
+
+img {
+  color: transparent;
 }
 
 .burger {
@@ -222,7 +227,7 @@ header.main {
   background-attachment: fixed;
   min-height: 110vh;
   color: #fff;
-  z-index: 1;
+  z-index: 0;
   overflow: hidden;
 }
 
@@ -575,6 +580,7 @@ header .social-wrapper .social a img:active {
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
+  text-align: center;
 }
 
 .btn.btn-primary {
@@ -603,6 +609,269 @@ header .social-wrapper .social a img:active {
     font-size: 1.2rem;
     padding: 1.2rem 1.6rem;
   }
+}
+
+.btn.btn-unactive {
+  background-color: #AAB2C1 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  cursor: default;
+}
+
+.section-title {
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 10rem;
+}
+
+.section-title .h2 {
+  font-weight: 900;
+  font-size: 5.2vh;
+  color: #2E3747;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.section-title .h2.decorations {
+  margin: 10rem 0;
+}
+
+.section-title .h2.decorations:after {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 780px) {
+  .section-title .h2.decorations:after {
+    display: none;
+  }
+}
+
+.section-title .h2.decorations.plane:after {
+  content: url("../img/poster-section/header-decor.svg");
+}
+
+.section-title .wall-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 100%;
+  z-index: -1;
+}
+
+.trips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media screen and (max-width: 1100px) {
+  .trips {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.trips .trip {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(33.33333% - 30px);
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
+          box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin-bottom: 3rem;
+  max-width: 40rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .trips .trip {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .trips .trip {
+    width: calc(100% - 30px);
+  }
+}
+
+.trips .trip.unactive img {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+}
+
+.trips .trip .img-wrapper {
+  overflow: hidden;
+  display: block;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 208px;
+}
+
+.trips .trip .img-wrapper img {
+  -webkit-transition: 2s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: 2s cubic-bezier(0.65, 0.05, 0.36, 1);
+  height: 100%;
+  width: 100%;
+}
+
+.trips .trip .head,
+.trips .trip .body {
+  padding: 1.5rem 3rem;
+}
+
+.trips .trip .foot {
+  padding: 1.8rem 3rem 3rem 3rem;
+}
+
+@media (max-width: 359px) {
+  .trips .trip .foot .pair {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+.trips .trip .head,
+.trips .trip .body {
+  border-bottom: 1px solid #F2F3FA;
+}
+
+.trips .trip .date {
+  font-size: 1.2rem;
+  color: #7C879C;
+}
+
+.trips .trip .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.trips .trip .description {
+  color: #7C879C;
+  margin-bottom: 1.8rem;
+}
+
+.trips .trip .pair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -.5rem;
+}
+
+.trips .trip .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.trips .trip .seats-number {
+  font-size: 1.2rem;
+  color: #AAB2C1;
+}
+
+.trips .trip .left-side {
+  margin: .5rem;
+}
+
+.trips .trip .btn {
+  margin: .5rem;
+}
+
+.trips .trip:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  -webkit-box-shadow: 0px 15px 20px rgba(155, 155, 155, 0.15);
+          box-shadow: 0px 15px 20px rgba(155, 155, 155, 0.15);
+}
+
+.trips .trip:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.raiting {
+  background-color: #fff;
+  background: #F2F3FA;
+  border-radius: 10px;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1100px) {
+  .raiting {
+    padding: 1.5rem;
+  }
+}
+
+.raiting .pair .bold,
+.raiting .pair .stars-wrapper {
+  margin: .5rem;
+}
+
+.raiting .stars-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.raiting .count {
+  color: #AAB2C1;
+  margin-right: .5rem;
+}
+
+@media (max-width: 359px) {
+  .raiting .count {
+    display: none;
+  }
+}
+
+.raiting .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -2px;
+}
+
+.raiting .stars li {
+  display: inline-block;
+  height: 1.6rem;
+  width: 1.6rem;
+  background: url("../img/global-icons/star-primary.svg") center/contain no-repeat;
+  margin: 2px;
+}
+
+.raiting .stars li.gray-star {
+  background-image: url("../img/global-icons/star-gray.svg");
 }
 
 .test {

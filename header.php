@@ -116,5 +116,3 @@
 		<svg class="wave" viewBox="0 0 1920 518" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1920 0H1840C1760 0 1600 0 1440 57C1280 115 1120 230 960 288C800 345 640 345 480 316C320 288 160 230 80 201L0 172V518H80C160 518 320 518 480 518C640 518 800 518 960 518C1120 518 1280 518 1440 518C1600 518 1760 518 1840 518H1920V0Z" fill="white"/></svg>
 	</header>
 	<!-- /.main -->
-
-	<div class="test"></div>
