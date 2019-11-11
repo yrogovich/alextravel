@@ -127,6 +127,7 @@ function alextravel_theme_scripts() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery-lazy', '//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js' , 'jquery' , false, true );
 	wp_enqueue_script('aos-script', '//unpkg.com/aos@2.3.1/dist/aos.js' , 'jquery' , false, true );
+	wp_enqueue_script('mouse-parallax-script', '//cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js' , 'jquery' , false, true );
 	wp_enqueue_script('smooth-scroll', '//cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js' , 'jquery' , false, true );
 	wp_enqueue_script('main-script', get_template_directory_uri() . '/src/js/main.js' , 'jquery' , false, true );
 }

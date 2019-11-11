@@ -69,7 +69,7 @@ h5, .h5 {
     max-height: 100%;
     height: 100%;
     width: 100%;
-    background-color: $gray;
+
 }
 
 .container {
@@ -457,6 +457,15 @@ header {
             &.camera:after {
                 content: url('../img/gallery-section/header-decor.svg');
             }
+            &.enjoy:after {
+                content: url('../img/reviews-section/header-decor.svg');
+            }
+            &.smile:after {
+                content: url('../img/about-section/header-decor.svg');
+            }
+            &.faq:after {
+                content: url('../img/faq-section/header-decor.svg');
+            }
         }
     }
     .wall-text {
@@ -621,12 +630,14 @@ header {
     }
 }
 #gallery {
-    padding: 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 35rem;
     &:before {
         content: url('../img/gallery-section/wave.svg');
         height: 280px;
     }
-    background: linear-gradient(180deg, #2AC2D4 0%, rgba(42, 194, 212, 0) 32.81%),  #2AC2D4;
+  
+    background: linear-gradient(180deg, #2AC2D4 0%, rgba(42, 194, 212, 0) 32.81%), url('../img/gallery-section/sprite-new.png'), #2AC2D4; 
     .h2 {
         color: $white;
     }
@@ -651,6 +662,7 @@ header {
             border-top-right-radius: 1rem;
             height: 250px;
             position: relative;
+            cursor: pointer;
 
             img {
                 transition: 1s;
@@ -742,12 +754,276 @@ header {
     }
 }
 
+//Reviews section
+#reviews {
+    padding-bottom: 31rem;
+    &:before {
+        content: url('../img/reviews-section/wave.svg');
+        height: 360px;
+    }
+    .super-slider {
+       margin-top: 13rem;    
+        height: 320px;
+        background-color: $gray;
+    }
+}
+
+// About section
+.h3 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+#about {
+    padding-top: 5rem;
+    padding-bottom: 35rem;
+    color: $white;
+    background-color: #7081FF;
+    background: linear-gradient(180deg, #7081FF 0%, rgba(42, 194, 212, 0) 32.81%), url('../img/gallery-section/sprite-new.png'), #7081FF; 
+    .h2 {
+        color: $white;
+    }
+    &:before {
+        content: url('../img/about-section/wave.svg');
+        height: 285px;
+    }
+    .bio-row {
+        @include row-flex();
+        align-items: center;
+        .picture {
+            @include col();
+            @include size(6);
+            @include size-sm(12);
+
+            position: relative;
+            margin-bottom: 4rem;
+            .bubble-alex {
+                object-fit: contain;
+
+                transition: 3s cubic-bezier(0.77, -0.43, 0.15, 1.69);
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+           
+            .social  {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                animation: 10s cubic-bezier(0.77, -0.43, 0.15, 1.69) scaling-bubble infinite;
+                .links-wrapper {
+                    position: absolute;
+                    top: 50%;
+                    right: 0%;
+                    transform: translate(-40%, -60%);
+                    margin: -.6rem;  
+                    a {
+                        img {
+                            height: 4.4rem;
+                            width: 4.4rem;
+                        }
+                    }
+                }
+            }
+            @keyframes scaling-bubble {
+                0% {
+                    transform: scale(1);
+                }
+                60% {
+                    transform: scale(1.06);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+        }
+        .text {
+            @include col();
+            @include size(6);
+            @include size-sm(12);
+
+            p {
+                font-size: 1.6rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
+ul.primary-style {
+    margin-left: 5rem;
+    li {
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 1.9rem;
+            height: 1.9rem;
+            margin-right: 1rem;
+            background: $white;
+            border-radius: 10rem;
+            border: 1px dashed $white;
+            padding: .2rem;
+            background-clip: content-box; /* support: IE9+ */
+            background-color: $white;
+            vertical-align: middle;
+            margin-left: -3rem;
+        }
+        margin-bottom: 1.5rem;
+    }
+}
+
+// FAQ section
+#faq {
+    padding-bottom: 35rem;
+    &:before {
+        content: url('../img/faq-section/wave.svg');
+        height: 460px;
+    }
+}
+.faq-row {
+    @include row-flex();
+    justify-content: center;
+    .accordions {
+        @include col();
+        @include size(7);
+        @include size-sm(12);
+        margin-bottom: 4rem;
+
+        .accordion {
+            overflow: hidden;
+            border-radius: 4rem;
+            margin-bottom: 1rem;
+            
+            .head {
+                border-radius: 4rem;
+                min-height: 8rem;
+                background-color: $primary;
+                padding: 1rem 8rem 1rem 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: $white;
+                position: relative;
+                cursor: pointer;
+                transition: .6s;
+                &:hover {
+                    .toggler {        
+                        &:before {
+                            transform: rotate(180deg);
+                        }
+                        &:after {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+                .toggler {
+                    width: 6rem;
+                    height: 6rem;
+                    background-color: $white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    right: 1rem;
+                    transform: translateY(-50%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    &:before,
+                    &:after {
+                        content: '';
+                        width: 34px;
+                        height: 6px;
+                        border-radius: 50px;
+                        background-color: $primary;
+                        transition: .6s;
+                    }
+                    &:after {
+                        position: absolute;
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+            .content {
+                display: none;
+                opacity: 0;
+                transition: .6s;
+                background: $gray;
+                border-top: 1px solid $white;
+                padding: 1.5rem 3rem 2rem 3rem;
+                color: $deep-gray;
+                ul li:before {
+                    background-color: $deep-gray;
+                    border-color: $deep-gray;
+                }
+            }
+            &.active {
+                .head {
+                    background-color: $gray;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    color: $black;
+                    
+                    &:hover {
+                        .toggler {        
+                            &:before {
+                                transform:none;
+                            }
+                        }
+                    }
+                    .toggler {
+                        &:after {
+                            transform: rotate(0deg);
+                        }
+                    }
+                   
+                }
+                .content {
+                    display: block;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .sidebar {
+        @include col();
+        @include size(5);
+        @include size-sm(12);
+
+        position: sticky;
+        top: 0;
+        .parallax {
+            position: relative;
+            .bird {
+                position: absolute;
+                top: 20%!important;
+                left: 5%!important;
+            }
+        }
+    }
+}
+
 .test {
     height: 800px;
 }
 
+.social {
+    a {
+        margin: .5rem;
+        img{
+            transition: .3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+            &:active {
+                transform: scale(.9);
+            }
+        }
+    }
+}
+
 //footer
 footer {
+    position: relative;
     padding: 1.5rem 0 5rem;
     background-color: #303E45;
     color: $white;
@@ -767,18 +1043,6 @@ footer {
     }
     .social {
         margin: 1rem -.5rem 2rem -.5rem;
-        a {
-            margin: .5rem;
-            img{
-                transition: .3s;
-                &:hover {
-                    transform: scale(1.1);
-                }
-                &:active {
-                    transform: scale(.9);
-                }
-            }
-        }
     }
     .small {
         font-size: 1.2rem;

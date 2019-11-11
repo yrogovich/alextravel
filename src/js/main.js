@@ -8,11 +8,24 @@
             stepSize: 85,
         });
 
+        try {
+            var scene = $('#scene').get(0);
+            var parallaxInstance = new Parallax(scene);
+            
+        } catch (error) {
+            console.log(error);
+        }
+
+        $('.accordion .head').click(function() {
+            $(this).parent('.accordion').toggleClass('active');;
+        });
+        
+
         // Lazyloading
         $('.lazy').Lazy({
             effect: 'fadeIn',
             effectTime: 1000,
-            threshold: 0,
+            // threshold: 0,
             onError: function(element) {
                 console.log('error loading ' + element.data('src'));
             }
