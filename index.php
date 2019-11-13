@@ -712,6 +712,12 @@ get_header();
 <!-- /#about.section -->
 
 <div id="faq" class="section">
+    <img src="<?php bloginfo('template_url') ?>/src/img/security-section/moutains.jpg" class="mountains">
+    <div class="bull-parallax" data-relative-input="true">
+        <img data-depth="0.1" data-src="<?php bloginfo('template_url') ?>/src/img/security-section/bull.png" class="lazy bull">
+    </div>
+
+
     <div class="container">
         <div class="section-title">
             <div class="h2 decorations faq">Вопросы и ответы</div>
@@ -921,8 +927,8 @@ get_header();
             <!-- /.accordions -->
             <div class="sidebar">
                 <div class="parallax" data-relative-input="true" id="scene">
-                    <img data-src="<?php bloginfo('template_url') ?>/src/img/faq-section/question.png" alt="question" class="question lazy">
-                    <img data-depth="0.2" data-src="<?php bloginfo('template_url') ?>/src/img/faq-section/bird.png" alt="bird" class="bird lazy">
+                    <img data-depth="0.1" data-src="<?php bloginfo('template_url') ?>/src/img/faq-section/question.png" alt="question" class="question lazy">
+                    <img data-depth="0.3" data-src="<?php bloginfo('template_url') ?>/src/img/faq-section/bird.png" alt="bird" class="bird lazy">
                 </div>
                 <!-- /.parallax -->
             </div>
@@ -935,7 +941,178 @@ get_header();
 </div>
 <!-- /#faq.section -->
 
-<div class="test"></div>
+<div id="security" class="section">
+    <div class="container">
+        <div class="section-title">
+            <div class="h2 decorations security">Безопастность</div>
+            <img class="wall-text lazy" data-src="<?php bloginfo('template_url') ?>/src/img/titles/security.svg" alt="security">
+        </div>
+        <!-- /.section-title -->
+
+        <div class="features">
+            <div class="column-1">
+                <div class="feature">
+                    <div class="image">
+                        <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/security-section/feature-1.png" alt="Подготовка">
+                    </div>
+                    <!-- /.image -->
+                    <div class="text">
+                        <div class="h3">Подготовка</div>
+                        <p>К каждому путешествию мы готовимся тщательно. Перед отправкой я разошлю каждому список того, что важно и желательно взять. Помимо этого, вы расскажете мне о своих опасениях, предпочтениях, тревогах и я постараюсь их все учесть. Ну и главное, весь маршрут и все что с нами произойдет, пройдено не раз, а значит риск ошибки минимален.</p>
+                    </div>
+                    <!-- /.text -->
+                </div>
+                <!-- /.feature -->
+                <div class="feature">
+                    <div class="image">
+                        <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/security-section/feature-3.svg" alt="Преступность">
+                    </div>
+                    <!-- /.image -->
+                    <div class="text">
+                        <div class="h3">Преступность</div>
+                        <p>Исландия одна из самых безопасных стран мира. За последние 20 лет здесь произошло лишь одно серьезное преступление, после которого полиция страны попросила прощения у населения. Местное население крайне доброжелательно и открыто к туристам. Более душевных и милых людей вы врядли еще где-то встретите!))</p>
+                    </div>
+                    <!-- /.text -->
+                </div>
+                <!-- /.feature -->
+                <div class="feature">
+                    <div class="image">
+                        <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/security-section/feature-5.png" alt="Язык">
+                    </div>
+                    <!-- /.image -->
+                    <div class="text">
+                        <div class="h3">Язык</div>
+                        <p>Я свободно говорю по-английски, поэтому у вас попросту не возникнет такой ситуации, где бы вам понадобился язык. Но даже если такая ситуация возникнет, просто позвоните мне и я объясню собеседнику, что от него требуется. Местное население свободно говорит по-английски.</p>
+                    </div>
+                    <!-- /.text -->
+                </div>
+                <!-- /.feature -->
+            </div>
+            <!-- /.column-1 -->
+            <div class="column-2">
+                <div class="feature">
+                    <div class="image">
+                        <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/security-section/feature-2.svg" alt="Волны">
+                    </div>
+                    <!-- /.image -->
+                    <div class="text">
+                        <div class="h3">Волны</div>
+                        <p>Все наши туры проходят летом, так как именно в это время средний минимум температуры наиболее высокий и уровень осадков минимален. А это значит что на воде будет штиль и благоприятные условия для поиска китов. В случае непредвиденной ситуации лодка быстро вернется к берегу и пока море не успокоится мы никуда не поплывем. </p>
+                    </div>
+                    <!-- /.text -->
+                </div>
+                <!-- /.feature -->
+                <div class="feature">
+                    <div class="image">
+                        <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/security-section/feature-4.svg" alt="Опытный тур-лидер">
+                    </div>
+                    <!-- /.image -->
+                    <div class="text">
+                        <div class="h3">Опытный тур-лидер</div>
+                        <p>За моими плечами не одна страна, и я точно знаю, что можно делать, а что нельзя. Везде, где мы будем останавливаться, у меня есть контакты необходимого госпиталя, куда бы мы смогли добраться в кратчайшие сроки. Ну и не стоит забывать оформлять медицинскую страховку. Это еще один ключик к сохранности вашего здоровья.</p>
+                    </div>
+                    <!-- /.text -->
+                </div>
+                <!-- /.feature -->
+                <div class="feature">
+                    <div class="image">
+                        <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/security-section/feature-6.svg" alt="Животные">
+                    </div>
+                    <!-- /.image -->
+                    <div class="text">
+                        <div class="h3">Животные</div>
+                        <p>Исландия одна из немногих стран где нет хищных животных, змей или насекомых опасных для жизни. Максимум кого мы тут встретим это милые лошадки, безобидные киты и прекрасные тупики. Есть единственное исключение это норка, но случаев нападения этого пушистого животного зафиксировано не было!</p>
+                    </div>
+                    <!-- /.text -->
+                </div>
+                <!-- /.feature -->
+            </div>
+            <!-- /.column-2 -->
+        </div>
+        <!-- /.features -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /#security.section -->
+
+<div id="request" class="section">
+    <div class="container">
+        <div class="section-title">
+            <div class="h2 decorations plane">Хочу с Вами</div>
+            <img class="wall-text lazy" data-src="<?php bloginfo('template_url') ?>/src/img/titles/request.svg" alt="заявка">
+        </div>
+        <!-- /.section-title -->
+        <div class="h4">Заполни форму заявки и отправляйся с нами в путешествие в ближайшее время</div>
+        <div class="form-wrapper">
+            <form id="open-form" class="open-form" action="javascript:" onsubmit="callHandler('#open-form')">
+                <input type="hidden" name="form_name" value="Заявка на ближайшее путешествие">
+
+                <div class="input-pair">
+                    <div class="input-wrapper">
+                        <input type="text" name="user_first_name" placeholder="Имя" required>
+                    </div>
+                    <!-- /.input-wrapper -->
+                    <div class="input-wrapper">
+                        <input type="text" name="user_last_name" placeholder="Фамилия" required>
+                    </div>
+                    <!-- /.input-wrapper -->
+                </div>
+                <!-- /.input-pair -->
+
+                <div class="input-pair">
+                    <div class="input-wrapper">
+                        <input type="email" name="user_email" placeholder="E-mail" required>
+                    </div>
+                    <!-- /.input-wrapper -->
+                    <div class="input-wrapper">
+                        <input type="text" name="user_phone" placeholder="Телефон" required>
+                    </div>
+                    <!-- /.input-wrapper -->
+                </div>
+                <!-- /.input-pair -->
+
+                <button class="btn btn-primary">Я еду</button>
+            </form>
+        </div>
+        <!-- /.form-wrapper -->
+    </div>
+    <!-- /.container -->
+</div>
+
+<div id="prefooter">
+
+    <img src="<?php bloginfo('template_url') ?>/src/img/prefooter/background.jpg" class="mountains-bg">
+    <div class="big-parallax" data-relative-input="true">
+        <img data-depth="0.2" data-src="<?php bloginfo('template_url') ?>/src/img/prefooter/back-grass.png" class="lazy back-grass">
+        <img data-depth="0.1" data-src="<?php bloginfo('template_url') ?>/src/img/prefooter/girl.png" class="lazy girl">
+        <img data-depth="0.2" src="<?php bloginfo('template_url') ?>/src/img/prefooter/front-grass.png" class="lazy front-grass">
+        <img data-depth="-0.1" data-src="<?php bloginfo('template_url') ?>/src/img/prefooter/clouds.png" class="lazy clouds">
+    </div>
+    <!-- /.big-parallax -->
+
+    <div class="container">
+        <div class="row">
+            <div class="column-1">
+                
+            </div>
+            <!-- /.column-1 -->
+
+            <div class="column-2">
+                <div class="section-title">
+                    <div class="h2 decorations faq">Остались вопросы?</div>
+                </div>
+                <!-- /.section-title -->
+                <div class="h4">Если у вас остались вопросы -  звоните или пишите. <span class="block">Я всегда на связи.</span></div>
+                <p>Если вы из Москвы, можем устроить личную встречу <span class="md-block">и я вам расскажу о нашем путешествии.</span> <span class="block">Если вы из регионов, давайте созвонимся по скайпу!</span></p>
+                <a href="#" class="btn btn-primary">Связаться со мной</a>
+            </div>
+            <!-- /.column-2 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.prefooter -->
 	
 <?php
 get_footer();

@@ -9,14 +9,21 @@
         });
 
         try {
-            var scene = $('#scene').get(0);
-            var parallaxInstance = new Parallax(scene);
+            var scene1 = $('#scene').get(0);
+            var parallaxInstance1 = new Parallax(scene1);
+
+            var scene2 = $('.big-parallax').get(0);
+            var parallaxInstance2 = new Parallax(scene2);
+
+            var scene3 = $('.bull-parallax').get(0);
+            var parallaxInstance3 = new Parallax(scene3);
             
         } catch (error) {
             console.log(error);
         }
 
         $('.accordion .head').click(function() {
+            $('.accordion').removeClass('active');
             $(this).parent('.accordion').toggleClass('active');;
         });
         
@@ -64,6 +71,29 @@
         });
         function clearInterval() {
             interval = 0;
+        }
+
+        try {
+            var images = document.querySelectorAll('.mountains-bg');
+            new simpleParallax(images, {
+                delay: 0,
+                orientation: 'down',
+                scale: 1.2,
+                overflow: true,
+                delay: .8,
+                transition: 'cubic-bezier(0,0,0,1)',
+            });
+            var images = document.querySelectorAll('.mountains');
+            new simpleParallax(images, {
+                delay: 0,
+                orientation: 'down',
+                scale: 1.2,
+                overflow: true,
+                delay: .8,
+                transition: 'cubic-bezier(0,0,0,1)',
+            });
+        } catch (error) {
+            console.log(error)
         }
     });
 })(jQuery); // <----- jQuery no conflict wrapper
