@@ -17,7 +17,12 @@
 
             var scene3 = $('.bull-parallax').get(0);
             var parallaxInstance3 = new Parallax(scene3);
-            
+
+            var scene4 = $('.camera-parallax').get(0);
+            var parallaxInstance4 = new Parallax(scene4);
+
+            var scene5 = $('.circle-parallax').get(0);
+            var parallaxInstance4 = new Parallax(scene5);
         } catch (error) {
             console.log(error);
         }

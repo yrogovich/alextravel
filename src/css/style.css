@@ -229,12 +229,6 @@ header.main .wave {
   z-index: -1;
 }
 
-@media (max-height: 700px) {
-  header.main .wave {
-    bottom: -4%;
-  }
-}
-
 header.main h1 {
   font-size: 6vh;
   max-width: 60vh;
@@ -895,6 +889,37 @@ header .social-wrapper .social a img:active {
   padding-bottom: 33rem;
 }
 
+#poster .camera-parallax {
+  position: absolute;
+  bottom: 1rem;
+  right: 22%;
+}
+
+@media (max-width: 1600px) {
+  #poster .camera-parallax {
+    right: 10%;
+  }
+}
+
+#poster .circle-parallax {
+  position: absolute;
+  bottom: -18rem;
+  right: 5%;
+}
+
+@media (max-width: 1600px) {
+  #poster .circle-parallax {
+    right: -15%;
+  }
+}
+
+#poster .circle-parallax .circle-bg {
+  width: 1052px;
+  height: 391px;
+  border-radius: 50%;
+  background-color: #BDF8FF;
+}
+
 .h4 {
   font-size: 1.8rem;
   font-weight: bold;
@@ -914,6 +939,12 @@ header .social-wrapper .social a img:active {
   background-size: cover;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+@media (max-width: 1290px) {
+  .section:before {
+    left: -50rem;
+  }
 }
 
 #gallery {
@@ -1290,7 +1321,7 @@ ul.primary-style li:before {
 
 .mountains {
   position: absolute;
-  bottom: 0;
+  bottom: 20rem;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;

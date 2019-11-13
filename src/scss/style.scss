@@ -146,9 +146,6 @@ header {
             position: absolute;
             bottom: 0;
             z-index: -1;
-            @media (max-height: 700px) {
-                bottom: -4%;
-            }
         }
         h1 { 
             font-size: 6vh;
@@ -614,7 +611,30 @@ header {
 }
 #poster {
     padding-bottom: 33rem;
+    .camera-parallax {
+        position: absolute;
+        bottom: 1rem;
+        right: 22%;
+        @media (max-width: 1600px) {
+            right: 10%;
+        }
+    }
+    .circle-parallax {
+        position: absolute;
+        bottom: -18rem;
+        right: 5%;
+        @media (max-width: 1600px) {
+            right: -15%;
+        }
+        .circle-bg {
+            width: 1052px;
+            height: 391px;
+            border-radius: 50%;
+            background-color: #BDF8FF;
+        }
+    }
 }
+
 .h4 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -632,6 +652,9 @@ header {
         height: 120px;
         background-size: cover;
         transform: translateY(-100%);
+        @media (max-width: 1290px) {
+            left: -50rem;
+        }
     }
 }
 #gallery {
@@ -879,7 +902,7 @@ ul.primary-style {
 // FAQ section
 .mountains {
     position: absolute;
-    bottom: 0;
+    bottom: 20rem;
     width: 100%;
     object-fit: contain;
 }

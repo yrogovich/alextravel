@@ -16,6 +16,14 @@ get_header();
 ?>
 
 <div class="section" id="poster">
+    <div class="circle-parallax" data-relative-input="true">
+        <div data-depth="0.1" class="circle-bg"></div>
+    </div>
+    <div class="camera-parallax" data-relative-input="true">  
+        <img data-depth="-0.3" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/camera.png" class="camera lazy">
+    </div>
+    
+
     <div class="container">
         <div class="section-title">
             <div class="h2 decorations plane">Скоро едем</div>
@@ -712,7 +720,8 @@ get_header();
 <!-- /#about.section -->
 
 <div id="faq" class="section">
-    <img src="<?php bloginfo('template_url') ?>/src/img/security-section/moutains.jpg" class="mountains">
+    <img data-src="<?php bloginfo('template_url') ?>/src/img/security-section/moutains.jpg" class="mountains lazy">
+
     <div class="bull-parallax" data-relative-input="true">
         <img data-depth="0.1" data-src="<?php bloginfo('template_url') ?>/src/img/security-section/bull.png" class="lazy bull">
     </div>
@@ -1081,7 +1090,7 @@ get_header();
 
 <div id="prefooter">
 
-    <img src="<?php bloginfo('template_url') ?>/src/img/prefooter/background.jpg" class="mountains-bg">
+    <img data-src="<?php bloginfo('template_url') ?>/src/img/prefooter/background.jpg" class="mountains-bg lazy">
     <div class="big-parallax" data-relative-input="true">
         <img data-depth="0.2" data-src="<?php bloginfo('template_url') ?>/src/img/prefooter/back-grass.png" class="lazy back-grass">
         <img data-depth="0.1" data-src="<?php bloginfo('template_url') ?>/src/img/prefooter/girl.png" class="lazy girl">
