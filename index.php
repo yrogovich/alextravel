@@ -532,7 +532,7 @@ get_header();
                         </div>
                         <!-- /.title -->
                         <div class="phots-count">
-                            100 фото
+                            11 фото
                         </div>
                         <!-- /.phots-count -->
                     </div>
@@ -578,7 +578,7 @@ get_header();
                         </div>
                         <!-- /.title -->
                         <div class="phots-count">
-                            100 фото
+                            56 фото
                         </div>
                         <!-- /.phots-count -->
                     </div>
@@ -624,7 +624,7 @@ get_header();
                         </div>
                         <!-- /.title -->
                         <div class="phots-count">
-                            100 фото
+                            93 фото
                         </div>
                         <!-- /.phots-count -->
                     </div>
