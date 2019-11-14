@@ -103,9 +103,9 @@
 			<div class="social-wrapper">
 				<span class="title">Присоеденяйся!</span>
 				<div class="social">
-					<a href="<?=VK?>" target="_blank" class="vk"><img src="<?php bloginfo('template_url') ?>/src/img/header/vk.svg" alt="vk"></a>
-					<a href="<?=INST?>" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/header/inst.svg" alt="inst"></a>
-					<a href="<?=FACEBOOK?>" target="_blank" class="facebook"><img src="<?php bloginfo('template_url') ?>/src/img/header/facebook.svg" alt="facebook"></a>
+					<a href="<?=VK?>" target="_blank" class="vk"><img data-src="<?php bloginfo('template_url') ?>/src/img/header/vk.svg" class="lazy" alt="vk"></a>
+					<a href="<?=INST?>" target="_blank" class="inst"><img data-src="<?php bloginfo('template_url') ?>/src/img/header/inst.svg" class="lazy" alt="inst"></a>
+					<a href="<?=FACEBOOK?>" target="_blank" class="facebook"><img data-src="<?php bloginfo('template_url') ?>/src/img/header/facebook.svg" class="lazy" alt="facebook"></a>
 				</div>
 			</div>
 			</div>

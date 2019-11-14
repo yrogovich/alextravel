@@ -23,6 +23,7 @@
 
             var scene5 = $('.circle-parallax').get(0);
             var parallaxInstance4 = new Parallax(scene5);
+
         } catch (error) {
             console.log(error);
         }
@@ -97,8 +98,65 @@
                 delay: .8,
                 transition: 'cubic-bezier(0,0,0,1)',
             });
+            var images = document.querySelectorAll('.mountains-mobile');
+            new simpleParallax(images, {
+                delay: 0,
+                orientation: 'down',
+                scale: 1.4,
+                overflow: true,
+                delay: .8,
+                transition: 'cubic-bezier(0,0,0,1)',
+            });
         } catch (error) {
-            console.log(error)
+            console.log(error);
+        }
+
+        try {
+            $('.super-slider').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+                //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+                var i = (currentSlide ? currentSlide : 0) + 1;
+                $('.slides-count .current').text(i);
+                $('.slides-count .size').text(slick.slideCount);
+
+                //Add preview of video for next slide
+                var url =  'url('+$('.slick-current').next().find('.youtube img').prop('src')+')';
+                console.log(url);
+                $('.slick-current .next-video').css('background-image', url);
+            });
+            $('.super-slider').slick({
+                fade: true,
+                arrows: false,
+                dots: true
+            });
+            $('.controls .left').click(function() {
+                $('.super-slider').slick('slickPrev');
+            });
+            $('.controls .right').click(function() {
+               $('.super-slider').slick('slickNext');
+            });        
+        } catch (error) {
+            console.log(error);
         }
     });
 })(jQuery); // <----- jQuery no conflict wrapper
+
+// Youtube
+(function() {
+	var youtube = document.querySelectorAll( ".youtube" );	
+	for (var i = 0; i < youtube.length; i++) {		
+		var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";		
+		var image = new Image();
+        image.src = source;
+        image.addEventListener( "load", function() {
+            youtube[ i ].appendChild( image );
+        }( i ) );		
+        youtube[i].addEventListener( "click", function() {
+            var iframe = document.createElement( "iframe" );
+                    iframe.setAttribute( "frameborder", "0" );
+                    iframe.setAttribute( "allowfullscreen", "" );
+                    iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+                    this.innerHTML = "";
+                    this.appendChild( iframe );
+        } );	
+	};	
+})();

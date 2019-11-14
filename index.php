@@ -673,6 +673,120 @@ get_header();
         <!-- /.section-title -->
         
         <div class="super-slider">
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="column-1">
+                        <div class="controls">
+                            <div class="left"></div>
+                            <div class="slides-count">
+                                <span class="current"></span>
+                                <span class="size"></span>
+                            </div>
+                            <div class="right"></div>
+                        </div>
+                        <!-- /.controls -->
+                        <div class="head">
+                            <div class="h4">
+                                Макс Николаев 
+                                <a href="#" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst"></a>
+                            </div>
+                            <div class="date">Исландия (октябрь 2019)</div>
+                        </div>
+                        <!-- /.head -->
+                        <div class="body">
+                            <p>Настало время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени.</p>
+                        </div>
+                        <!-- /.body -->
+                        <div class="dots"></div>
+                    </div>
+                    <!-- /.column-1 -->
+                    <div class="column-2">
+                        <div class="youtube" data-embed="e8QKBu-qAPA">
+                            <div class="play-button"></div>
+                            <div class="next-video"></div>
+                        </div>
+                    </div>
+                    <!-- /.column-2 -->
+                </div>
+                <!-- /.slide-content -->
+            </div>
+            <!-- /.slide -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="column-1">
+                        <div class="controls">
+                            <div class="left"></div>
+                            <div class="slides-count">
+                                <span class="current"></span>
+                                <span class="size"></span>
+                            </div>
+                            <div class="right"></div>
+                        </div>
+                        <!-- /.controls -->
+                        <div class="head">
+                            <div class="h4">
+                                Иван Петров
+                                <a href="#" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst"></a>
+                            </div>
+                            <div class="date">Исландия (октябрь 2018)</div>
+                        </div>
+                        <!-- /.head -->
+                        <div class="body">
+                            <p>Время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени. Настало время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени.</p>
+                        </div>
+                        <!-- /.body -->
+                        <div class="dots"></div>
+                    </div>
+                    <!-- /.column-1 -->
+                    <div class="column-2">
+                        <div class="youtube" data-embed="6obeWGWKN4s">
+                            <div class="play-button"></div>
+                            <div class="next-video"></div>
+                        </div>
+                    </div>
+                    <!-- /.column-2 -->
+                </div>
+                <!-- /.slide-content -->
+            </div>
+            <!-- /.slide -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="column-1">
+                        <div class="controls">
+                            <div class="left"></div>
+                            <div class="slides-count">
+                                <span class="current"></span>
+                                <span class="size"></span>
+                            </div>
+                            <div class="right"></div>
+                        </div>
+                        <!-- /.controls -->
+                        <div class="head">
+                            <div class="h4">
+                                Александра Ивановна
+                                <a href="#" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst"></a>
+                            </div>
+                            <div class="date">Исландия (октябрь 2018)</div>
+                        </div>
+                        <!-- /.head -->
+                        <div class="body">
+                            <p>Программа была настолько насыщенная, что на сон практически не оставалось времени. Настало время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени.</p>
+                        </div>
+                        <!-- /.body -->
+                        <div class="dots"></div>
+                    </div>
+                    <!-- /.column-1 -->
+                    <div class="column-2">
+                        <div class="youtube" data-embed="WSLbCs64MLc">
+                            <div class="play-button"></div>
+                            <div class="next-video"></div>
+                        </div>
+                    </div>
+                    <!-- /.column-2 -->
+                </div>
+                <!-- /.slide-content -->
+            </div>
+            <!-- /.slide -->
         </div>
         <!-- /.super-slider -->
     </div>
@@ -705,10 +819,10 @@ get_header();
                 <div class="h3" data-aos="fade-up" data-aos-delay="100">Привет! Меня зовут Алексей Анушкин.</div>
                 <p data-aos="fade-up" data-aos-delay="500">Путешественник, 31 страна в рюкзаке, организатор образовательных мероприятий и создатель проекта Iceland trips.</p>
                 <ul class="primary-style">
-                    <li data-aos="fade-up" data-aos-delay="1000">Начал свой путь с вожатого в детском лагере. Жил в Европе, работал в Пекине и Москве.</li>
-                    <li data-aos="fade-up" data-aos-delay="1200">Проехал с друзьями на раритетном фургоне из Минска к атлантическому океану чтобы посёрфить.</li>
-                    <li data-aos="fade-up" data-aos-delay="1400">Организовал десятки мероприятий, пробежал полумарафон и Bison Race</li>
-                    <li data-aos="fade-up" data-aos-delay="1600">Ко всему подхожу с душой и окружаю каждого заботой и вниманием. Можете быть спокойны, со мной эта поездка будет безопасной, лёгкой, интересной и насыщенной</li>
+                    <li data-aos="fade-up" data-aos-delay="600">Начал свой путь с вожатого в детском лагере. Жил в Европе, работал в Пекине и Москве.</li>
+                    <li data-aos="fade-up" data-aos-delay="600">Проехал с друзьями на раритетном фургоне из Минска к атлантическому океану чтобы посёрфить.</li>
+                    <li data-aos="fade-up" data-aos-delay="600">Организовал десятки мероприятий, пробежал полумарафон и Bison Race</li>
+                    <li data-aos="fade-up" data-aos-delay="600">Ко всему подхожу с душой и окружаю каждого заботой и вниманием. Можете быть спокойны, со мной эта поездка будет безопасной, лёгкой, интересной и насыщенной</li>
                 </ul>
             </div>
             <!-- /.text -->
@@ -720,7 +834,8 @@ get_header();
 <!-- /#about.section -->
 
 <div id="faq" class="section">
-    <img data-src="<?php bloginfo('template_url') ?>/src/img/security-section/moutains.jpg" class="mountains lazy">
+    <img data-src="<?php bloginfo('template_url') ?>/src/img/security-section/moutains.jpg"  class="mountains lazy">
+    <img data-src="<?php bloginfo('template_url') ?>/src/img/security-section/moutains-mobile.jpg" class="mountains-mobile lazy">
 
     <div class="bull-parallax" data-relative-input="true">
         <img data-depth="0.1" data-src="<?php bloginfo('template_url') ?>/src/img/security-section/bull.png" class="lazy bull">
@@ -786,7 +901,30 @@ get_header();
                             <li>Полотенце</li>
                             <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
                             <li>Индивидуальная аптечка.</li>
-                            <li>Портативный аккумулятор для зарядки гаджетов</li>
+                        </ul>
+                    </div>
+                    <!-- /.content -->
+                </div>
+                <!-- /.accordion -->
+                <div class="accordion">
+                    <div class="head">
+                        <div class="h4">Как мы будем питаться?</div>
+                        <!-- /.h4 -->
+
+                        <div class="toggler"></div>
+                    </div>
+                    <!-- /.head -->
+                  
+                    <div class="content">
+                        <ul class="primary-style">
+                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
+                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
+                            <li>Плотные штаны или джинсы</li>
+                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
+                            <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
+                            <li>Футболки, толстовку или свитер</li>
+                            <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
+                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
                         </ul>
                     </div>
                     <!-- /.content -->
@@ -815,6 +953,31 @@ get_header();
                             <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
                             <li>Индивидуальная аптечка.</li>
                             <li>Портативный аккумулятор для зарядки гаджетов</li>
+                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
+                            <li>Полотенце</li>
+                            <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
+                            <li>Индивидуальная аптечка.</li>
+                            <li>Портативный аккумулятор для зарядки гаджетов</li>
+                        </ul>
+                    </div>
+                    <!-- /.content -->
+                </div>
+                <!-- /.accordion -->
+                <div class="accordion">
+                    <div class="head">
+                        <div class="h4">Как мы будем питаться?</div>
+                        <!-- /.h4 -->
+
+                        <div class="toggler"></div>
+                    </div>
+                    <!-- /.head -->
+                  
+                    <div class="content">
+                        <ul class="primary-style">
+                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
+                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
+                            <li>Плотные штаны или джинсы</li>
+                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
                         </ul>
                     </div>
                     <!-- /.content -->
@@ -841,64 +1004,6 @@ get_header();
                             <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
                             <li>Полотенце</li>
                             <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                            <li>Индивидуальная аптечка.</li>
-                            <li>Портативный аккумулятор для зарядки гаджетов</li>
-                        </ul>
-                    </div>
-                    <!-- /.content -->
-                </div>
-                <!-- /.accordion -->
-                <div class="accordion">
-                    <div class="head">
-                        <div class="h4">Как мы будем питаться?</div>
-                        <!-- /.h4 -->
-
-                        <div class="toggler"></div>
-                    </div>
-                    <!-- /.head -->
-                  
-                    <div class="content">
-                        <ul class="primary-style">
-                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                            <li>Плотные штаны или джинсы</li>
-                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                            <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                            <li>Футболки, толстовку или свитер</li>
-                            <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                            <li>Полотенце</li>
-                            <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                            <li>Индивидуальная аптечка.</li>
-                            <li>Портативный аккумулятор для зарядки гаджетов</li>
-                        </ul>
-                    </div>
-                    <!-- /.content -->
-                </div>
-                <!-- /.accordion -->
-                <div class="accordion">
-                    <div class="head">
-                        <div class="h4">Как мы будем питаться?</div>
-                        <!-- /.h4 -->
-
-                        <div class="toggler"></div>
-                    </div>
-                    <!-- /.head -->
-                  
-                    <div class="content">
-                        <ul class="primary-style">
-                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                            <li>Плотные штаны или джинсы</li>
-                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                            <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                            <li>Футболки, толстовку или свитер</li>
-                            <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                            <li>Полотенце</li>
-                            <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                            <li>Индивидуальная аптечка.</li>
-                            <li>Портативный аккумулятор для зарядки гаджетов</li>
                         </ul>
                     </div>
                     <!-- /.content -->
@@ -1094,7 +1199,7 @@ get_header();
     <div class="big-parallax" data-relative-input="true">
         <img data-depth="0.2" data-src="<?php bloginfo('template_url') ?>/src/img/prefooter/back-grass.png" class="lazy back-grass">
         <img data-depth="0.1" data-src="<?php bloginfo('template_url') ?>/src/img/prefooter/girl.png" class="lazy girl">
-        <img data-depth="0.2" src="<?php bloginfo('template_url') ?>/src/img/prefooter/front-grass.png" class="lazy front-grass">
+        <img data-depth="0.2" data-src="<?php bloginfo('template_url') ?>/src/img/prefooter/front-grass.png" class="lazy front-grass">
         <img data-depth="-0.1" data-src="<?php bloginfo('template_url') ?>/src/img/prefooter/clouds.png" class="lazy clouds">
     </div>
     <!-- /.big-parallax -->
