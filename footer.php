@@ -77,5 +77,35 @@
 
 <?php wp_footer(); ?>
 
+<!-- Modal HTML embedded directly into document -->
+<div id="call-me-modal" class="modal"> 
+    <div class="content">
+        <div class="section-title">
+                <div class="h2 decorations faq">Как с вами связаться?</div>
+        </div>
+        <form id="call-me-form" class="open-form" action="javascript:" onsubmit="callHandler('#call-me-form')">
+            <input type="hidden" name="form_name" value="Свяжитесь со мной">
+
+
+            <div class="input-wrapper">
+                <input type="text" name="user_first_name" placeholder="Имя" required>
+            </div>
+            <!-- /.input-wrapper -->
+            <div class="input-wrapper">
+                <input type="email" name="user_email" placeholder="E-mail" required>
+            </div>
+            <!-- /.input-wrapper -->
+            <div class="input-wrapper">
+                <input type="text" name="user_phone" placeholder="Телефон" >
+            </div>
+            <!-- /.input-wrapper -->
+
+
+            <button class="btn btn-primary">Свяжитесь со мной</button>
+        </form>
+    </div>
+    <!-- /.content --> 
+</div>
+
 </body>
 </html>
