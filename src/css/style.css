@@ -1713,7 +1713,7 @@ ul.primary-style li:before {
 
 .mountains {
   position: absolute;
-  bottom: 20rem;
+  bottom: 10rem;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
