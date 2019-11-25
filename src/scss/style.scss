@@ -132,24 +132,43 @@ img {
 
 header {
     padding-top: 2rem;
+    .wave {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+    .relative {
+        position: relative;
+        @include sm-block() {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        };
+    }
+    .dates {
+        position: relative;
+        &:before {
+            content: url('../img/global-icons/calendar.svg');
+            display: inline-block;
+            margin-right: 1rem;
+            vertical-align: sub;
+        }
+    }
+    &.tour-name,
     &.main {
         position: relative;
-        background: $gray url('../img/header/background.jpg') center / cover no-repeat;
+        background-color: $deep-gray;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-attachment: fixed;
-        min-height: 110vh;
         color: $white;
         z-index: 0;
         overflow: hidden;
-        .wave {
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            z-index: -1;
-        }
-        h1 { 
-            font-size: 6vh;
-            max-width: 60vh;
-            .bold {
+        min-height: 110vh;
+        h1 {
+             .bold {
                 line-height: 1.2;
             }
             line-height: 1.5;
@@ -162,6 +181,87 @@ header {
                 font-size: 5vh;
                 max-width: 50vh;
             };
+        }
+    }
+    &.tour-name {
+        @include sm-block() {
+            min-height: 65vh;
+        };
+        h1 { 
+            font-size: 5.5vh;
+            max-width: 78vh;
+            @include xs-block() {
+                font-size: 3vh;
+                .bold {
+                    font-size: 3.8vh;
+                }
+            };
+        }
+        .dates {
+            margin-top: 3rem;
+        }
+        #flag-parallax {
+            position: absolute;
+            top: 6vh;
+            right: -50px;
+            z-index: -1;
+            @media (max-width: 1450px) {
+                transform: scale(.8)!important;
+            }
+            @media (max-width: 1100px), (max-height: 729px) {
+                top: -8vh;
+            }
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+    }
+    .overlap,
+    .overlap-mobile {
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: .5;
+        z-index: -1;
+        @include xs-block() {
+            height: 95%;
+        };
+    }
+    .overlap {
+        @include xs-block() {
+            display: none;
+        }
+    }
+    .overlap-mobile {
+        display: none;
+        @include xs-block() {
+            display: block;
+        }
+    }
+    &.iceland {
+        background-image: url('../img/iceland/header-bg.jpg');  
+
+        .wave {
+            bottom: -100px;
+            @media (max-width: 1090px) {
+                bottom: 0;
+            }
+        }
+    }
+
+
+    
+    &.main {   
+        background-image: url('../img/header/background.jpg');   
+        
+        h1 { 
+            font-size: 6vh;
+            max-width: 60vh;
+           
         }
         ul {
             margin: 5rem 0;
@@ -213,14 +313,7 @@ header {
                 }
             }
         }
-        .relative {
-            position: relative;
-            @include sm-block() {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            };
-        }
+
         .man {
             position: absolute;
             left: 30vw;

@@ -211,46 +211,186 @@ header {
   padding-top: 2rem;
 }
 
-header.main {
-  position: relative;
-  background: #F2F3FA url("../img/header/background.jpg") center/cover no-repeat;
-  background-attachment: fixed;
-  min-height: 110vh;
-  color: #fff;
-  z-index: 0;
-  overflow: hidden;
-}
-
-header.main .wave {
+header .wave {
   width: 100%;
   position: absolute;
   bottom: 0;
   z-index: -1;
 }
 
-header.main h1 {
-  font-size: 6vh;
-  max-width: 60vh;
+header .relative {
+  position: relative;
+}
+
+@media screen and (max-width: 780px) {
+  header .relative {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header .dates {
+  position: relative;
+}
+
+header .dates:before {
+  content: url("../img/global-icons/calendar.svg");
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: sub;
+}
+
+header.tour-name, header.main {
+  position: relative;
+  background-color: #7C879C;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  z-index: 0;
+  overflow: hidden;
+  min-height: 110vh;
+}
+
+header.tour-name h1, header.main h1 {
   line-height: 1.5;
 }
 
-header.main h1 .bold {
+header.tour-name h1 .bold, header.main h1 .bold {
   line-height: 1.2;
 }
 
 @media screen and (max-width: 780px) {
-  header.main h1 {
+  header.tour-name h1, header.main h1 {
     text-align: center;
     margin: auto;
   }
 }
 
 @media screen and (max-width: 560px) {
-  header.main h1 {
+  header.tour-name h1, header.main h1 {
     text-align: center;
     font-size: 5vh;
     max-width: 50vh;
   }
+}
+
+@media screen and (max-width: 780px) {
+  header.tour-name {
+    min-height: 65vh;
+  }
+}
+
+header.tour-name h1 {
+  font-size: 5.5vh;
+  max-width: 78vh;
+}
+
+@media screen and (max-width: 560px) {
+  header.tour-name h1 {
+    font-size: 3vh;
+  }
+  header.tour-name h1 .bold {
+    font-size: 3.8vh;
+  }
+}
+
+header.tour-name .dates {
+  margin-top: 3rem;
+}
+
+header.tour-name #flag-parallax {
+  position: absolute;
+  top: 6vh;
+  right: -50px;
+  z-index: -1;
+}
+
+@media (max-width: 1450px) {
+  header.tour-name #flag-parallax {
+    -webkit-transform: scale(0.8) !important;
+            transform: scale(0.8) !important;
+  }
+}
+
+@media (max-width: 1100px), (max-height: 729px) {
+  header.tour-name #flag-parallax {
+    top: -8vh;
+  }
+}
+
+@media (max-width: 991px) {
+  header.tour-name #flag-parallax {
+    display: none;
+  }
+}
+
+header .overlap,
+header .overlap-mobile {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .5;
+  z-index: -1;
+}
+
+@media screen and (max-width: 560px) {
+  header .overlap,
+  header .overlap-mobile {
+    height: 95%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  header .overlap {
+    display: none;
+  }
+}
+
+header .overlap-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 560px) {
+  header .overlap-mobile {
+    display: block;
+  }
+}
+
+header.iceland {
+  background-image: url("../img/iceland/header-bg.jpg");
+}
+
+header.iceland .wave {
+  bottom: -100px;
+}
+
+@media (max-width: 1090px) {
+  header.iceland .wave {
+    bottom: 0;
+  }
+}
+
+header.main {
+  background-image: url("../img/header/background.jpg");
+}
+
+header.main h1 {
+  font-size: 6vh;
+  max-width: 60vh;
 }
 
 header.main ul {
@@ -308,25 +448,6 @@ header.main ul li.active:before {
     width: 3rem;
     height: 3rem;
     padding: .5rem;
-  }
-}
-
-header.main .relative {
-  position: relative;
-}
-
-@media screen and (max-width: 780px) {
-  header.main .relative {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
