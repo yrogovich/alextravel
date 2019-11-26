@@ -248,7 +248,7 @@ header {
         .wave {
             bottom: -100px;
             @media (max-width: 1090px) {
-                bottom: 0;
+                bottom: -1px;
             }
         }
     }
@@ -518,6 +518,43 @@ header {
         box-shadow: none!important;
         cursor: default;
     }
+    &.btn-select {
+        color: #AAB2C1;
+        font-weight: bold;
+        padding: 1.5rem 2rem;
+        border: 2px solid #AAB2C1;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        &.active {
+            color: $black;
+            border-color: $primary;
+        }
+        .footnote {
+            margin-left: auto;
+            white-space: nowrap;
+        }
+    }
+    &.btn-telegram {
+        padding: 1.4rem 3rem 1.6rem 3rem;
+        background-color: #0088CC;
+        box-shadow: 0px 3px 4px rgba(0, 136, 204, 0.75);
+        font-weight: bold;
+        color: $white;
+        &::before {
+            content: url('../img/global-icons/telegram-icon.svg');
+            margin-right: 1rem;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &:hover {
+            box-shadow: 0px 3px 4px rgba(#0088CC, 0.75),
+                    inset 0px -10px 15px 0 rgba($white,0.2);
+        }
+        &:active {
+            box-shadow: 0px 0px 4px rgba(#0088CC, 0.75);
+        }
+    }
 }
 // Titles
 .section-title {
@@ -685,19 +722,35 @@ header {
             display: none;
         }
     }
-    .stars {
-        display: flex;
-        align-items: center;
-        margin: -2px;
-        li {
-            display: inline-block;
-            height: 1.6rem;
-            width: 1.6rem;
-            background: url('../img/global-icons/star-primary.svg') center / contain no-repeat;
-            margin: 2px;
-            &.gray-star {
-                background-image: url('../img/global-icons/star-gray.svg');
-            }
+}
+.stars {
+    display: flex;
+    align-items: center;
+    margin: -2px;
+    li {
+        display: inline-block;
+        height: 1.6rem;
+        width: 1.6rem;
+        background: url('../img/global-icons/star-primary.svg') center / contain no-repeat;
+        margin: 2px;
+        &.gray {
+            background-image: url('../img/global-icons/star-gray.svg');
+        }
+    }
+}
+.tickets {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -2px;
+    li {
+        display: inline-block;
+        width: 3.5rem;
+        height: 3.5rem;
+        background: url('../img/global-icons/ticket.svg') center / contain no-repeat;
+        margin: 2px;
+        &.gray {
+            background-image: url('../img/global-icons/ticket-gray.svg');
         }
     }
 }
@@ -737,6 +790,10 @@ header {
 
 .h4 {
     font-size: 1.8rem;
+    font-weight: bold;
+}
+.h5 {
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
@@ -1815,6 +1872,199 @@ footer {
     }
 }
 
+////////////////////////////////////////////////
+/* Other pages */
+.raiting-row {
+    @include row-flex();
+    .block {
+        @include col();
+        @include size(4);
+        @include size-sm(12);
+
+        border-radius: 1rem;
+        padding: 3rem 3rem 2rem 3rem;
+        @include xs(padding, 2rem 2rem 1rem 2rem);
+        background-color: $gray;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        .pair {
+            flex: 1 1 10rem;
+            margin-right: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .stars {
+            li {
+                width: 22.5px;
+                height: 22.5px;
+                @media (max-width: $iphone-5) {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
+#curators {
+    margin-top: -10rem;
+    @include sm(margin-top, 0);
+}
+.tour-info-row {
+    margin-top: 3rem;
+    @include row-flex();
+    .info-curators {
+        @include col();
+        @include size(4);
+        @include size-sm(12);
+
+        margin-bottom: 5rem;
+        .h5 {
+            margin-bottom: 2.5rem;
+        }
+
+        .curators {
+            margin: 2rem -.5rem 3rem -.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .curator {
+                flex: 1 1 80px;
+                margin: .5rem;
+                text-align: center;
+                .image {
+                    position: relative;
+                    margin-bottom: .5rem;
+                    img {
+                        max-width: 100%;
+                    }
+                    .inst {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            transition: .6s;
+                            @media (max-height: 790px) {
+                                height: 6rem;
+                            }
+                            &:hover {
+                                transform: rotate(360deg);
+                            } 
+                            &:active {
+                                transform: scale(.9);
+                            }
+                        }
+                    }
+                }
+                .date {
+                    max-width: 9rem;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .get-ticket-tour {
+        @include col();
+        @include size(8);
+        @include size-sm(12);
+
+        background: $white;
+        box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
+        border-radius: 1rem;
+        .head {
+            padding: 3.5rem 3rem 2.5rem 3rem;
+            border-bottom: 4px solid $gray;  
+           
+            .row {
+                margin: -.5rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .pair,
+            .tickets {
+                margin: .5rem;
+            }
+            .tickets {
+                li {
+                    @include lg-block() {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+                }
+            }
+            @include xs-block() {
+                padding: 2.5rem 2rem 1.5rem 2rem;
+            }
+        }
+        .body {
+            padding: 3rem;
+            @include xs-block() {
+                padding: 2rem;
+            }
+            border-bottom: 4px solid $gray;
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin: 2rem -2.5rem;
+                .btn,
+                .price,
+                .column {
+                    margin: 1rem 2.5rem 1rem;
+                    margin-bottom: 1rem;
+                }
+                .column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+            }
+
+            .pair {
+                display: flex;
+                flex-wrap: wrap;
+                margin: -0.5rem;
+            }
+            .btn-select {
+                width: 100%;
+                flex: 1 1 20rem;
+                margin: 0.5rem;
+            }
+        }
+        .foot {
+            padding: 3rem;
+            color: $deep-gray;
+            @include xs-block() {
+                padding: 2rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+.info {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 3.8rem;
+
+    display: flex;
+    align-items: center;
+    &:before {
+        content: url('../img/global-icons/info.svg');
+        display: inline-block;
+        margin-right: 1rem;
+        margin-left: -38px;
+    }
+    @include xs-block() {
+        font-size: 1.4rem;
+    }
+}
+
 /////////////////////
 .modal {
     display: none;
@@ -1866,4 +2116,9 @@ footer {
 }
 .bold {
     font-weight: 900;
+}
+
+
+.test {
+    height: 50rem;
 }

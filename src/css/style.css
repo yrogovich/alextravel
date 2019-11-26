@@ -380,7 +380,7 @@ header.iceland .wave {
 
 @media (max-width: 1090px) {
   header.iceland .wave {
-    bottom: 0;
+    bottom: -1px;
   }
 }
 
@@ -736,6 +736,56 @@ header .social-wrapper .social a img:active {
   cursor: default;
 }
 
+.btn.btn-select {
+  color: #AAB2C1;
+  font-weight: bold;
+  padding: 1.5rem 2rem;
+  border: 2px solid #AAB2C1;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn.btn-select.active {
+  color: #2E3747;
+  border-color: #FFC700;
+}
+
+.btn.btn-select .footnote {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.btn.btn-telegram {
+  padding: 1.4rem 3rem 1.6rem 3rem;
+  background-color: #0088CC;
+  -webkit-box-shadow: 0px 3px 4px rgba(0, 136, 204, 0.75);
+          box-shadow: 0px 3px 4px rgba(0, 136, 204, 0.75);
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn.btn-telegram::before {
+  content: url("../img/global-icons/telegram-icon.svg");
+  margin-right: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn.btn-telegram:hover {
+  -webkit-box-shadow: 0px 3px 4px rgba(0, 136, 204, 0.75), inset 0px -10px 15px 0 rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 3px 4px rgba(0, 136, 204, 0.75), inset 0px -10px 15px 0 rgba(255, 255, 255, 0.2);
+}
+
+.btn.btn-telegram:active {
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 136, 204, 0.75);
+          box-shadow: 0px 0px 4px rgba(0, 136, 204, 0.75);
+}
+
 .section-title {
   text-align: center;
   position: relative;
@@ -985,7 +1035,7 @@ header .social-wrapper .social a img:active {
   }
 }
 
-.raiting .stars {
+.stars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -995,7 +1045,7 @@ header .social-wrapper .social a img:active {
   margin: -2px;
 }
 
-.raiting .stars li {
+.stars li {
   display: inline-block;
   height: 1.6rem;
   width: 1.6rem;
@@ -1003,8 +1053,32 @@ header .social-wrapper .social a img:active {
   margin: 2px;
 }
 
-.raiting .stars li.gray-star {
+.stars li.gray {
   background-image: url("../img/global-icons/star-gray.svg");
+}
+
+.tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -2px;
+}
+
+.tickets li {
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: url("../img/global-icons/ticket.svg") center/contain no-repeat;
+  margin: 2px;
+}
+
+.tickets li.gray {
+  background-image: url("../img/global-icons/ticket-gray.svg");
 }
 
 .date {
@@ -1057,6 +1131,11 @@ header .social-wrapper .social a img:active {
 
 .h4 {
   font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.h5 {
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -2629,6 +2708,329 @@ footer .footer-row .column-2 {
   margin: 1rem;
 }
 
+/* Other pages */
+.raiting-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.raiting-row .block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(33.33333% - 30px);
+  border-radius: 1rem;
+  padding: 3rem 3rem 2rem 3rem;
+  background-color: #F2F3FA;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 780px) {
+  .raiting-row .block {
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .raiting-row .block {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+}
+
+.raiting-row .block .pair {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.raiting-row .block .stars li {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+@media (max-width: 359px) {
+  .raiting-row .block .stars li {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+#curators {
+  margin-top: -10rem;
+}
+
+@media screen and (max-width: 780px) {
+  #curators {
+    margin-top: 0;
+  }
+}
+
+.tour-info-row {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.tour-info-row .info-curators {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(33.33333% - 30px);
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 780px) {
+  .tour-info-row .info-curators {
+    width: calc(100% - 30px);
+  }
+}
+
+.tour-info-row .info-curators .h5 {
+  margin-bottom: 2.5rem;
+}
+
+.tour-info-row .info-curators .curators {
+  margin: 2rem -.5rem 3rem -.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tour-info-row .info-curators .curators .curator {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80px;
+          flex: 1 1 80px;
+  margin: .5rem;
+  text-align: center;
+}
+
+.tour-info-row .info-curators .curators .curator .image {
+  position: relative;
+  margin-bottom: .5rem;
+}
+
+.tour-info-row .info-curators .curators .curator .image img {
+  max-width: 100%;
+}
+
+.tour-info-row .info-curators .curators .curator .image .inst {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.tour-info-row .info-curators .curators .curator .image .inst img {
+  width: 24px;
+  height: 24px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+@media (max-height: 790px) {
+  .tour-info-row .info-curators .curators .curator .image .inst img {
+    height: 6rem;
+  }
+}
+
+.tour-info-row .info-curators .curators .curator .image .inst img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.tour-info-row .info-curators .curators .curator .image .inst img:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.tour-info-row .info-curators .curators .curator .date {
+  max-width: 9rem;
+  margin: auto;
+}
+
+.tour-info-row .get-ticket-tour {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(66.66667% - 30px);
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
+          box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 780px) {
+  .tour-info-row .get-ticket-tour {
+    width: calc(100% - 30px);
+  }
+}
+
+.tour-info-row .get-ticket-tour .head {
+  padding: 3.5rem 3rem 2.5rem 3rem;
+  border-bottom: 4px solid #F2F3FA;
+}
+
+.tour-info-row .get-ticket-tour .head .row {
+  margin: -.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tour-info-row .get-ticket-tour .head .pair,
+.tour-info-row .get-ticket-tour .head .tickets {
+  margin: .5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .tour-info-row .get-ticket-tour .head .tickets li {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .tour-info-row .get-ticket-tour .head {
+    padding: 2.5rem 2rem 1.5rem 2rem;
+  }
+}
+
+.tour-info-row .get-ticket-tour .body {
+  padding: 3rem;
+  border-bottom: 4px solid #F2F3FA;
+}
+
+@media screen and (max-width: 560px) {
+  .tour-info-row .get-ticket-tour .body {
+    padding: 2rem;
+  }
+}
+
+.tour-info-row .get-ticket-tour .body .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem -2.5rem;
+}
+
+.tour-info-row .get-ticket-tour .body .row .btn,
+.tour-info-row .get-ticket-tour .body .row .price,
+.tour-info-row .get-ticket-tour .body .row .column {
+  margin: 1rem 2.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.tour-info-row .get-ticket-tour .body .row .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tour-info-row .get-ticket-tour .body .pair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.tour-info-row .get-ticket-tour .body .btn-select {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  margin: 0.5rem;
+}
+
+.tour-info-row .get-ticket-tour .foot {
+  padding: 3rem;
+  color: #7C879C;
+}
+
+@media screen and (max-width: 560px) {
+  .tour-info-row .get-ticket-tour .foot {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+.info {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-left: 3.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info:before {
+  content: url("../img/global-icons/info.svg");
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: -38px;
+}
+
+@media screen and (max-width: 560px) {
+  .info {
+    font-size: 1.4rem;
+  }
+}
+
 .modal {
   display: none;
   border-radius: 2rem;
@@ -2706,5 +3108,9 @@ footer .footer-row .column-2 {
 
 .bold {
   font-weight: 900;
+}
+
+.test {
+  height: 50rem;
 }
 /*# sourceMappingURL=style.css.map */

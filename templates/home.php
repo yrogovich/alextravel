@@ -105,8 +105,8 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
@@ -120,7 +120,7 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
@@ -183,8 +183,8 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
@@ -198,7 +198,7 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
@@ -262,8 +262,8 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
@@ -277,7 +277,7 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
@@ -341,8 +341,8 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
@@ -356,7 +356,7 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
@@ -419,8 +419,8 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
@@ -434,7 +434,7 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
@@ -498,8 +498,8 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
@@ -513,7 +513,7 @@ get_header();
                                    <li></li>
                                    <li></li>
                                    <li></li>
-                                   <li class="gray-star"></li>
+                                   <li class="gray"></li>
                                </ul>
                            </div>
                        </div>
