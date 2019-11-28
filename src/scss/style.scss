@@ -183,6 +183,11 @@ header {
             };
         }
     }
+    &.main {
+        @include xs-block() {
+            min-height: 125vh;
+        }
+    }
     &.tour-name {
         @include sm-block() {
             min-height: 65vh;
@@ -600,6 +605,21 @@ header {
             &.security:after {
                 content: url('../img/security-section/header-decor.svg');
             }
+            &.way:after {
+                content: url('../img/iceland/way/header-decor.svg');
+            }
+            &.price:after {
+                content: url('../img/iceland/price/header-decor.svg');
+            }
+            &.like:after {
+                content: url('../img/iceland/price-include/header-decor.svg');
+            }
+            &.warning:after {
+                content: url('../img/iceland/not-included/header-decor.svg');
+            }
+            &.smile-2:after {
+                content: url('../img/iceland/trust/header-decor.svg');
+            }
         }
     }
     .wall-text {
@@ -943,6 +963,40 @@ header {
 }
 
 //Reviews section
+.controls,
+.navigation {
+    display: flex;
+    align-items: center;
+    .left,
+    .right {
+        position: relative;
+        width: 47px;
+        height: 38px;   
+        background-color: $primary;
+        border-radius: 5rem 0px 0px 5rem;
+        cursor: pointer;
+        &:before {
+            content: url('../img/reviews-section/slider-left.svg');
+            position: absolute;
+            top: 30%;
+            left: 32%;
+            transition: .3s;
+        }
+        &:hover {  
+            &:before {
+                left: 20%;
+            }
+        }
+        &:active {
+            &:before {
+                transform: scale(.9);
+            }
+        }
+    }
+    .right {
+        transform: scaleX(-1);
+    }
+}
 #reviews {
     padding-bottom: 31rem;
     @include sm-block() {
@@ -970,8 +1024,6 @@ header {
                 @include size-sm(12);
 
                 .controls {
-                    display: flex;
-                    align-items: center;
                     margin-bottom: 4.8rem;
                     .slides-count {
                         margin: 7px;
@@ -986,35 +1038,7 @@ header {
                             }
                         }
                     }
-                    .left,
-                    .right {
-                        position: relative;
-                        width: 47px;
-                        height: 38px;   
-                        background-color: $primary;
-                        border-radius: 5rem 0px 0px 5rem;
-                        cursor: pointer;
-                        &:before {
-                            content: url('../img/reviews-section/slider-left.svg');
-                            position: absolute;
-                            top: 30%;
-                            left: 32%;
-                            transition: .3s;
-                        }
-                        &:hover {  
-                            &:before {
-                                left: 20%;
-                            }
-                        }
-                        &:active {
-                            &:before {
-                                transform: scale(.9);
-                            }
-                        }
-                    }
-                    .right {
-                        transform: scaleX(-1);
-                    }
+                   
                 }
                 .head {
                     .inst {
@@ -1283,6 +1307,12 @@ header {
             p {
                 font-size: 1.6rem;
                 margin-bottom: 2.5rem;
+            }
+            ul {
+                margin-bottom: 2rem;
+            }
+            .h4 {
+                margin-bottom: 2rem;
             }
         }
     }
@@ -1907,9 +1937,25 @@ footer {
         }
     }
 }
+.wave-wrapper {
+    position: relative;
+    margin-top: 10rem;
+    width: 100%;
+    .wave {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    @include xs-block() {
+        margin-top: 5rem;
+    }
+}
 #curators {
     margin-top: -10rem;
     @include sm(margin-top, 0);
+    .wave-wrapper {
+        padding-bottom: 9.5%;
+    }
 }
 .tour-info-row {
     margin-top: 3rem;
@@ -1971,79 +2017,82 @@ footer {
         @include col();
         @include size(8);
         @include size-sm(12);
+    }
+}
+.get-ticket-tour {
+    max-width: 77rem;
 
-        background: $white;
-        box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
-        border-radius: 1rem;
-        .head {
-            padding: 3.5rem 3rem 2.5rem 3rem;
-            border-bottom: 4px solid $gray;  
-           
-            .row {
-                margin: -.5rem;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-            .pair,
-            .tickets {
-                margin: .5rem;
-            }
-            .tickets {
-                li {
-                    @include lg-block() {
-                        width: 2.5rem;
-                        height: 2.5rem;
-                    }
+    background: $white;
+    box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
+    border-radius: 1rem;
+    .head {
+        padding: 3.5rem 3rem 2.5rem 3rem;
+        border-bottom: 4px solid $gray;  
+       
+        .row {
+            margin: -.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .pair,
+        .tickets {
+            margin: .5rem;
+        }
+        .tickets {
+            li {
+                @include lg-block() {
+                    width: 2.5rem;
+                    height: 2.5rem;
                 }
-            }
-            @include xs-block() {
-                padding: 2.5rem 2rem 1.5rem 2rem;
             }
         }
-        .body {
-            padding: 3rem;
-            @include xs-block() {
-                padding: 2rem;
-            }
-            border-bottom: 4px solid $gray;
+        @include xs-block() {
+            padding: 2.5rem 2rem 1.5rem 2rem;
+        }
+    }
+    .body {
+        padding: 3rem;
+        @include xs-block() {
+            padding: 2rem;
+        }
+        border-bottom: 4px solid $gray;
 
-            .row {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                margin: 2rem -2.5rem;
-                .btn,
-                .price,
-                .column {
-                    margin: 1rem 2.5rem 1rem;
-                    margin-bottom: 1rem;
-                }
-                .column {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 2rem -2.5rem;
+            .btn,
+            .price,
+            .column {
+                margin: 1rem 2.5rem 1rem;
+                margin-bottom: 1rem;
             }
-
-            .pair {
+            .column {
                 display: flex;
-                flex-wrap: wrap;
-                margin: -0.5rem;
-            }
-            .btn-select {
-                width: 100%;
-                flex: 1 1 20rem;
-                margin: 0.5rem;
+                flex-direction: column;
+                justify-content: space-around;
             }
         }
-        .foot {
-            padding: 3rem;
-            color: $deep-gray;
-            @include xs-block() {
-                padding: 2rem;
-                font-size: 1.2rem;
-            }
+
+        .pair {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -0.5rem;
+        }
+        .btn-select {
+            width: 100%;
+            flex: 1 1 20rem;
+            margin: 0.5rem;
+        }
+    }
+    .foot {
+        padding: 3rem;
+        color: $deep-gray;
+        @include xs-block() {
+            padding: 2rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -2065,6 +2114,633 @@ footer {
     }
 }
 
+#us-way {
+    margin-top: -10rem;
+    .section-title {
+        margin-bottom: 0;
+        .h2 {
+            padding: 10rem 0;
+            margin-bottom: 0;
+            &.decorations{
+                &:after {
+                    top: 55%;
+                }
+            }
+        }
+    }
+    
+    background: linear-gradient(180deg, #2AC2D4 0%, rgba(42, 194, 212, 0) 32.81%), url('../img/gallery-section/sprite-new.png'), #2AC2D4; 
+    .h2 {
+        color: $white;
+    }
+    .wave-wrapper {
+        padding-bottom: 20.5%;
+        .mountain {
+            position: absolute;
+            right: 0%;
+            top: 2rem;
+            @include xs-block() {
+                top: -5rem;
+            }
+        }
+    }
+
+    .navigation {
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        .left,
+        .right {
+            @include xs-block() {
+                display: none;
+            }
+        }
+        .days {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -0.5rem;
+            li {
+                text-align: center;
+                font-size: 1.8rem;
+                background-color: $white;
+                width: 47.5px;
+                height: 47.5px;
+                border-radius: 50%;
+                border: 8px solid #AAB2C1;
+                transition: .6s color;
+                box-sizing: content-box;
+                margin: 0.5rem;
+                cursor: pointer;
+                @include lg-block() {
+                    font-size: 1.4rem;
+                    width: 40px;
+                    height: 40px;
+                }
+                &:after {
+                    content: 'день';
+                    display: block;
+                    color: #AAB2C1;
+                    font-size: 1.2rem;
+                    line-height: .5;
+                }
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: .6s;
+                }
+                &.active {
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+
+    .tour-row {
+        @include row-flex();
+        align-items: center;
+        .tour-description {
+            @include col();
+            @include size(6);
+            @include size-sm(12);
+
+            margin-bottom: 5rem;
+            z-index: 1;
+
+            .card {
+                overflow: hidden;
+                background-color: $white;
+                border-radius: 1rem;
+                box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
+                .image {
+                    width: 100%;
+                    height: 25rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .body {
+                    padding: 3rem;
+                    .h4 {
+                        margin-bottom: 2rem;
+                    }
+                    p {
+                        color: $deep-gray;
+                    }
+                }
+            }
+        }
+        .tour-map {
+            @include col();
+            @include size(6);
+            @include size-sm(12);
+
+            margin-bottom: 5rem;
+            
+            .map {
+                z-index: 0;
+                position: relative;
+                .bubble-top,
+                .bubble-bottom {
+                    position: absolute;
+                    z-index: -1;
+                }
+                .bubble-top {
+                    top: 0;
+                    right: 2rem;
+                    transform: translate(0, -40%);
+                }
+                .bubble-bottom {
+                    bottom: 0;
+                    right: 0;
+                    transform: translate(0, 10%);
+                }
+            }
+            .map-img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+#big-slider {
+    @include xs-block() {
+        padding-top: 10rem;
+    }
+    .wave-wrapper {
+        padding-bottom: 25%;
+    }
+    background-color: $white;
+    .section-title {
+        margin-bottom: 0;
+        .h2 {
+            margin-top: 0;
+            padding-top: 0;
+        }
+    }
+    #slider {
+        margin-top: 15rem;
+        @include xs-block() {
+            margin-top: 10rem;
+        }
+    }
+    .slick-list {
+        overflow: unset;
+    }
+    .slick-slide {
+        transition: .6s;
+        border-radius: 1rem;
+        opacity: .5;
+        margin: 0 6rem;
+        overflow: hidden;
+        box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.35);
+        @include xs-block() {
+            margin: 0 3rem;
+        }
+    }
+    .slick-center {
+        transform: scale(1.4);
+        @include xs-block() {
+            transform: scale(1.2);
+        }
+        opacity: 1;
+    }
+    .slick-next,
+    .slick-prev {
+        z-index: 1;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: $primary;
+        &:before {
+            content: url('../img/reviews-section/slider-left.svg');
+            position: absolute;
+            top: 26%;
+            left: 25%;
+            transition: .3s;
+        }
+        &:hover {  
+            &:before {
+               opacity: 1;
+            }
+        }
+        &:active {
+            &:before {
+                transform: scale(.9);
+            }
+        }
+    }
+    .slick-next {
+        right: 30vw;
+        @media (max-width: 1400px) {
+            right: 32vw;
+        }
+        &:before {
+            transform: scaleX(-1);
+        }
+    }
+    .slick-prev {
+        left: 30vw;
+        @media (max-width: 1400px) {
+            left: 32vw;
+        }
+    }
+    .slide {
+        display: block!important;
+    }
+}
+#how-price {
+    background-color: #7081FF;
+    background: linear-gradient(180deg, #7081FF 0%, rgba(42, 194, 212, 0) 32.81%), url('../img/gallery-section/sprite-new.png'), #7081FF; 
+    @include xs-block() {
+        padding-top: 10rem;
+    }
+    .h2 {
+        color: $white;
+        &.decorations {
+            margin-top: 0;
+        }
+    }
+    .wave-wrapper {
+        padding-bottom: 21.1%;
+    }
+    .get-ticket-tour {
+        margin: auto;
+        @include xs-block() {
+            margin-bottom: 10rem;
+        }
+        .body {
+            border-bottom: none;
+        }
+    }
+}
+#price-include {
+    .wave-wrapper {
+        margin-top: 20rem;
+        padding-bottom: 20.1%;
+        .mountain {
+            position: absolute;
+            right: 0%;
+            bottom: 0;
+            z-index: -1;
+        }
+        .passport-parralax {
+            position: absolute;
+            left: 15vw;
+            bottom: -3rem;
+            @media (max-width: 1400px) {
+                transform: scale(.7)!important;
+                left: 10vw;
+                bottom: -8rem;
+            }
+            @include sm(display, none);
+        }
+    }
+}
+.reasons-column {
+    margin-top: 10rem;
+    .reason {
+        @include row-flex();
+        align-items: center;
+        margin-bottom: -2rem;
+        .text {
+            @include col();
+            @include size(5);
+            @include size-md(6);
+            @include size-sm(12);
+
+            margin-bottom: 5rem;
+
+            .h3 {
+                position: relative;
+                display: inline-block;
+                margin-bottom: 4rem;
+                &:before {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    z-index: -1;
+                }
+            }
+            p,ul {
+                color: $deep-gray;
+            }
+            ul.primary-style {    
+                margin-left: 3rem;
+                li:before {
+                    background-color: $deep-gray;
+                    border-color: $deep-gray;
+                }
+            }
+        }
+        .images {
+            @include col();
+            @include size(7);
+            @include size-md(6);
+            @include size-sm(12);
+
+            margin-bottom: 5rem;
+
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+
+            .main-image {      
+                text-align: center;
+                position: relative;
+                display: inline-block;
+                &:before {
+                    content: '';
+                    background-image: url('../img/iceland/price-include/bubble.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    width: 100%;
+                    height: 100%;
+
+                    position: absolute;
+                    top: -1rem;
+                    left: 52%;
+                    z-index: -1;
+                    transform: translateX(-50%);
+                }
+            }
+            .icon-wrapper {
+                @include sm-block() {
+                    transform: scale(0.4) translate(-60%,70%)!important;
+                }
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+
+        }
+        &:nth-child(1) .text .h3:before {
+            content: url('../img/iceland/price-include/01.svg');
+        }
+        &:nth-child(2) .text .h3:before {
+            content: url('../img/iceland/price-include/02.svg');
+        }
+        &:nth-child(3) .text .h3:before {
+            content: url('../img/iceland/price-include/03.svg');
+        }
+        &:nth-child(4) .text .h3:before {
+            content: url('../img/iceland/price-include/04.svg');
+        }
+        &:nth-child(5) .text .h3:before {
+            content: url('../img/iceland/price-include/05.svg');
+        }
+        &:nth-child(6) .text .h3:before {
+            content: url('../img/iceland/price-include/06.svg');
+        }
+        &.inverse {
+            .images {
+                order: -1;
+                @include sm-block() {
+                    order: 0;
+                }
+                justify-content: flex-start;
+                .main-image {
+                    &:before {
+                        background-image: url('../img/iceland/price-include/bubble-inverse.svg');
+                    }
+                }
+                .icon-wrapper {
+                    @include sm-block() {
+                        transform: scale(0.4) translate(60%,70%)!important;
+                    }
+                    position: absolute;
+                    left: unset;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+#not-included {
+    background: linear-gradient(180deg, #2AC2D4 0%, rgba(42, 194, 212, 0) 32.81%), url('../img/gallery-section/sprite-new.png'), #2AC2D4; 
+    color: $white;
+    @include xs(padding-top, 5rem);
+    .section-title {
+        .h2 {
+            margin-top: 0;
+            color: $white;
+        }
+    }
+    .wave-wrapper {
+        margin-top: 0;
+        padding-bottom: 20.1%;
+    }
+    .features {
+        @include row-flex();
+
+        margin-top: 15rem;
+        .feature {
+            @include col();
+            @include size(4);
+            @include size-xs(12);
+
+            margin-bottom: 3rem;
+            text-align: center;
+            .image {
+                height: 111px;
+                margin-bottom: 5rem;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+            .h3 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+#trust {
+    .wave-wrapper {
+        padding-bottom: 18%;
+    }
+    .section-title .wall-text {
+        top: 78%;
+    }
+    .section-title .h2.decorations {
+        @include xs(margin, 5rem 0);
+    }
+    .row {
+        margin-top: 15rem;
+        @include xs(margin-top, 0);
+        @include row-flex();
+        .about {
+            @include col();
+            @include size(5);
+            @include size-sm(12);
+            margin-bottom: 5rem;
+            .h4 {
+                margin-bottom: 4rem;
+            }
+        }
+        .images {
+            @include col();
+            @include size(7);
+            @include size-sm(12);
+
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            .main-image {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:before {
+                    content: '';
+                    background-image: url('../img/iceland/trust/valley-mask.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    width: 100%;
+                    height: 100%;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    z-index: -1;
+                    transform: translate(-52%, -48%);
+                }
+            }
+            .puffin-wrapper {
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+            }
+        }
+    }
+}
+.primary-box {
+    margin-bottom: 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    min-height: 150px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 9px;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
+        border-radius: 10px;
+        background-color: $primary;
+    }
+    .title {
+        color: $primary;
+        font-weight: bold;
+        font-size: 3.6rem;
+        margin-bottom: 1rem;
+        @include xs-block() {
+            font-size: 2.6rem;
+        }
+    }
+    p {
+        color: $deep-gray;
+    }
+}
+#opportunities {
+    background: linear-gradient(180deg, #2AC2D4 0%, rgba(42, 194, 212, 0) 32.81%), url('../img/gallery-section/sprite-new.png'), #2AC2D4; 
+    z-index: 1;
+    .wave-wrapper {
+        position: relative;
+        padding-bottom: 21%;
+        z-index: -1;
+        .waterfall {
+            position: absolute;
+            bottom: 2rem;
+            right: 0;
+            z-index: 0;
+        }
+        .cloud {
+            position: absolute;
+            bottom: 2rem;
+            left: 0;
+            z-index: 0;
+        }
+        .waterfall,
+        .cloud {
+            @include xs-block() {
+                display: none!important;
+            }
+        }
+    }
+    .h2 {
+        color: $white;
+    }
+    .card {
+        max-width: 77rem;
+        margin: 0 auto;
+        background-color: $white;
+        box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
+        border-radius: 1rem;
+        padding: 3.5rem 3rem;
+        text-align: center;
+        z-index: 1;
+        .body {
+            .h5 {
+                margin-bottom: 2.5rem;
+            }
+            .subscribe-form {
+                max-width: 60rem;
+                margin: 1rem auto 2.5rem auto;
+                flex-wrap: wrap;
+                .input-wrapper {
+                    flex: 5 1 190px;
+                }
+                .btn {
+                    flex: 1 1 150px;
+                    @include xs(padding, 1.8rem 1.6rem);
+                }
+            }
+            border-bottom: 1px solid #F2F3FA;
+        }
+        .foot {
+            margin-top: 3rem;
+            .h5 {
+                margin-bottom: 1rem;
+            }
+            .date {
+                color: $black;
+            }
+        }
+    }
+}
+
+.tour-page {
+    #faq {
+        &:before {
+            display: none;
+        }
+    }
+    #about {
+        padding-bottom: 0;
+        .wave-wrapper {
+            margin-top: 0;
+            padding-bottom: 20%;
+            @include sm(margin-top, 5rem);
+        }
+    }
+}
+
 /////////////////////
 .modal {
     display: none;
@@ -2074,6 +2750,7 @@ footer {
     width: 100%;
     height: 100%;
     background: white url('../img/security-section/moutains.jpg') bottom / contain no-repeat;
+    box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
     .content {
         text-align: center;
         height: 100%;
@@ -2099,6 +2776,49 @@ footer {
         width: 100%;
     }
 }
+//mobile-menu
+.mobile-menu {
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background-color: rgba($black, .6);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .6s;
+    
+    .menu-wrapper {
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width:  90%;
+        max-height: 100%;
+        width:  1024px;
+        height: 650px;
+        border-radius: 1rem;
+        color: $black;
+        background: white url('../img/security-section/moutains.jpg') bottom / contain no-repeat;
+        box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.15);
+
+        ul {
+            li {
+                margin: 2rem 0;
+                font-size: 3rem;
+                font-weight: bold;
+            }
+        }
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
 
 // Utilities
 .block {
@@ -2121,4 +2841,8 @@ footer {
 
 .test {
     height: 50rem;
+}
+
+.compensate-for-scrollbar {
+    margin-right: 0!important;
 }

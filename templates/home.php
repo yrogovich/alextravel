@@ -160,6 +160,7 @@ get_header();
             <!-- /.trip unactive -->
 
             <div class="trip">
+                <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland-2.jpg" alt="iceland">
                 </div>
@@ -221,6 +222,7 @@ get_header();
                     <!-- /.raiting -->
                 </div>
                 <!-- /.body -->
+                </a>
 
                 <div class="foot">
                     <div class="pair">
@@ -229,7 +231,7 @@ get_header();
                             <div class="seats-number">осталось 9 мест</div>
                         </div>
                         <!-- /.left-side -->
-                        <div class="btn btn-primary">Оставить заявку</div>
+                        <div data-fancybox data-src="#request-modal" class="btn btn-primary">Оставить заявку</div>
                     </div>
                     <!-- /.pair -->
                 </div>
@@ -238,10 +240,11 @@ get_header();
             <!-- /.trip -->
 
             <div class="trip">
-                <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland-3.jpg" alt="iceland">
-                </div>
-                <!-- /.img-wrapper -->
+                <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
+                    <div class="img-wrapper">
+                        <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland-3.jpg" alt="iceland">
+                    </div>
+                    <!-- /.img-wrapper -->
 
                 <div class="head">
                     <span class="date">20 ноября — 29 ноября</span>
@@ -300,6 +303,8 @@ get_header();
                     <!-- /.raiting -->
                 </div>
                 <!-- /.body -->
+                </a>
+
 
                 <div class="foot">
                     <div class="pair">
@@ -308,7 +313,7 @@ get_header();
                             <div class="seats-number">осталось 9 мест</div>
                         </div>
                         <!-- /.left-side -->
-                        <div class="btn btn-primary">Оставить заявку</div>
+                        <div data-fancybox data-src="#request-modal" class="btn btn-primary">Оставить заявку</div>
                     </div>
                     <!-- /.pair -->
                 </div>
@@ -317,6 +322,7 @@ get_header();
             <!-- /.trip -->
 
             <div class="trip">
+                <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland.jpg" alt="iceland">
                 </div>
@@ -379,6 +385,7 @@ get_header();
                     <!-- /.raiting -->
                 </div>
                 <!-- /.body -->
+                </a>
 
                 <div class="foot">
                     <div class="pair">
@@ -387,7 +394,7 @@ get_header();
                             <div class="seats-number">осталось 9 мест</div>
                         </div>
                         <!-- /.left-side -->
-                        <div class="btn btn-primary">Все места проданы</div>
+                        <div data-fancybox data-src="#request-modal" class="btn btn-primary">Оставить заявку</div>
                     </div>
                     <!-- /.pair -->
                 </div>
@@ -396,6 +403,7 @@ get_header();
             <!-- /.trip -->
 
             <div class="trip">
+                <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland-2.jpg" alt="iceland">
                 </div>
@@ -457,6 +465,7 @@ get_header();
                     <!-- /.raiting -->
                 </div>
                 <!-- /.body -->
+                </a>
 
                 <div class="foot">
                     <div class="pair">
@@ -465,7 +474,7 @@ get_header();
                             <div class="seats-number">осталось 9 мест</div>
                         </div>
                         <!-- /.left-side -->
-                        <div class="btn btn-primary">Оставить заявку</div>
+                        <div data-fancybox data-src="#request-modal" class="btn btn-primary">Оставить заявку</div>
                     </div>
                     <!-- /.pair -->
                 </div>
@@ -474,6 +483,7 @@ get_header();
             <!-- /.trip -->
 
             <div class="trip">
+                <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland-3.jpg" alt="iceland">
                 </div>
@@ -536,6 +546,7 @@ get_header();
                     <!-- /.raiting -->
                 </div>
                 <!-- /.body -->
+                </a>
 
                 <div class="foot">
                     <div class="pair">
@@ -544,7 +555,7 @@ get_header();
                             <div class="seats-number">осталось 9 мест</div>
                         </div>
                         <!-- /.left-side -->
-                        <div class="btn btn-primary">Оставить заявку</div>
+                        <div data-fancybox data-src="#request-modal" class="btn btn-primary">Оставить заявку</div>
                     </div>
                     <!-- /.pair -->
                 </div>
@@ -863,14 +874,14 @@ get_header();
                 </div>
             </div>
             <!-- /.picture -->
-            <div class="text" >
-                <div class="h3" data-aos="fade-up" data-aos-delay="100">Привет! Меня зовут Алексей Анушкин.</div>
-                <p data-aos="fade-up" data-aos-delay="500">Путешественник, 31 страна в рюкзаке, организатор образовательных мероприятий и создатель проекта Iceland trips.</p>
+            <div class="text">
+                <div class="h3">Привет! Меня зовут Алексей Анушкин.</div>
+                <p >Путешественник, 31 страна в рюкзаке, организатор образовательных мероприятий и создатель проекта Iceland trips.</p>
                 <ul class="primary-style">
-                    <li data-aos="fade-up" data-aos-delay="600">Начал свой путь с вожатого в детском лагере. Жил в Европе, работал в Пекине и Москве.</li>
-                    <li data-aos="fade-up" data-aos-delay="600">Проехал с друзьями на раритетном фургоне из Минска к атлантическому океану чтобы посёрфить.</li>
-                    <li data-aos="fade-up" data-aos-delay="600">Организовал десятки мероприятий, пробежал полумарафон и Bison Race</li>
-                    <li data-aos="fade-up" data-aos-delay="600">Ко всему подхожу с душой и окружаю каждого заботой и вниманием. Можете быть спокойны, со мной эта поездка будет безопасной, лёгкой, интересной и насыщенной</li>
+                    <li >Начал свой путь с вожатого в детском лагере. Жил в Европе, работал в Пекине и Москве.</li>
+                    <li >Проехал с друзьями на раритетном фургоне из Минска к атлантическому океану чтобы посёрфить.</li>
+                    <li>Организовал десятки мероприятий, пробежал полумарафон и Bison Race</li>
+                    <li>Ко всему подхожу с душой и окружаю каждого заботой и вниманием. Можете быть спокойны, со мной эта поездка будет безопасной, лёгкой, интересной и насыщенной</li>
                 </ul>
             </div>
             <!-- /.text -->
@@ -910,18 +921,18 @@ get_header();
                   
                     <div class="content">
                         <ul class="primary-style">
-                            <li data-aos="fade-up">Всё зависит от сезона, но вот общие рекомендации.</li>
-                            <li data-aos="fade-up" >Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                            <li data-aos="fade-up" >Плотные штаны или джинсы</li>
-                            <li data-aos="fade-up" >Непромокаемую и непродуваемую куртку с капюшоном</li>
-                            <li data-aos="fade-up" >Головной убор, легкий шарф и перчатки (по желанию)</li>
-                            <li data-aos="fade-up" >Футболки, толстовку или свитер</li>
-                            <li data-aos="fade-up" >Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                            <li data-aos="fade-up" >Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                            <li data-aos="fade-up" >Полотенце</li>
-                            <li data-aos="fade-up" >Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                            <li data-aos="fade-up" >Индивидуальная аптечка.</li>
-                            <li data-aos="fade-up" >Портативный аккумулятор для зарядки гаджетов</li>
+                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
+                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
+                            <li>Плотные штаны или джинсы</li>
+                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
+                            <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
+                            <li>Футболки, толстовку или свитер</li>
+                            <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
+                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
+                            <li>Полотенце</li>
+                            <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
+                            <li>Индивидуальная аптечка.</li>
+                            <li>Портативный аккумулятор для зарядки гаджетов</li>
                         </ul>
                     </div>
                     <!-- /.content -->
@@ -1207,6 +1218,7 @@ get_header();
         <div class="h4">Заполни форму заявки и отправляйся с нами в путешествие в ближайшее время</div>
         <div class="form-wrapper">
             <form id="open-form" class="open-form" action="javascript:" onsubmit="callHandler('#open-form')">
+                <input type="hidden" name="url" value="<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>">
                 <input type="hidden" name="form_name" value="Заявка на ближайшее путешествие">
 
                 <div class="input-pair">

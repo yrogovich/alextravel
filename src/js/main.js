@@ -3,6 +3,13 @@
      * When DOM is ready
      */
     $(document).ready(function(){
+        $('.burger').click(function()  {
+            $('.mobile-menu').toggleClass('active');
+        });
+        $('.mobile-menu').click(function() {
+            $('.mobile-menu').removeClass('active');
+            $('.burger').removeClass('active');
+        })
         try {
             // Step 1: Create jQuery plugin
             // ============================
@@ -177,22 +184,45 @@
         try {
             var scene1 = $('#scene').get(0);
             var parallaxInstance1 = new Parallax(scene1);
-
-            var scene2 = $('.big-parallax').get(0);
-            var parallaxInstance2 = new Parallax(scene2);
-
-            var scene3 = $('.bull-parallax').get(0);
-            var parallaxInstance3 = new Parallax(scene3);
-
-            var scene4 = $('.camera-parallax').get(0);
-            var parallaxInstance4 = new Parallax(scene4);
-
-            var scene5 = $('.circle-parallax').get(0);
-            var parallaxInstance4 = new Parallax(scene5);
-
         } catch (error) {
             console.log(error);
         }
+        try {
+            var scene2 = $('.big-parallax').get(0);
+            var parallaxInstance2 = new Parallax(scene2);
+        } catch (error) {
+            console.log(error);
+        }
+        try {
+            var scene3 = $('.bull-parallax').get(0);
+            var parallaxInstance3 = new Parallax(scene3);    
+        } catch (error) {
+            console.log(error);
+        }
+        try {
+            var scene4 = $('.camera-parallax').get(0);
+            var parallaxInstance4 = new Parallax(scene4);
+        } catch (error) {
+            console.log(error);
+        }
+        try {
+            var scene5 = $('.circle-parallax').get(0);
+        var parallaxInstance4 = new Parallax(scene5);
+        } catch (error) {
+            console.log(error);
+        }
+       
+        $('.get-ticket-tour .btn-select').click(function() {
+            if($(this).hasClass('select-1')) {
+                $('.get-ticket-tour .btn-select').removeClass('active');
+                $('.get-ticket-tour .select-1').addClass('active');
+            }
+            else {
+                $('.get-ticket-tour .btn-select').removeClass('active');
+                $('.get-ticket-tour .select-2').addClass('active');
+            }
+        });
+       
 
         $('.accordion .head').click(function() {
             $('.accordion').removeClass('active');

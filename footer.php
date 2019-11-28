@@ -41,6 +41,7 @@
                     <div class="title">Подпишитесь на наши новости</div>
 
                     <form id="subscribe-form" class="subscribe-form" action="javascript:" onsubmit="callHandler('#subscribe-form')">
+                        <input type="hidden" name="url" value="<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>">
                         <input type="hidden" name="form_name" value="Подписка на рассылку">
                         <div class="input-wrapper">
                             <input type="email" name="user_email" placeholder="E-mail" required>
@@ -66,13 +67,34 @@
 			url: '<?php bloginfo("template_url"); ?>/src/send.php',
 			data: msg,
 			success: function(data) {
-				console.log('form ok');
+                console.log('form ok');
+                jQuery.fancybox.open({ // FancyBox 3
+                    src: '#thanks-modal', 
+                    modal: true
+                });
+                setTimeout(() => {
+                    jQuery.fancybox.close();
+                    jQuery.fancybox.close();
+                }, 2000);
 			},
 			error: function () {
 				console.log('form error');
 			}
 		});
-	}
+    }
+    jQuery(document).ready(function(){
+        getMethod();
+        function getMethod() {
+            if(jQuery('.select-1').hasClass('active')) {         
+                value = jQuery('#curators .select-1').text();
+                jQuery('.form_payment_method').val(value);
+            }
+            else {
+                value = jQuery('#curators .select-2').text();
+                jQuery('.form_payment_method').val(value);
+            }
+        }
+    });
 </script>
 
 <?php wp_footer(); ?>
@@ -84,6 +106,7 @@
                 <div class="h2 decorations faq">Как с вами связаться?</div>
         </div>
         <form id="call-me-form" class="open-form" action="javascript:" onsubmit="callHandler('#call-me-form')">
+            <input type="hidden" name="url" value="<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>">
             <input type="hidden" name="form_name" value="Свяжитесь со мной">
 
 
@@ -106,6 +129,68 @@
     </div>
     <!-- /.content --> 
 </div>
+
+<!-- Modal HTML embedded directly into document -->
+<div id="request-modal" class="modal"> 
+    <div class="content">
+        <div class="section-title">
+                <div class="h2 decorations faq">Как с вами связаться?</div>
+        </div>
+        <form id="request-form" class="open-form" action="javascript:" onsubmit="getMethod();callHandler('#request-form')">
+            <input type="hidden" name="url" value="<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>">
+            <input type="hidden" name="form_name" value="Оставить заявку на поездку">
+            <input type="hidden" name="form_payment_method" class="form_payment_method">
+
+            <div class="input-wrapper">
+                <input type="text" name="user_first_name" placeholder="Имя" required>
+            </div>
+            <!-- /.input-wrapper -->
+            <div class="input-wrapper">
+                <input type="email" name="user_email" placeholder="E-mail" required>
+            </div>
+            <!-- /.input-wrapper -->
+            <div class="input-wrapper">
+                <input type="text" name="user_phone" placeholder="Телефон" >
+            </div>
+            <!-- /.input-wrapper -->
+
+
+            <button class="btn btn-primary">Свяжитесь со мной</button>
+        </form>
+    </div>
+    <!-- /.content --> 
+</div>
+
+<!-- Modal HTML embedded directly into document -->
+<div id="thanks-modal" class="modal"> 
+    <div class="content">
+        <div class="section-title">
+            <div class="h2 decorations smile">Форма отправлена успешно!</div>
+        </div>
+    </div>
+    <!-- /.content --> 
+</div>
+
+<div class="mobile-menu">
+    <div class="container">
+        <div class="menu-wrapper">
+            <?php 
+            wp_nav_menu( [
+                'menu'            => 'menu-primary', 
+                'menu_class'      => 'menu', 
+                'menu_id'         => 'menu-primary',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            ] ); 
+            ?>
+        </div>
+        <!-- /.menu-wrapper -->
+    </div>
+</div>
+<!-- /.mobile-menu -->
 
 </body>
 </html>
