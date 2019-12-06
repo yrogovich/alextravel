@@ -29,9 +29,9 @@
                     <a href="mailto:<?=EMAIL?>" class="mail"><?=EMAIL?></a>
 
                     <div class="social">
-                        <a href="<?=VK?>" target="_blank" class="vk"><img src="<?php bloginfo('template_url') ?>/src/img/footer/vk.svg" alt="vk"></a>
                         <a href="<?=INST?>" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst"></a>
                         <a href="<?=FACEBOOK?>" target="_blank" class="facebook"><img src="<?php bloginfo('template_url') ?>/src/img/footer/fb.svg" alt="facebook"></a>
+                        <a href="<?=VK?>" target="_blank" class="vk"><img src="<?php bloginfo('template_url') ?>/src/img/footer/vk.svg" alt="vk"></a>     
                     </div>
 
                     <p class="small">ИП Анушкин Алексей Юрьевич. УНП ‎692140946. <a href="<?php echo get_privacy_policy_url() ?>" class="link">Политика конфиденциальности</a></p>
@@ -49,7 +49,7 @@
                         <button class="btn btn-primary">Подписаться</button>
                     </form>
 
-                    <p>Авторские туры от Kolesnikov Travel — это эксклюзивные путешествия с глубоким погружением в такие места как Бали и Филиппины. Я выбираю только самые красивые "природные" страны и формирую двухнедельное живое приключение, чтобы у вас было достаточно времени прочувствовать страну "от" и "до". Мой девиз "Лучше один раз, но качественно и эмоционально"</p>
+                    <p>Авторские туры от AlexTravel.me — это уникальные путешествия в редкие страны, в которые Вы сами скорее всего не поедете. Самое главное в результате – количество нереально приятных и фантастических эмоций, которые Вы получите. По этому принципы мы отбираем страны, маршруты, локации и удобства перемещения. Что бы Вашего счастья стало больше!</p>
                 </div>
                 <!-- /.column-2 -->
             </div>
@@ -115,16 +115,13 @@
             </div>
             <!-- /.input-wrapper -->
             <div class="input-wrapper">
-                <input type="email" name="user_email" placeholder="E-mail" required>
-            </div>
-            <!-- /.input-wrapper -->
-            <div class="input-wrapper">
-                <input type="text" name="user_phone" placeholder="Телефон" >
+                <input type="text" name="user_phone" placeholder="Телефон" required>
             </div>
             <!-- /.input-wrapper -->
 
 
             <button class="btn btn-primary">Свяжитесь со мной</button>
+            <a href="<?=TELEGRAM_LINK?>" target="_blank" class="btn btn-telegram">Напиши мне в телеграм</a>
         </form>
     </div>
     <!-- /.content --> 
@@ -146,16 +143,13 @@
             </div>
             <!-- /.input-wrapper -->
             <div class="input-wrapper">
-                <input type="email" name="user_email" placeholder="E-mail" required>
-            </div>
-            <!-- /.input-wrapper -->
-            <div class="input-wrapper">
-                <input type="text" name="user_phone" placeholder="Телефон" >
+                <input type="text" name="user_phone" placeholder="Телефон" required>
             </div>
             <!-- /.input-wrapper -->
 
 
             <button class="btn btn-primary">Свяжитесь со мной</button>
+            <a href="<?=TELEGRAM_LINK?>" target="_blank" class="btn btn-telegram">Напиши мне в телеграм</a>
         </form>
     </div>
     <!-- /.content --> 
@@ -172,6 +166,14 @@
 </div>
 
 <div class="mobile-menu">
+    <svg class="burger close active" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+        <path class="line top"
+                d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+        <path class="line middle"
+                d="m 70,50 h -40" />
+        <path class="line bottom"
+                d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+    </svg>
     <div class="container">
         <div class="menu-wrapper">
             <?php 

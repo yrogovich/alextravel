@@ -3,6 +3,59 @@
      * When DOM is ready
      */
     $(document).ready(function(){
+        // Tabs script
+        if($(location).attr('hash')) {
+            var activeTab = $(location).attr('hash');
+        }
+        else {
+            var activeTab = $('#us-way .navigation li:first-child a').attr("href");
+        }   
+        activateTab();       
+        $("#us-way .navigation li").click(function(e) {
+            deactivateTabs();
+            activeTab = $(this).children().attr("href");
+            activateTab();
+            return false;
+        }); 
+        $("#us-way .navigation .left").click(function(e) {         
+            activeTab = $('.navigation li.active').prev().children().attr("href");
+            deactivateAll();
+            activateTab();          
+        }); 
+        $("#us-way .navigation .right").click(function(e) {         
+            activeTab = $('.navigation li.active').next().children().attr("href");
+            deactivateAll();
+            activateTab();
+        }); 
+        function deactivateAll() {
+            if(activeTab) {
+                $('#us-way .navigation li.active').removeClass('active');
+                $('#us-way .card.active').removeClass('active');
+            }   
+        }
+        function activateTab() {
+            $(activeTab).addClass('active');
+            $('#us-way .navigation li a[href="'+activeTab+'"]').parent().addClass('active');
+        }
+        function deactivateTabs() {
+            $(activeTab).removeClass('active');
+            $('#us-way .navigation li a[href="'+activeTab+'"]').parent().removeClass('active');
+        }
+
+        // Get ticket tour
+        $('.get-ticket-tour .btn-select').click(function() {
+            if($(this).hasClass('select-1')) {
+                $('.get-ticket-tour .btn-select').removeClass('active');
+                $('.get-ticket-tour .select-1').addClass('active');
+                $('.get-ticket-tour .price').text('790 €');
+            }
+            else {
+                $('.get-ticket-tour .btn-select').removeClass('active');
+                $('.get-ticket-tour .select-2').addClass('active');
+                $('.get-ticket-tour .price').text('890 €');
+            }
+        });
+
         try {
             var flag = $('#flag-parallax').get(0);
             var parallaxflag = new Parallax(flag);
@@ -57,7 +110,7 @@
                 slidesToScroll: 1,
                 arrows: true,
                 autoplay: true,
-                autoplaySpeed: 3000,
+                autoplaySpeed: 4000,
                 lazyLoad: 'ondemand',
                 speed: 1000,
                 responsive: [{

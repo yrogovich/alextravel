@@ -103,7 +103,7 @@ get_header();
                         <div class="curator">
                             <div class="image">
                                 <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/iceland/curators/slava.png" alt="Вячеслав Пракопенко">
-                                <a href="<?=INST?>" target="_blank" class="inst">
+                                <a href="<?=INST_SLAVA?>" target="_blank" class="inst">
                                     <img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst">
                                 </a>
                             </div>
@@ -114,7 +114,7 @@ get_header();
                         <div class="curator">
                             <div class="image">
                                 <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/iceland/curators/photographer.png" alt="Мистер Фотограф">
-                                <a href="<?=INST?>" target="_blank" class="inst">
+                                <a href="<?=INST_PHOTOGRAPHER?>" target="_blank" class="inst">
                                     <img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst">
                                 </a>
                             </div>
@@ -125,7 +125,7 @@ get_header();
                     </div>
                     <!-- /.curators -->
                     <div class="h5">Присоеденяйтесь в чат поездки</div>
-                    <a href="#" target="_blank" class="btn btn-telegram">Телеграм чат тура</a>
+                    <a href="<?=TELEGRAM_ICELAND_СHAT?>" target="_blank" class="btn btn-telegram">Телеграм чат тура</a>
                 </div>
                 <!-- /.info-curators -->
                 <div class="get-ticket-tour"  data-aos="fade-up">
@@ -134,7 +134,7 @@ get_header();
                             <div class="pair">
                                 <div class="date">Осталось</div>
                                 <!-- /.date -->
-                                <div class="h5">10 мест из 15</div>
+                                <div class="h5">9 мест из 17</div>
                             </div>
                             <!-- /.pair -->
                             <ul class="tickets">
@@ -148,6 +148,8 @@ get_header();
                                 <li></li>
                                 <li></li>
                                 <li></li>
+                                <li></li>
+                                <li class="gray"></li>
                                 <li class="gray"></li>
                                 <li class="gray"></li>
                                 <li class="gray"></li>
@@ -166,10 +168,10 @@ get_header();
                         <!-- /.pair -->
                         <div class="row">
                             <a data-fancybox data-src="#request-modal" class="btn btn-primary">Оставить заявку</a>
-                            <div class="h4 price">990 €</div>
+                            <div class="h4 price">790 €</div>
                             <div class="column">
-                                <div class="date">Бронирование 100 €</div>
-                                <div class="date">Дальнейшая оплата двумя частями по 350 €</div>
+                                <div class="date">Бронирование 90 € (сумма засчитывается в стоимость тура)</div>
+                                <div class="date">Дальнейшая оплата двумя частями по 350 € (в феврале и апреле)</div>
                             </div>
                             <!-- /.column -->
                         </div>
@@ -178,7 +180,7 @@ get_header();
                     </div>
                     <!-- /.body -->
                     <div class="foot">
-                        <p class="gray">Зимой на Байкале особенная атмосфера, а от открывающихся красот поистине захватывает дыхание. Вертолеты, снегоходы, суда на воздушной подушке и внедорожники. Каждый день мы будем менять вид транспорта, чтобы получить максимум эмоций и увидеть Байкал с разных ракурсов. Начать год именно так - отличная идея. Место встречи - аэропорт Иркутска. Погнали с нами!</p>
+                        <p class="gray">Специальный тур для предпренимателей Новый формат. Фантастический нетворкинг близких по духу людей. Исследуем Южное побережье. Самые сочные места. 1600 км на внедорожниках. Океан, ледники, вулканы. Питание, проживание, джипы - входят в стоимость.</p>
                     </div>
                     <!-- /.foot -->
                 </div>
@@ -209,11 +211,21 @@ get_header();
                         <div class="left"></div>
 
                         <ul class="days">
-                            <li class="active">1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
+                            <li class="active">
+                                <a href="#day-1">1</a>
+                            </li>
+                            <li>
+                                <a href="#day-2">2</a>
+                            </li>
+                            <li>
+                                <a href="#day-3">3</a>
+                            </li>
+                            <li>
+                                <a href="#day-4">4</a>
+                            </li>
+                            <li>
+                                <a href="#day-5">5</a>
+                            </li>
                         </ul>
                         <!-- /.days -->
 
@@ -221,14 +233,65 @@ get_header();
                     </div>
                     <!-- /.navigation -->
 
-                    <div class="card">
+                    <div id="day-1" class="card">
                         <div class="image">
-                            <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/iceland/way/img-1.jpg" alt="img">
+                            <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/iceland/way/day-1.jpg" alt="img">
                         </div>
                         <!-- /.image -->
                         <div class="body">
                             <div class="h4">День #1</div>
                             <p>Наконец-то мы тут, в далекой и сказочной Исландии. Прилетаем в аэропорт Кефлавик. Берём в прокат наши джипы и едем по живописной дороге в сторону наших первых апартаментов. Заселяемся, кушаем, отдыхаем и отправляемся в путешествие по Золотому кольцу. Нас будут ждать невероятный водопад Gullfoss и долина гейзеров Haukadalur, где мы увидим могущественные Geysir и Strokkur. Маршрут займет около 8 часов.</p>
+                        </div>
+                        <!-- /.body -->
+                    </div>
+                    <!-- /.card -->
+                    <div id="day-2" class="card">
+                        <div class="image">
+                            <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/iceland/way/day-2.jpg" alt="img">
+                        </div>
+                        <!-- /.image -->
+                        <div class="body">
+                            <div class="h4">День #2</div>
+                            <p>Режим в Исландии – важная составляющая путешествия, ведь мы хотим столько всего вам показать! Каждый день мы встаем в 7:30, час на завтрак / сборы – погнали дальше. <br>
+                            Первой точкой на нашем маршруте станет водопад Seljandsfoss высотой 60 м, впечатляющий своей величественностью.
+                            По пути к следующей точке нашего маршрута заглянем в Dyrholaey. Это место обладает необъяснимой магией, дарящей покой и безмятежность на душе.
+                            Программу дня завершаем знакомством... с морскими котиками, в их естественной среде обитания – ледниковой лагуне Jökulsárlón</p>
+                        </div>
+                        <!-- /.body -->
+                    </div>
+                    <!-- /.card -->
+                    <div id="day-3" class="card">
+                        <div class="image">
+                            <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/iceland/way/day-3.jpg" alt="img">
+                        </div>
+                        <!-- /.image -->
+                        <div class="body">
+                            <div class="h4">День #3</div>
+                            <p>Описание дня в процессе написания.</p>
+                        </div>
+                        <!-- /.body -->
+                    </div>
+                    <!-- /.card -->
+                    <div id="day-4" class="card">
+                        <div class="image">
+                            <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/iceland/way/day-4.jpg" alt="img">
+                        </div>
+                        <!-- /.image -->
+                        <div class="body">
+                            <div class="h4">День #4</div>
+                            <p>Описание дня в процессе написания.</p>
+                        </div>
+                        <!-- /.body -->
+                    </div>
+                    <!-- /.card -->
+                    <div id="day-5" class="card">
+                        <div class="image">
+                            <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/iceland/way/day-5.jpg" alt="img">
+                        </div>
+                        <!-- /.image -->
+                        <div class="body">
+                            <div class="h4">День #5</div>
+                            <p>Описание дня в процессе написания.</p>
                         </div>
                         <!-- /.body -->
                     </div>
@@ -269,24 +332,11 @@ get_header();
         </div>
         <!-- /.container -->
         <div id="slider"  data-aos="zoom-in">
-            <div class="slide">
-                <img data-lazy="<?php bloginfo('template_url') ?>/src/img/iceland/big-slider/slide-1.jpg" alt="slide">
-            </div>
-            <div class="slide">
-                <img data-lazy="<?php bloginfo('template_url') ?>/src/img/iceland/big-slider/slide-2.jpg" alt="slide">
-            </div>
-            <div class="slide">
-                <img data-lazy="<?php bloginfo('template_url') ?>/src/img/iceland/big-slider/slide-3.jpg" alt="slide">
-            </div>
-            <div class="slide">
-                <img data-lazy="<?php bloginfo('template_url') ?>/src/img/iceland/big-slider/slide-3.jpg" alt="slide">
-            </div>
-            <div class="slide">
-                <img data-lazy="<?php bloginfo('template_url') ?>/src/img/iceland/big-slider/slide-3.jpg" alt="slide">
-            </div>
-            <div class="slide">
-                <img data-lazy="<?php bloginfo('template_url') ?>/src/img/iceland/big-slider/slide-3.jpg" alt="slide">
-            </div>
+            <?php for($i = 1; $i <= 41; $i++): ?>
+                <div class="slide">
+                    <img data-lazy="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_october_2019/iceland_<?php printf('%02d',$i) ?>.jpg" alt="slide">
+                </div>
+            <?php endfor; ?>
         </div>
         <!-- /#slider -->
 
@@ -420,9 +470,9 @@ get_header();
                         <div class="h3">Транспорт</div>
 
                         <ul class="primary-style">
-                            <li>трансфер от аэропорта до отеля в Рейкьявике и назад;</li>
-                            <li>перемещения от отеля или кемпинга до мест проведения активностей (голубая лагуна, плавание с китами, плавание по ледниковой лагуне).</li>
-                            <li>все перемещения по маршруту следования;</li>
+                            <li>В стоимость входят все перемещения по маршруту, от дверей аэропорта в начале до дверей аэропорта в конце пути</li>
+                            <li>Едем на современных полноприводных кроссоверах</li>
+                            <li>Бензин, страховки, стоянки и т.д. так же входят в стоимость</li>
                         </ul>
                         <!-- /.primary-style -->
                     </div>
@@ -445,7 +495,7 @@ get_header();
                     <div class="text" data-aos="fade-up" data-aos-duration="1500">
                         <div class="h3">Интернет везде</div>
 
-                        <p>У нас будет Wi-Fi прямо в машиине на местной сим-карте, чтобы во время дороги была возможность делиться фотографиями - это уже включено в стоимость. В домах у нас будет метный Wi-Fi.</p>
+                        <p>У нас будет Wi-Fi прямо в машиине на местной сим-карте, чтобы во время дороги была возможность делиться фотографиями - это уже включено в стоимость. В домах у нас будет местный Wi-Fi.</p>
                     </div>
                     <!-- /.text -->
 
@@ -487,7 +537,7 @@ get_header();
                     <div class="text" data-aos="fade-up" data-aos-duration="1500">
                         <div class="h3">Профессиональный фотограф</div>
 
-                        <p>Мы собрали для вас лучших фотографов Исландии, которые помогут запечатлеть ваше путешествие! Мы собрали для вас лучших фотографов Исландии, которые помогут запечатлеть ваше путешествие! </p>
+                        <p>С нами в туре обязательно будет профессиональный фотограф. Он будет фотографировать всех участников во всех местах путеществия. </p>
                     </div>
                     <!-- /.text -->
 
@@ -622,17 +672,7 @@ get_header();
                     
                         <div class="content">
                             <ul class="primary-style">
-                                <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                                <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                                <li>Плотные штаны или джинсы</li>
-                                <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                                <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                                <li>Футболки, толстовку или свитер</li>
-                                <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                                <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                                <li>Полотенце</li>
-                                <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                                <li>Индивидуальная аптечка.</li>
+                                <li>Исландия считается самой дорогой страной в Европе и цены там действительно кусаются. Мы нашли местную бюджетную продуктовую сеть, называется "BONUS", где большая часть продуктов стоит всего в 2-2,5 раза дороже чем в Минске. Поэтому часть еды я заранее закуплю в Минске, а часть буду докупать на месте. У нас будут организованы: легкие завтраки, ссобойки и тимбилдинг-ужины (мы готовим простые и сытные блюда все вместе). У нас будет мини-пикник с видом на ледниковую лагуну и поход в секретный рыбный ресторан для местных.</li>
                             </ul>
                         </div>
                         <!-- /.content -->
@@ -640,7 +680,7 @@ get_header();
                     <!-- /.accordion -->
                     <div class="accordion">
                         <div class="head">
-                            <div class="h4">Как мы будем питаться?</div>
+                            <div class="h4">Сколько денег с собой менять и нужно ли это делать?</div>
                             <!-- /.h4 -->
 
                             <div class="toggler"></div>
@@ -649,14 +689,7 @@ get_header();
                     
                         <div class="content">
                             <ul class="primary-style">
-                                <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                                <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                                <li>Плотные штаны или джинсы</li>
-                                <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                                <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                                <li>Футболки, толстовку или свитер</li>
-                                <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                                <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
+                                <li>Поскольку Исландия – страна прогрессивная, то здесь можно обойтись без наличных денег: банковские карты принимают практически везде. Моя рекомендация - наличные хоть в каких-то объемах в евро должны быть. <br> Что касается суммы, то я советую иметь неприкосновенный запас около 200-300 евро. А так у каждого свои нужды. Есть ребята которые тратили за всю поездку 150 евро, а есть те кто 500 и больше.</li>
                             </ul>
                         </div>
                         <!-- /.content -->
@@ -664,7 +697,7 @@ get_header();
                     <!-- /.accordion -->
                     <div class="accordion">
                         <div class="head">
-                            <div class="h4">Как мы будем питаться?</div>
+                            <div class="h4">На чем мы будем перемещаться по Исландии?</div>
                             <!-- /.h4 -->
 
                             <div class="toggler"></div>
@@ -673,23 +706,7 @@ get_header();
                     
                         <div class="content">
                             <ul class="primary-style">
-                                <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                                <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                                <li>Плотные штаны или джинсы</li>
-                                <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                                <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                                <li>Футболки, толстовку или свитер</li>
-                                <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                                <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                                <li>Полотенце</li>
-                                <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                                <li>Индивидуальная аптечка.</li>
-                                <li>Портативный аккумулятор для зарядки гаджетов</li>
-                                <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                                <li>Полотенце</li>
-                                <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                                <li>Индивидуальная аптечка.</li>
-                                <li>Портативный аккумулятор для зарядки гаджетов</li>
+                                <li>На джипах Hyundai Tucson. В каждом джипе будет по 5 человек. В машинах будут рации для оперативной связи друг с другом. В Исландии действует ограничение скорости в 90 км/час. (Штрафы безумно большие)</li>
                             </ul>
                         </div>
                         <!-- /.content -->
@@ -697,7 +714,7 @@ get_header();
                     <!-- /.accordion -->
                     <div class="accordion">
                         <div class="head">
-                            <div class="h4">Как мы будем питаться?</div>
+                            <div class="h4">Где мы будем жить?</div>
                             <!-- /.h4 -->
 
                             <div class="toggler"></div>
@@ -706,10 +723,7 @@ get_header();
                     
                         <div class="content">
                             <ul class="primary-style">
-                                <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                                <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                                <li>Плотные штаны или джинсы</li>
-                                <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
+                                <li>Вы уже знаете что Исландия - самая дорогая европейская страна. Цены на отели впечатляют, для примера самый обычный номер начинается от 70 евро/ночь. Поэтому мы оптимизируем расходы на жилье и останавливаемся в гестхаусах и хостелах. Они простые, но уютные. Так как большую часть времени мы будем проводить в пути в процессе осмотра достопримечательностей нет смысла переплачивать за комфорт которым толком и не воспользуешься.</li>
                             </ul>
                         </div>
                         <!-- /.content -->
@@ -717,7 +731,7 @@ get_header();
                     <!-- /.accordion -->
                     <div class="accordion">
                         <div class="head">
-                            <div class="h4">Как мы будем питаться?</div>
+                            <div class="h4">Сколько человек будет в группе?</div>
                             <!-- /.h4 -->
 
                             <div class="toggler"></div>
@@ -726,16 +740,7 @@ get_header();
                     
                         <div class="content">
                             <ul class="primary-style">
-                                <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                                <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                                <li>Плотные штаны или джинсы</li>
-                                <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                                <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                                <li>Футболки, толстовку или свитер</li>
-                                <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                                <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                                <li>Полотенце</li>
-                                <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
+                                <li>Нас будет 10 или 15 человек. Стремимся к цифре кратной 5. Именно столько человек помещается в одном автомобиле.</li>
                             </ul>
                         </div>
                         <!-- /.content -->
@@ -743,7 +748,7 @@ get_header();
                     <!-- /.accordion -->
                     <div class="accordion">
                         <div class="head">
-                            <div class="h4">Как мы будем питаться?</div>
+                            <div class="h4">Какая погода в Исландии?</div>
                             <!-- /.h4 -->
 
                             <div class="toggler"></div>
@@ -752,18 +757,60 @@ get_header();
                     
                         <div class="content">
                             <ul class="primary-style">
-                                <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                                <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                                <li>Плотные штаны или джинсы</li>
-                                <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                                <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                                <li>Футболки, толстовку или свитер</li>
-                                <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                                <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                                <li>Полотенце</li>
-                                <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                                <li>Индивидуальная аптечка.</li>
-                                <li>Портативный аккумулятор для зарядки гаджетов</li>
+                                <li>Непредсказуемая. Это как в Питере, только может быть еще более ветренно. Акутальную погоду лучше всего смотреть на этом веб-сайте: <a href="https://en.vedur.is" class="link" target="blank">en.vedur.is</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.accordion -->
+                    <div class="accordion">
+                        <div class="head">
+                            <div class="h4">Авиабилеты</div>
+                            <!-- /.h4 -->
+
+                            <div class="toggler"></div>
+                        </div>
+                        <!-- /.head -->
+                    
+                        <div class="content">
+                            <ul class="primary-style">
+                                <li>Летим WizzAir из Вильнюса или Варшавы (ориентировочная стоимость 100-200€, в зависимости от сезона). Сейчас на даты 8-12 июня цена 160€ туда обратно. Для лета это очень вкусно!</li>
+                                <li>Вы можете прилететь в Рейкьявик из любого города. Москва, Рига, Минск и т.д.</li>
+                            </ul>
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.accordion -->
+                    <div class="accordion">
+                        <div class="head">
+                            <div class="h4">Виза</div>
+                            <!-- /.h4 -->
+
+                            <div class="toggler"></div>
+                        </div>
+                        <!-- /.head -->
+                    
+                        <div class="content">
+                            <ul class="primary-style">
+                                <li>Подходит любая многократная</li>
+                                <li>шенгенская виза (30-60€). Скорее всего она у Вас уже есть</li>
+                            </ul>
+                        </div>
+                        <!-- /.content -->
+                    </div>
+                    <!-- /.accordion -->
+                    <div class="accordion">
+                        <div class="head">
+                            <div class="h4">Дополнительные экскурсии</div>
+                            <!-- /.h4 -->
+
+                            <div class="toggler"></div>
+                        </div>
+                        <!-- /.head -->
+                    
+                        <div class="content">
+                            <ul class="primary-style">
+                                <li>Едвали у Вас будет время на них ) Наш маршрут максимально выстроен на удовольствии. Не будет никакой нужды )</li>
                             </ul>
                         </div>
                         <!-- /.content -->
@@ -889,123 +936,12 @@ get_header();
             </div>
             <!-- /.section-title -->
             
-            <div class="super-slider">
-                <div class="slide">
-                    <div class="slide-content">
-                        <div class="column-1">
-                            <div class="controls">
-                                <div class="left"></div>
-                                <div class="slides-count">
-                                    <span class="current"></span>
-                                    <span class="size"></span>
-                                </div>
-                                <div class="right"></div>
-                            </div>
-                            <!-- /.controls -->
-                            <div class="head">
-                                <div class="h4">
-                                    Макс Николаев 
-                                    <a href="#" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst"></a>
-                                </div>
-                                <div class="date">Исландия (октябрь 2019)</div>
-                            </div>
-                            <!-- /.head -->
-                            <div class="body">
-                                <p>Настало время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени.</p>
-                            </div>
-                            <!-- /.body -->
-                            <div class="dots"></div>
-                        </div>
-                        <!-- /.column-1 -->
-                        <div class="column-2">
-                            <div class="youtube" data-embed="e8QKBu-qAPA">
-                                <div class="play-button"></div>
-                                <div class="next-video"></div>
-                            </div>
-                        </div>
-                        <!-- /.column-2 -->
-                    </div>
-                    <!-- /.slide-content -->
+            <div class="youtube-wrapper">
+                <div class="youtube" data-embed="GYFjvbuUE2w">
+                    <div class="play-button"></div>
+                    <div class="next-video"></div>
                 </div>
-                <!-- /.slide -->
-                <div class="slide">
-                    <div class="slide-content">
-                        <div class="column-1">
-                            <div class="controls">
-                                <div class="left"></div>
-                                <div class="slides-count">
-                                    <span class="current"></span>
-                                    <span class="size"></span>
-                                </div>
-                                <div class="right"></div>
-                            </div>
-                            <!-- /.controls -->
-                            <div class="head">
-                                <div class="h4">
-                                    Иван Петров
-                                    <a href="#" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst"></a>
-                                </div>
-                                <div class="date">Исландия (октябрь 2018)</div>
-                            </div>
-                            <!-- /.head -->
-                            <div class="body">
-                                <p>Время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени. Настало время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени.</p>
-                            </div>
-                            <!-- /.body -->
-                            <div class="dots"></div>
-                        </div>
-                        <!-- /.column-1 -->
-                        <div class="column-2">
-                            <div class="youtube" data-embed="6obeWGWKN4s">
-                                <div class="play-button"></div>
-                                <div class="next-video"></div>
-                            </div>
-                        </div>
-                        <!-- /.column-2 -->
-                    </div>
-                    <!-- /.slide-content -->
-                </div>
-                <!-- /.slide -->
-                <div class="slide">
-                    <div class="slide-content">
-                        <div class="column-1">
-                            <div class="controls">
-                                <div class="left"></div>
-                                <div class="slides-count">
-                                    <span class="current"></span>
-                                    <span class="size"></span>
-                                </div>
-                                <div class="right"></div>
-                            </div>
-                            <!-- /.controls -->
-                            <div class="head">
-                                <div class="h4">
-                                    Александра Ивановна
-                                    <a href="#" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst"></a>
-                                </div>
-                                <div class="date">Исландия (октябрь 2018)</div>
-                            </div>
-                            <!-- /.head -->
-                            <div class="body">
-                                <p>Программа была настолько насыщенная, что на сон практически не оставалось времени. Настало время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени.</p>
-                            </div>
-                            <!-- /.body -->
-                            <div class="dots"></div>
-                        </div>
-                        <!-- /.column-1 -->
-                        <div class="column-2">
-                            <div class="youtube" data-embed="WSLbCs64MLc">
-                                <div class="play-button"></div>
-                                <div class="next-video"></div>
-                            </div>
-                        </div>
-                        <!-- /.column-2 -->
-                    </div>
-                    <!-- /.slide-content -->
-                </div>
-                <!-- /.slide -->
             </div>
-            <!-- /.super-slider -->
         </div>
         <!-- /.container -->
     </div>
@@ -1034,7 +970,7 @@ get_header();
             <!-- /.picture -->
             <div class="text">
                 <div class="h3">Привет! Меня зовут Алексей Анушкин.</div>
-                <p >Путешественник, 31 страна в рюкзаке, организатор образовательных мероприятий и создатель проекта Iceland trips.</p>
+                <p >Путешественник, 31 страна в рюкзаке, организатор образовательных мероприятий и создатель проекта Alextravel.me</p>
                 <ul class="primary-style">
                     <li >Начал свой путь с вожатого в детском лагере. Жил в Европе, работал в Пекине и Москве.</li>
                     <li >Проехал с друзьями на раритетном фургоне из Минска к атлантическому океану чтобы посёрфить.</li>
@@ -1071,17 +1007,17 @@ get_header();
 
                 <div class="primary-box" data-aos="fade-up" data-aos-offset="-200">
                     <div class="title">7 поездок</div>
-                    <p>С групповыми турами в Исландию мы уже сделали</p>
+                    <p>С групповыми турами в Исландию мы уже сделали.</p>
                 </div>
                 <!-- /.primary-box -->
                 <div class="primary-box" data-aos="fade-up" data-aos-offset="-200">
                     <div class="title">90+ человек</div>
-                    <p>Хотя скорее больше, были участниками наших экспедиций</p>
+                    <p>Хотя скорее больше, были участниками наших экспедиций.</p>
                 </div>
                 <!-- /.primary-box -->
                 <div class="primary-box" data-aos="fade-up"data-aos-offset="-200">
                     <div class="title">Официальные туры</div>
-                    <p>Мы работаем в т.ч. с юридическими лицами. Возможна оплата по безналичному расчету</p>
+                    <p>Мы работаем в т.ч. с юридическими лицами. Возможна оплата по безналичному расчету.</p>
                 </div>
                 <!-- /.primary-box -->
             </div>
@@ -1118,7 +1054,7 @@ get_header();
 
         <div class="card">
             <div class="body">
-                <div class="h5">Оставляй заявку, я расскажу тебе о будующих поездках, забронировать можно будет сейчас, а оплачивать по частям - это удобно, как показывает практика.</div>
+                <div class="h5">Оставляй заявку, я расскажу тебе о будующих поездках, забронировать можно будет сейчас, а оплачивать по частям позже - это удобно, как показывает практика.</div>
 
                 <form id="get-opportunities-form" class="subscribe-form" action="javascript:" onsubmit="callHandler('#get-opportunities-form')">
                     <input type="hidden" name="url" value="<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>">
@@ -1126,14 +1062,14 @@ get_header();
                     <div class="input-wrapper">
                         <input type="text" name="user_phone" placeholder="Телефон" required>
                     </div>
-                    <button class="btn btn-primary">Узнать возможности</button>
+                    <button class="btn btn-primary">Хочу с вами</button>
                 </form>
             </div>
             <!-- /.body -->
             <div class="foot">
-                <div class="date">Новости. Вопросы. Общение.</div>
+                <div class="date">Новости. Вопросы. Общение. Свободные места    </div>
                 <div class="h5">Присоединяйтесь к нам:</div>
-                <a href="#" target="_blank" class="btn btn-telegram">Телеграм чат тура</a>
+                <a href="<?=TELEGRAM_PROJECT_СHAT?>" target="_blank" class="btn btn-telegram">Общий чат проекта</a>
             </div>
             <!-- /.foot -->
         </div>

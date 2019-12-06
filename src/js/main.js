@@ -9,7 +9,12 @@
         $('.mobile-menu').click(function() {
             $('.mobile-menu').removeClass('active');
             $('.burger').removeClass('active');
-        })
+        });
+        $('.mobile-menu .close').click(function() {
+            $('.mobile-menu').removeClass('active');
+            $('.burger').removeClass('active');
+        });
+
         try {
             // Step 1: Create jQuery plugin
             // ============================
@@ -211,17 +216,6 @@
         } catch (error) {
             console.log(error);
         }
-       
-        $('.get-ticket-tour .btn-select').click(function() {
-            if($(this).hasClass('select-1')) {
-                $('.get-ticket-tour .btn-select').removeClass('active');
-                $('.get-ticket-tour .select-1').addClass('active');
-            }
-            else {
-                $('.get-ticket-tour .btn-select').removeClass('active');
-                $('.get-ticket-tour .select-2').addClass('active');
-            }
-        });
        
 
         $('.accordion .head').click(function() {

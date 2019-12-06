@@ -30,10 +30,12 @@ get_header();
 			</h1>
 
 			<ul>
-				<li data-aos="fade-up" data-aos-delay="400">Исландия (ноябрь) - мест нет</li>
-				<li data-aos="fade-up" data-aos-delay="600">Исландия (декабрь) - мест нет</li>
-				<li data-aos="fade-up" data-aos-delay="800">Иордания (январь) - мест нет</li>
-				<li data-aos="fade-up" data-aos-delay="1000" class="active">Исландия (апрель) - осталось 9 мест</li>
+				<li data-aos="fade-up" data-aos-delay="400">Иордания (10-14 февраля 20г) - места проданы</li>
+				<li data-aos="fade-up" data-aos-delay="600">Исландия (4-8 марта 20г) – места проданы</li>
+				<li data-aos="fade-up" data-aos-delay="800">Швейцария (2-7 апреля 20г) - места проданы</li>
+				<li data-aos="fade-up" data-aos-delay="1000" class="active">
+                    <a href="<?php echo get_home_url(null, 'iceland/'); ?>">Исландия (14-21 июня 20г) – осталось 9 мест</a>
+                </li>
 			</ul>
 
 			<div id="compass">
@@ -49,9 +51,9 @@ get_header();
 			<div class="social-wrapper">
 				<span class="title">Присоеденяйся!</span>
 				<div class="social">
-					<a href="<?=VK?>" target="_blank" class="vk"><img data-src="<?php bloginfo('template_url') ?>/src/img/header/vk.svg" class="lazy" alt="vk"></a>
-					<a href="<?=INST?>" target="_blank" class="inst"><img data-src="<?php bloginfo('template_url') ?>/src/img/header/inst.svg" class="lazy" alt="inst"></a>
-					<a href="<?=FACEBOOK?>" target="_blank" class="facebook"><img data-src="<?php bloginfo('template_url') ?>/src/img/header/facebook.svg" class="lazy" alt="facebook"></a>
+                    <a href="<?=INST?>" target="_blank" class="inst"><img data-src="<?php bloginfo('template_url') ?>/src/img/header/inst.svg" class="lazy" alt="inst"></a>
+                    <a href="<?=FACEBOOK?>" target="_blank" class="facebook"><img data-src="<?php bloginfo('template_url') ?>/src/img/header/facebook.svg" class="lazy" alt="facebook"></a>
+					<a href="<?=VK?>" target="_blank" class="vk"><img data-src="<?php bloginfo('template_url') ?>/src/img/header/vk.svg" class="lazy" alt="vk"></a>	
 				</div>
 			</div>
 			</div>
@@ -81,21 +83,21 @@ get_header();
 
         <div class="trips">
             <div class="trip unactive">
+                <a href="<?php //echo get_home_url(null, '/'); ?>">
                 <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland.jpg" alt="iceland">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/trips/jordan_1.jpg" alt="jordan">
                 </div>
                 <!-- /.img-wrapper -->
 
                 <div class="head">
-                    <span class="date">20 ноября — 29 ноября</span>
+                    <span class="date">10-14 января 2020г. 5 дней.</span>
                     <!-- /.date -->
-                    <div class="h4">Исландия</div>
+                    <div class="h4">Иордания</div>
                 </div>
                 <!-- /.head -->
 
                 <div class="body">
-                    <div class="description">Вокруг острова за 9 дней. Два океана, ледники, вулканы, киты и кай дороги. Все включено. </div>
-
+                    <div class="description">Пустынный десант и 8е чудо света. Самые красивые места Иордании – Амман, Петра, Мертвое море, пустыня, каньоны и т.д. 1200 км на внедорожниках. Питание, проживание, джипы - входят в стоимость.</div>
                     <div class="raiting">
                        <div class="pair">
                            <div class="bold">Сложность</div>
@@ -143,11 +145,12 @@ get_header();
                     <!-- /.raiting -->
                 </div>
                 <!-- /.body -->
+                </a>
 
                 <div class="foot">
                     <div class="pair">
                         <div class="left-side">
-                            <div class="price">990 €</div>
+                            <div class="price">790 €</div>
                             <div class="seats-number">осталось 0 мест</div>
                         </div>
                         <!-- /.left-side -->
@@ -157,104 +160,24 @@ get_header();
                 </div>
                 <!-- /.foot -->
             </div>
-            <!-- /.trip unactive -->
-
-            <div class="trip">
-                <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
-                <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland-2.jpg" alt="iceland">
-                </div>
-                <!-- /.img-wrapper -->
-
-                <div class="head">
-                    <span class="date">20 ноября — 29 ноября</span>
-                    <!-- /.date -->
-                    <div class="h4">Исландия</div>
-                </div>
-                <!-- /.head -->
-
-                <div class="body">
-                    <div class="description">Вокруг острова за 9 дней. Два океана, ледники, вулканы, киты и кай дороги. Все включено. </div>
-                    <div class="raiting">
-                       <div class="pair">
-                           <div class="bold">Сложность</div>
-                           <div class="stars-wrapper">
-                               <div class="count">3/5</div>
-                               <ul class="stars">
-                                   <li></li>
-                                   <li></li>
-                                   <li></li>
-                                   <li class="gray"></li>
-                                   <li class="gray"></li>
-                               </ul>
-                           </div>
-                       </div>
-                       <!-- /.pair -->
-                       <div class="pair">
-                           <div class="bold">Комфорт</div>
-                           <div class="stars-wrapper">
-                                <div class="count">4/5</div>
-                               <ul class="stars">
-                                   <li></li>
-                                   <li></li>
-                                   <li></li>
-                                   <li></li>
-                                   <li class="gray"></li>
-                               </ul>
-                           </div>
-                       </div>
-                       <!-- /.pair -->
-                       <div class="pair">
-                           <div class="bold">Адреналин</div>
-                           <div class="stars-wrapper">
-                                <div class="count">5/5</div>
-                               <ul class="stars">
-                                   <li></li>
-                                   <li></li>
-                                   <li></li>
-                                   <li></li>
-                                   <li></li>
-                               </ul>
-                           </div>
-                       </div>
-                       <!-- /.pair -->
-                    </div>
-                    <!-- /.raiting -->
-                </div>
-                <!-- /.body -->
-                </a>
-
-                <div class="foot">
-                    <div class="pair">
-                        <div class="left-side">
-                            <div class="price">990 €</div>
-                            <div class="seats-number">осталось 9 мест</div>
-                        </div>
-                        <!-- /.left-side -->
-                        <div data-fancybox data-src="#request-modal" class="btn btn-primary">Оставить заявку</div>
-                    </div>
-                    <!-- /.pair -->
-                </div>
-                <!-- /.foot -->
-            </div>
             <!-- /.trip -->
 
-            <div class="trip">
+            <div class="trip unactive">
                 <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
                     <div class="img-wrapper">
-                        <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland-3.jpg" alt="iceland">
+                        <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland.jpg" alt="iceland">
                     </div>
                     <!-- /.img-wrapper -->
 
                 <div class="head">
-                    <span class="date">20 ноября — 29 ноября</span>
+                    <span class="date">4-8 марта 2020г. 5 дней.</span>
                     <!-- /.date -->
                     <div class="h4">Исландия</div>
                 </div>
                 <!-- /.head -->
 
                 <div class="body">
-                    <div class="description">Вокруг острова за 9 дней. Два океана, ледники, вулканы, киты и кай дороги. Все включено. </div>
+                    <div class="description">Исследуем Южное побережье. Самые сочные места. 1600 км на внедорожниках. Океан, ледники, вулканы. Питание, проживание, джипы - входят в стоимость.</div>
 
                     <div class="raiting">
                        <div class="pair">
@@ -309,11 +232,11 @@ get_header();
                 <div class="foot">
                     <div class="pair">
                         <div class="left-side">
-                            <div class="price">990 €</div>
-                            <div class="seats-number">осталось 9 мест</div>
+                            <div class="price">790 €</div>
+                            <div class="seats-number">осталось 0 мест</div>
                         </div>
                         <!-- /.left-side -->
-                        <div data-fancybox data-src="#request-modal" class="btn btn-primary">Оставить заявку</div>
+                        <div class="btn btn-primary btn-unactive">Все места проданы</div>
                     </div>
                     <!-- /.pair -->
                 </div>
@@ -321,22 +244,22 @@ get_header();
             </div>
             <!-- /.trip -->
 
-            <div class="trip">
-                <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
+            <div class="trip unactive">
+                <a href="<?php //echo get_home_url(null, '/'); ?>">
                 <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland.jpg" alt="iceland">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/trips/switzerland_1.jpg" alt="switzerland">
                 </div>
                 <!-- /.img-wrapper -->
 
                 <div class="head">
-                    <span class="date">20 ноября — 29 ноября</span>
+                    <span class="date">2-7 апреля 2020г. 6 дней.</span>
                     <!-- /.date -->
-                    <div class="h4">Исландия</div>
+                    <div class="h4">Швейцария</div>
                 </div>
                 <!-- /.head -->
 
                 <div class="body">
-                    <div class="description">Вокруг острова за 9 дней. Два океана, ледники, вулканы, киты и кай дороги. Все включено. </div>
+                    <div class="description">Если смотрели выпуск Птушкина про Швейцарию, сами все понимаете. Альпийская сказка. 1000 км на кроссоверах вокруг страны. Горы, озера, сыр. Питание, проживание, джипы - входят в стоимость.</div>
 
                     <div class="raiting">
                        <div class="pair">
@@ -390,11 +313,11 @@ get_header();
                 <div class="foot">
                     <div class="pair">
                         <div class="left-side">
-                            <div class="price">990 €</div>
-                            <div class="seats-number">осталось 9 мест</div>
+                            <div class="price">790 €</div>
+                            <div class="seats-number">осталось 0 мест</div>
                         </div>
                         <!-- /.left-side -->
-                        <div data-fancybox data-src="#request-modal" class="btn btn-primary">Оставить заявку</div>
+                        <div class="btn btn-primary btn-unactive">Все места проданы</div>
                     </div>
                     <!-- /.pair -->
                 </div>
@@ -402,22 +325,22 @@ get_header();
             </div>
             <!-- /.trip -->
 
-            <div class="trip">
-                <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
+            <div class="trip unactive">
+                <a href="<?php //echo get_home_url(null, '/'); ?>">
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland-2.jpg" alt="iceland">
                 </div>
                 <!-- /.img-wrapper -->
 
                 <div class="head">
-                    <span class="date">20 ноября — 29 ноября</span>
+                    <span class="date">10-18 мая 2020г. 8 дней.</span>
                     <!-- /.date -->
                     <div class="h4">Исландия</div>
                 </div>
                 <!-- /.head -->
 
                 <div class="body">
-                    <div class="description">Вокруг острова за 9 дней. Два океана, ледники, вулканы, киты и кай дороги. Все включено. </div>
+                    <div class="description">Вокруг всего острова на внедорожниках (2000 км) за 8 дней. Два океана, ледники, вулканы, киты. Питание, проживание, джипы - входят в стоимость.</div>
                     <div class="raiting">
                        <div class="pair">
                            <div class="bold">Сложность</div>
@@ -470,7 +393,92 @@ get_header();
                 <div class="foot">
                     <div class="pair">
                         <div class="left-side">
-                            <div class="price">990 €</div>
+                            <div class="price">1 490 €</div>
+                            <div class="seats-number">осталось 0 мест</div>
+                        </div>
+                        <!-- /.left-side -->
+                        <div class="btn btn-primary btn-unactive">Оставить заявку</div>
+                    </div>
+                    <!-- /.pair -->
+                </div>
+                <!-- /.foot -->
+            </div>
+            <!-- /.trip -->
+
+            <div class="trip new-format">
+                <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
+                <div class="img-wrapper">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland-3.jpg" alt="iceland">
+                    <div class="label">
+                        Тур для предпринимателей
+                    </div>
+                    <!-- /.label -->
+                </div>
+                <!-- /.img-wrapper -->
+
+                <div class="head">
+                    <span class="date">8-12 июня 2020г. 5 дней.</span>
+                    <!-- /.date -->
+                    <div class="h4">Исландия</div>
+                </div>
+                <!-- /.head -->
+
+                <div class="body">
+                    <div class="description">Исследуем Южное побережье. Самые сочные места. 1600 км на внедорожниках. Океан, ледники, вулканы. Питание, проживание, джипы - входят в стоимость.</div>
+
+                    <div class="raiting">
+                       <div class="pair">
+                           <div class="bold">Сложность</div>
+                           <div class="stars-wrapper">
+                               <div class="count">3/5</div>
+                               <ul class="stars">
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li class="gray"></li>
+                                   <li class="gray"></li>
+                               </ul>
+                           </div>
+                       </div>
+                       <!-- /.pair -->
+                       <div class="pair">
+                           <div class="bold">Комфорт</div>
+                           <div class="stars-wrapper">
+                                <div class="count">4/5</div>
+                               <ul class="stars">
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li class="gray"></li>
+                               </ul>
+                           </div>
+                       </div>
+                       <!-- /.pair -->
+                       <div class="pair">
+                           <div class="bold">Адреналин</div>
+                           <div class="stars-wrapper">
+                                <div class="count">5/5</div>
+                               <ul class="stars">
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                               </ul>
+                           </div>
+                       </div>
+                       <!-- /.pair -->
+                    </div>
+                    <!-- /.raiting -->
+                </div>
+                <!-- /.body -->
+                </a>
+
+                <div class="foot">
+                    <div class="pair">
+                        <div class="left-side">
+                            <div class="price">790 €</div>
                             <div class="seats-number">осталось 9 мест</div>
                         </div>
                         <!-- /.left-side -->
@@ -483,31 +491,31 @@ get_header();
             <!-- /.trip -->
 
             <div class="trip">
-                <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
+                <a href="<?php //echo get_home_url(null, '/'); ?>">
                 <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland-3.jpg" alt="iceland">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/trips/iceland_1.jpg" alt="iceland">
                 </div>
                 <!-- /.img-wrapper -->
 
                 <div class="head">
-                    <span class="date">20 ноября — 29 ноября</span>
+                    <span class="date">31 января - 5 февраля 2020г. 5 дней.</span>
                     <!-- /.date -->
                     <div class="h4">Исландия</div>
                 </div>
                 <!-- /.head -->
 
                 <div class="body">
-                    <div class="description">Вокруг острова за 9 дней. Два океана, ледники, вулканы, киты и кай дороги. Все включено. </div>
+                    <div class="description">Охота на северное сияние. Самые сочные места. 1600 км на внедорожниках. Океан, ледники, вулканы. Питание, проживание, джипы - входят в стоимость.</div>
 
                     <div class="raiting">
                        <div class="pair">
                            <div class="bold">Сложность</div>
                            <div class="stars-wrapper">
-                               <div class="count">3/5</div>
+                               <div class="count">2/5</div>
                                <ul class="stars">
                                    <li></li>
                                    <li></li>
-                                   <li></li>
+                                   <li class="gray"></li>
                                    <li class="gray"></li>
                                    <li class="gray"></li>
                                </ul>
@@ -551,8 +559,8 @@ get_header();
                 <div class="foot">
                     <div class="pair">
                         <div class="left-side">
-                            <div class="price">990 €</div>
-                            <div class="seats-number">осталось 9 мест</div>
+                            <div class="price">790 €</div>
+                            <div class="seats-number">осталось 15 мест</div>
                         </div>
                         <!-- /.left-side -->
                         <div data-fancybox data-src="#request-modal" class="btn btn-primary">Оставить заявку</div>
@@ -578,7 +586,7 @@ get_header();
         <!-- /.section-title -->
 
         <div class="archive">
-            <div class="image-folder"  data-aos="zoom-in-up" >
+            <div class="image-folder disabled"  data-aos="zoom-in-up" >
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
                 </div>
@@ -586,12 +594,12 @@ get_header();
                 <div class="body">
                     <div class="pair">
                         <div class="title">
-                            <div class="date">Октябрь 2019</div>
-                            <div class="h4">Исландия - 1600 км. на джипах</div>
+                            <div class="date">Август 2019</div>
+                            <div class="h4">Исландия. Южное побережье.</div>
                         </div>
                         <!-- /.title -->
                         <div class="phots-count">
-                            11 фото
+                            0 фото
                         </div>
                         <!-- /.phots-count -->
                     </div>
@@ -601,7 +609,7 @@ get_header();
             </div>
             <!-- /.image-folder -->
 
-            <div class="image-folder" data-aos="zoom-in-up" >
+            <div class="image-folder disabled" data-aos="zoom-in-up" >
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
                 </div>
@@ -609,12 +617,12 @@ get_header();
                 <div class="body">
                     <div class="pair">
                         <div class="title">
-                            <div class="date">Октябрь 2019</div>
-                            <div class="h4">Исландия - 1600 км. на джипах</div>
+                            <div class="date">Сентябрь 2019</div>
+                            <div class="h4">Исландия. Южное побережье.</div>
                         </div>
                         <!-- /.title -->
                         <div class="phots-count">
-                            100 фото
+                            0 фото
                         </div>
                         <!-- /.phots-count -->
                     </div>
@@ -624,7 +632,15 @@ get_header();
             </div>
             <!-- /.image-folder -->
 
-            <div class="image-folder" data-aos="zoom-in-up" >
+            
+            <a href="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_october_2019/iceland_01.jpg"
+                data-thumb="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_october_2019/thumbs/iceland_01.jpg"
+                data-fancybox="iceland_october_2019" 
+                data-caption="Исландия. Южное побережье."
+                data-thumbs='{"autoStart":true}'
+                class="image-folder" 
+                data-aos="zoom-in-up" 
+            >
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
                 </div>
@@ -633,21 +649,21 @@ get_header();
                     <div class="pair">
                         <div class="title">
                             <div class="date">Октябрь 2019</div>
-                            <div class="h4">Исландия - 1600 км. на джипах</div>
+                            <div class="h4">Исландия. Южное побережье.</div>
                         </div>
                         <!-- /.title -->
                         <div class="phots-count">
-                            56 фото
+                            41 фото
                         </div>
                         <!-- /.phots-count -->
                     </div>
                     <!-- /.pair -->
                 </div>
                 <!-- /.body -->
-            </div>
+            </a>
             <!-- /.image-folder -->
 
-            <div class="image-folder" data-aos="zoom-in-up" >
+            <div class="image-folder disabled" data-aos="zoom-in-up" >
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
                 </div>
@@ -655,58 +671,12 @@ get_header();
                 <div class="body">
                     <div class="pair">
                         <div class="title">
-                            <div class="date">Октябрь 2019</div>
-                            <div class="h4">Исландия - 1600 км. на джипах</div>
+                            <div class="date">Ноябрь 2019</div>
+                            <div class="h4">Исландия. Вокруг всего острова на внедорожниках (2000 км) за 8 дней.</div>
                         </div>
                         <!-- /.title -->
                         <div class="phots-count">
-                            100 фото
-                        </div>
-                        <!-- /.phots-count -->
-                    </div>
-                    <!-- /.pair -->
-                </div>
-                <!-- /.body -->
-            </div>
-            <!-- /.image-folder -->
-
-            <div class="image-folder" data-aos="zoom-in-up" >
-                <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
-                </div>
-                <!-- /.img-wrapper -->
-                <div class="body">
-                    <div class="pair">
-                        <div class="title">
-                            <div class="date">Октябрь 2019</div>
-                            <div class="h4">Исландия - 1600 км. на джипах</div>
-                        </div>
-                        <!-- /.title -->
-                        <div class="phots-count">
-                            93 фото
-                        </div>
-                        <!-- /.phots-count -->
-                    </div>
-                    <!-- /.pair -->
-                </div>
-                <!-- /.body -->
-            </div>
-            <!-- /.image-folder -->
-
-            <div class="image-folder" data-aos="zoom-in-up" >
-                <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
-                </div>
-                <!-- /.img-wrapper -->
-                <div class="body">
-                    <div class="pair">
-                        <div class="title">
-                            <div class="date">Октябрь 2019</div>
-                            <div class="h4">Исландия - 1600 км. на джипах</div>
-                        </div>
-                        <!-- /.title -->
-                        <div class="phots-count">
-                            100 фото
+                            0 фото
                         </div>
                         <!-- /.phots-count -->
                     </div>
@@ -722,6 +692,8 @@ get_header();
     <!-- /.container -->
 </div>
 <!-- /#gallery.section -->
+<!-- Connect fancybox-gallery -->
+<?php get_template_part('templates/parts/gallery') ?>
 
 <div class="section" id="reviews">
     <div class="container">
@@ -730,124 +702,12 @@ get_header();
             <img class="wall-text lazy" data-src="<?php bloginfo('template_url') ?>/src/img/titles/reviews.svg" alt="Отзывы">
         </div>
         <!-- /.section-title -->
-        
-        <div class="super-slider">
-            <div class="slide">
-                <div class="slide-content">
-                    <div class="column-1">
-                        <div class="controls">
-                            <div class="left"></div>
-                            <div class="slides-count">
-                                <span class="current"></span>
-                                <span class="size"></span>
-                            </div>
-                            <div class="right"></div>
-                        </div>
-                        <!-- /.controls -->
-                        <div class="head">
-                            <div class="h4">
-                                Макс Николаев 
-                                <a href="#" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst"></a>
-                            </div>
-                            <div class="date">Исландия (октябрь 2019)</div>
-                        </div>
-                        <!-- /.head -->
-                        <div class="body">
-                            <p>Настало время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени.</p>
-                        </div>
-                        <!-- /.body -->
-                        <div class="dots"></div>
-                    </div>
-                    <!-- /.column-1 -->
-                    <div class="column-2">
-                        <div class="youtube" data-embed="e8QKBu-qAPA">
-                            <div class="play-button"></div>
-                            <div class="next-video"></div>
-                        </div>
-                    </div>
-                    <!-- /.column-2 -->
-                </div>
-                <!-- /.slide-content -->
+        <div class="youtube-wrapper">
+            <div class="youtube" data-embed="GYFjvbuUE2w">
+                <div class="play-button"></div>
+                <div class="next-video"></div>
             </div>
-            <!-- /.slide -->
-            <div class="slide">
-                <div class="slide-content">
-                    <div class="column-1">
-                        <div class="controls">
-                            <div class="left"></div>
-                            <div class="slides-count">
-                                <span class="current"></span>
-                                <span class="size"></span>
-                            </div>
-                            <div class="right"></div>
-                        </div>
-                        <!-- /.controls -->
-                        <div class="head">
-                            <div class="h4">
-                                Иван Петров
-                                <a href="#" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst"></a>
-                            </div>
-                            <div class="date">Исландия (октябрь 2018)</div>
-                        </div>
-                        <!-- /.head -->
-                        <div class="body">
-                            <p>Время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени. Настало время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени.</p>
-                        </div>
-                        <!-- /.body -->
-                        <div class="dots"></div>
-                    </div>
-                    <!-- /.column-1 -->
-                    <div class="column-2">
-                        <div class="youtube" data-embed="6obeWGWKN4s">
-                            <div class="play-button"></div>
-                            <div class="next-video"></div>
-                        </div>
-                    </div>
-                    <!-- /.column-2 -->
-                </div>
-                <!-- /.slide-content -->
-            </div>
-            <!-- /.slide -->
-            <div class="slide">
-                <div class="slide-content">
-                    <div class="column-1">
-                        <div class="controls">
-                            <div class="left"></div>
-                            <div class="slides-count">
-                                <span class="current"></span>
-                                <span class="size"></span>
-                            </div>
-                            <div class="right"></div>
-                        </div>
-                        <!-- /.controls -->
-                        <div class="head">
-                            <div class="h4">
-                                Александра Ивановна
-                                <a href="#" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst"></a>
-                            </div>
-                            <div class="date">Исландия (октябрь 2018)</div>
-                        </div>
-                        <!-- /.head -->
-                        <div class="body">
-                            <p>Программа была настолько насыщенная, что на сон практически не оставалось времени. Настало время и мне подвести итоги этого незабываемого путешествия. Программа была настолько насыщенная, что на сон практически не оставалось времени.</p>
-                        </div>
-                        <!-- /.body -->
-                        <div class="dots"></div>
-                    </div>
-                    <!-- /.column-1 -->
-                    <div class="column-2">
-                        <div class="youtube" data-embed="WSLbCs64MLc">
-                            <div class="play-button"></div>
-                            <div class="next-video"></div>
-                        </div>
-                    </div>
-                    <!-- /.column-2 -->
-                </div>
-                <!-- /.slide-content -->
-            </div>
-            <!-- /.slide -->
         </div>
-        <!-- /.super-slider -->
     </div>
     <!-- /.container -->
 </div>
@@ -876,10 +736,10 @@ get_header();
             <!-- /.picture -->
             <div class="text">
                 <div class="h3">Привет! Меня зовут Алексей Анушкин.</div>
-                <p >Путешественник, 31 страна в рюкзаке, организатор образовательных мероприятий и создатель проекта Iceland trips.</p>
+                <p >Путешественник, 31 страна в рюкзаке, организатор образовательных мероприятий и создатель проекта AlexTravel.me</p>
                 <ul class="primary-style">
-                    <li >Начал свой путь с вожатого в детском лагере. Жил в Европе, работал в Пекине и Москве.</li>
-                    <li >Проехал с друзьями на раритетном фургоне из Минска к атлантическому океану чтобы посёрфить.</li>
+                    <li>Начал свой путь с вожатого в детском лагере. Жил в Европе, работал в Пекине и Москве.</li>
+                    <li>Проехал с друзьями на раритетном фургоне из Минска к атлантическому океану чтобы посёрфить.</li>
                     <li>Организовал десятки мероприятий, пробежал полумарафон и Bison Race</li>
                     <li>Ко всему подхожу с душой и окружаю каждого заботой и вниманием. Можете быть спокойны, со мной эта поездка будет безопасной, лёгкой, интересной и насыщенной</li>
                 </ul>
@@ -892,227 +752,50 @@ get_header();
 </div>
 <!-- /#about.section -->
 
-<div id="faq" class="section">
-    <img data-src="<?php bloginfo('template_url') ?>/src/img/security-section/moutains.jpg"  class="mountains lazy">
-    <img data-src="<?php bloginfo('template_url') ?>/src/img/security-section/moutains-mobile.jpg" class="mountains-mobile lazy">
-
-    <div class="bull-parallax" data-relative-input="true">
-        <img data-depth="0.1" data-src="<?php bloginfo('template_url') ?>/src/img/security-section/bull.png" class="lazy bull">
-    </div>
-
-
+<div id="request" class="section request-home">
     <div class="container">
         <div class="section-title">
-            <div class="h2 decorations faq">Вопросы и ответы</div>
-            <img class="wall-text lazy" data-src="<?php bloginfo('template_url') ?>/src/img/titles/faq.svg" alt="faq">
+            <div class="h2 decorations plane">Хочу с Вами</div>
+            <img class="wall-text lazy" data-src="<?php bloginfo('template_url') ?>/src/img/titles/request.svg" alt="заявка">
         </div>
         <!-- /.section-title -->
+        
+        <div class="form-wrapper">
+            <div class="body">
+                <div class="h4">Заполни форму заявки чтобы мы могли связаться с тобой!</div>
+                <form id="open-form" class="open-form" action="javascript:" onsubmit="callHandler('#open-form')">
+                    <input type="hidden" name="url" value="<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>">
+                    <input type="hidden" name="form_name" value="Заявка на ближайшее путешествие">
 
-        <div class="faq-row">
-            <div class="accordions">
-                <div class="accordion active">
-                    <div class="head">
-                        <div class="h4">Какую одежду брать с собой в Исландию и как готовиться к поездке?</div>
-                        <!-- /.h4 -->
+                    <div class="input-pair">
+                        <div class="input-wrapper">
+                            <input type="text" name="user_first_name" placeholder="Имя" required>
+                        </div>
+                        <!-- /.input-wrapper -->
+                        <div class="input-wrapper">
+                            <input type="text" name="user_phone" placeholder="Телефон" required>
+                        </div>
+                        <!-- /.input-wrapper -->
+                    </div>
+                    <!-- /.input-pair -->
 
-                        <div class="toggler"></div>
-                    </div>
-                    <!-- /.head -->
-                  
-                    <div class="content">
-                        <ul class="primary-style">
-                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                            <li>Плотные штаны или джинсы</li>
-                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                            <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                            <li>Футболки, толстовку или свитер</li>
-                            <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                            <li>Полотенце</li>
-                            <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                            <li>Индивидуальная аптечка.</li>
-                            <li>Портативный аккумулятор для зарядки гаджетов</li>
-                        </ul>
-                    </div>
-                    <!-- /.content -->
-                </div>
-                <!-- /.accordion -->
-                <div class="accordion">
-                    <div class="head">
-                        <div class="h4">Как мы будем питаться?</div>
-                        <!-- /.h4 -->
+                    
+                    <button class="btn btn-primary">Я еду</button>
 
-                        <div class="toggler"></div>
-                    </div>
-                    <!-- /.head -->
-                  
-                    <div class="content">
-                        <ul class="primary-style">
-                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                            <li>Плотные штаны или джинсы</li>
-                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                            <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                            <li>Футболки, толстовку или свитер</li>
-                            <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                            <li>Полотенце</li>
-                            <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                            <li>Индивидуальная аптечка.</li>
-                        </ul>
-                    </div>
-                    <!-- /.content -->
-                </div>
-                <!-- /.accordion -->
-                <div class="accordion">
-                    <div class="head">
-                        <div class="h4">Как мы будем питаться?</div>
-                        <!-- /.h4 -->
-
-                        <div class="toggler"></div>
-                    </div>
-                    <!-- /.head -->
-                  
-                    <div class="content">
-                        <ul class="primary-style">
-                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                            <li>Плотные штаны или джинсы</li>
-                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                            <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                            <li>Футболки, толстовку или свитер</li>
-                            <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                        </ul>
-                    </div>
-                    <!-- /.content -->
-                </div>
-                <!-- /.accordion -->
-                <div class="accordion">
-                    <div class="head">
-                        <div class="h4">Как мы будем питаться?</div>
-                        <!-- /.h4 -->
-
-                        <div class="toggler"></div>
-                    </div>
-                    <!-- /.head -->
-                  
-                    <div class="content">
-                        <ul class="primary-style">
-                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                            <li>Плотные штаны или джинсы</li>
-                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                            <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                            <li>Футболки, толстовку или свитер</li>
-                            <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                            <li>Полотенце</li>
-                            <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                            <li>Индивидуальная аптечка.</li>
-                            <li>Портативный аккумулятор для зарядки гаджетов</li>
-                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                            <li>Полотенце</li>
-                            <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                            <li>Индивидуальная аптечка.</li>
-                            <li>Портативный аккумулятор для зарядки гаджетов</li>
-                        </ul>
-                    </div>
-                    <!-- /.content -->
-                </div>
-                <!-- /.accordion -->
-                <div class="accordion">
-                    <div class="head">
-                        <div class="h4">Как мы будем питаться?</div>
-                        <!-- /.h4 -->
-
-                        <div class="toggler"></div>
-                    </div>
-                    <!-- /.head -->
-                  
-                    <div class="content">
-                        <ul class="primary-style">
-                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                            <li>Плотные штаны или джинсы</li>
-                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                        </ul>
-                    </div>
-                    <!-- /.content -->
-                </div>
-                <!-- /.accordion -->
-                <div class="accordion">
-                    <div class="head">
-                        <div class="h4">Как мы будем питаться?</div>
-                        <!-- /.h4 -->
-
-                        <div class="toggler"></div>
-                    </div>
-                    <!-- /.head -->
-                  
-                    <div class="content">
-                        <ul class="primary-style">
-                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                            <li>Плотные штаны или джинсы</li>
-                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                            <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                            <li>Футболки, толстовку или свитер</li>
-                            <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                            <li>Полотенце</li>
-                            <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                        </ul>
-                    </div>
-                    <!-- /.content -->
-                </div>
-                <!-- /.accordion -->
-                <div class="accordion">
-                    <div class="head">
-                        <div class="h4">Как мы будем питаться?</div>
-                        <!-- /.h4 -->
-
-                        <div class="toggler"></div>
-                    </div>
-                    <!-- /.head -->
-                  
-                    <div class="content">
-                        <ul class="primary-style">
-                            <li>Всё зависит от сезона, но вот общие рекомендации.</li>
-                            <li>Трекинговые, разношенные ботинки (желательно с защитой от влаги)</li>
-                            <li>Плотные штаны или джинсы</li>
-                            <li>Непромокаемую и непродуваемую куртку с капюшоном</li>
-                            <li>Головной убор, легкий шарф и перчатки (по желанию)</li>
-                            <li>Футболки, толстовку или свитер</li>
-                            <li>Купальник + шлепанцы (будем купаться в горячих источниках)</li>
-                            <li>Дождевик. Берите крепкий и яркий, не пожалеете ;)</li>
-                            <li>Полотенце</li>
-                            <li>Личная гигиена. Зубная паста, щетка, шампунь и т.д</li>
-                            <li>Индивидуальная аптечка.</li>
-                            <li>Портативный аккумулятор для зарядки гаджетов</li>
-                        </ul>
-                    </div>
-                    <!-- /.content -->
-                </div>
-                <!-- /.accordion -->
+                   
+                </form>
             </div>
-            <!-- /.accordions -->
-            <div class="sidebar">
-                <div class="parallax" data-relative-input="true" id="scene">
-                    <img data-depth="0.1" data-src="<?php bloginfo('template_url') ?>/src/img/faq-section/question.png" alt="question" class="question lazy">
-                    <img data-depth="0.3" data-src="<?php bloginfo('template_url') ?>/src/img/faq-section/bird.png" alt="bird" class="bird lazy">
-                </div>
-                <!-- /.parallax -->
-            </div>
-            <!-- /.sidebar -->
+            <!-- /.body -->
+           <div class="foot">
+                <div class="h4">или напишите мне в телеграм</div>
+                <a href="<?=TELEGRAM_LINK?>" target="_blank" class="btn btn-telegram">Написать в телеграм</a>
+           </div>
+           <!-- /.foot -->
         </div>
-        <!-- /.faq-row -->
-
+        <!-- /.form-wrapper -->
     </div>
     <!-- /.container -->
 </div>
-<!-- /#faq.section -->
 
 <div id="security" class="section">
     <div class="container">
@@ -1170,7 +853,7 @@ get_header();
                     <!-- /.image -->
                     <div class="text">
                         <div class="h3">Волны</div>
-                        <p>Все наши туры проходят летом, так как именно в это время средний минимум температуры наиболее высокий и уровень осадков минимален. А это значит что на воде будет штиль и благоприятные условия для поиска китов. В случае непредвиденной ситуации лодка быстро вернется к берегу и пока море не успокоится мы никуда не поплывем. </p>
+                        <p>Все наши туры проходят летом, так как именно в это время средний минимум температуры наиболее высокий и уровень осадков минимален. А это значит что на воде будет штиль и благоприятные условия для поиска китов. В случае непредвиденной ситуации лодка быстро вернется к берегу и пока море не успокоится мы никуда не поплывем.</p>
                     </div>
                     <!-- /.text -->
                 </div>
@@ -1205,53 +888,14 @@ get_header();
         <!-- /.features -->
     </div>
     <!-- /.container -->
+    <div class="wave-wrapper" >
+        <img src="<?php bloginfo('template_url') ?>/src/img/iceland/opportunities/wave-down.svg" alt="wave" class="wave">
+    </div>
+    <!-- /.wave-container -->
 </div>
 <!-- /#security.section -->
 
-<div id="request" class="section">
-    <div class="container">
-        <div class="section-title">
-            <div class="h2 decorations plane">Хочу с Вами</div>
-            <img class="wall-text lazy" data-src="<?php bloginfo('template_url') ?>/src/img/titles/request.svg" alt="заявка">
-        </div>
-        <!-- /.section-title -->
-        <div class="h4">Заполни форму заявки и отправляйся с нами в путешествие в ближайшее время</div>
-        <div class="form-wrapper">
-            <form id="open-form" class="open-form" action="javascript:" onsubmit="callHandler('#open-form')">
-                <input type="hidden" name="url" value="<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>">
-                <input type="hidden" name="form_name" value="Заявка на ближайшее путешествие">
 
-                <div class="input-pair">
-                    <div class="input-wrapper">
-                        <input type="text" name="user_first_name" placeholder="Имя" required>
-                    </div>
-                    <!-- /.input-wrapper -->
-                    <div class="input-wrapper">
-                        <input type="text" name="user_last_name" placeholder="Фамилия" required>
-                    </div>
-                    <!-- /.input-wrapper -->
-                </div>
-                <!-- /.input-pair -->
-
-                <div class="input-pair">
-                    <div class="input-wrapper">
-                        <input type="email" name="user_email" placeholder="E-mail" required>
-                    </div>
-                    <!-- /.input-wrapper -->
-                    <div class="input-wrapper">
-                        <input type="text" name="user_phone" placeholder="Телефон" required>
-                    </div>
-                    <!-- /.input-wrapper -->
-                </div>
-                <!-- /.input-pair -->
-
-                <button class="btn btn-primary">Я еду</button>
-            </form>
-        </div>
-        <!-- /.form-wrapper -->
-    </div>
-    <!-- /.container -->
-</div>
 
 <div id="prefooter">
 
@@ -1276,8 +920,8 @@ get_header();
                     <div class="h2 decorations faq">Остались вопросы?</div>
                 </div>
                 <!-- /.section-title -->
-                <div class="h4">Если у вас остались вопросы -  звоните или пишите. <span class="block">Я всегда на связи.</span></div>
-                <p>Если вы из Москвы, можем устроить личную встречу <span class="md-block">и я вам расскажу о нашем путешествии.</span> <span class="block">Если вы из регионов, давайте созвонимся по скайпу!</span></p>
+                <div class="h4">Напишите или позвоните нам. Мы всегда на связи.</div>
+                <p>Со всеми путешественниками я обязательно встречаюсь в живую в Минске перед поездкой. С остальными мы проводим знакомство через скайп. В наших турах были туристы из России, Литвы, Беларуси и даже Маврикия!</p>
                 <a data-fancybox data-src="#call-me-modal" href="javascript:;" class="btn btn-primary">Связаться со мной</a>
 
             </div>
