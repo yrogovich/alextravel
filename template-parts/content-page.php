@@ -10,10 +10,10 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="navbar-wrapper">
-		<div class="container-full">
+		<div class="navbar-container">
 			<?php get_template_part('templates/parts/navbar') ?>
 		</div>
-		<!-- /.container-full -->
+		<!-- /.navbar-container -->
 	</div>
 	<!-- /.navbar-wrapper -->
 

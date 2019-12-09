@@ -166,14 +166,7 @@
 </div>
 
 <div class="mobile-menu">
-    <svg class="burger close active" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
-        <path class="line top"
-                d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
-        <path class="line middle"
-                d="m 70,50 h -40" />
-        <path class="line bottom"
-                d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
-    </svg>
+
     <div class="container">
         <div class="menu-wrapper">
             <?php 
@@ -188,9 +181,36 @@
                 'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
             ] ); 
             ?>
+
+            <?php 
+            wp_nav_menu( [
+                'menu'            => 'menu-tours', 
+                'menu_class'      => 'menu', 
+                'menu_id'         => 'menu-tours',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            ] ); 
+            ?>
+
+            <?php 
+            wp_nav_menu( [
+                'menu'            => 'menu-helpful', 
+                'menu_class'      => 'menu', 
+                'menu_id'         => 'menu-helpful',
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            ] ); 
+            ?>
         </div>
         <!-- /.menu-wrapper -->
     </div>
+    <!-- /.container -->
 </div>
 <!-- /.mobile-menu -->
 

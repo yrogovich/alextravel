@@ -5,15 +5,24 @@
     $(document).ready(function(){
         $('.burger').click(function()  {
             $('.mobile-menu').toggleClass('active');
+            $('footer').toggleClass('active-mobile-nav');
         });
         $('.mobile-menu').click(function() {
-            $('.mobile-menu').removeClass('active');
-            $('.burger').removeClass('active');
+            hideNav();
         });
         $('.mobile-menu .close').click(function() {
-            $('.mobile-menu').removeClass('active');
-            $('.burger').removeClass('active');
+            hideNav();
         });
+        function hideNav() {
+            $('.mobile-menu').addClass('animate');
+            $('footer').removeClass('active-mobile-nav');
+            setTimeout(function(){
+                $('.mobile-menu').removeClass('active animate');
+                $('.burger').removeClass('active');
+            },490);
+        }
+
+
 
         try {
             // Step 1: Create jQuery plugin

@@ -18,10 +18,10 @@ get_header();
 ?>
 
     <header class="main">
-		<div class="container-full">
+		<div class="navbar-container">
 			<?php get_template_part('templates/parts/navbar') ?>
 		</div>
-		<!-- /.container-full -->
+		<!-- /.navbar-container -->
 		<div class="container">
 			<div class="relative">
 			<h1 data-aos="zoom-in">
@@ -34,7 +34,7 @@ get_header();
 				<li data-aos="fade-up" data-aos-delay="600">Исландия (4-8 марта 20г) – места проданы</li>
 				<li data-aos="fade-up" data-aos-delay="800">Швейцария (2-7 апреля 20г) - места проданы</li>
 				<li data-aos="fade-up" data-aos-delay="1000" class="active">
-                    <a href="<?php echo get_home_url(null, 'iceland/'); ?>">Исландия (14-21 июня 20г) – осталось 9 мест</a>
+                    <a href="<?php echo get_home_url(null, 'iceland/'); ?>">Исландия (8-12 июня 20г) – осталось 9 мест</a>
                 </li>
 			</ul>
 
@@ -83,7 +83,84 @@ get_header();
 
         <div class="trips">
             <div class="trip unactive">
-                <a href="<?php //echo get_home_url(null, '/'); ?>">
+                <div class="img-wrapper">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/trips/iceland_1.jpg" alt="iceland">
+                </div>
+                <!-- /.img-wrapper -->
+
+                <div class="head">
+                    <span class="date">20-24 января 2020г. 5 дней.</span>
+                    <!-- /.date -->
+                    <div class="h4">Исландия</div>
+                </div>
+                <!-- /.head -->
+
+                <div class="body">
+                    <div class="description">Охота на северное сияние. Самые сочные места. 1600 км на внедорожниках. Океан, ледники, вулканы. Питание, проживание, джипы - входят в стоимость.</div>
+
+                    <div class="raiting">
+                       <div class="pair">
+                           <div class="bold">Сложность</div>
+                           <div class="stars-wrapper">
+                               <div class="count">2/5</div>
+                               <ul class="stars">
+                                   <li></li>
+                                   <li></li>
+                                   <li class="gray"></li>
+                                   <li class="gray"></li>
+                                   <li class="gray"></li>
+                               </ul>
+                           </div>
+                       </div>
+                       <!-- /.pair -->
+                       <div class="pair">
+                           <div class="bold">Комфорт</div>
+                           <div class="stars-wrapper">
+                                <div class="count">4/5</div>
+                               <ul class="stars">
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li class="gray"></li>
+                               </ul>
+                           </div>
+                       </div>
+                       <!-- /.pair -->
+                       <div class="pair">
+                           <div class="bold">Удовольствие</div>
+                           <div class="stars-wrapper">
+                                <div class="count">5/5</div>
+                               <ul class="stars">
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                                   <li></li>
+                               </ul>
+                           </div>
+                       </div>
+                       <!-- /.pair -->
+                    </div>
+                    <!-- /.raiting -->
+                </div>
+                <!-- /.body -->
+
+                <div class="foot">
+                    <div class="pair">
+                        <div class="left-side">
+                            <div class="price">790 €</div>
+                            <div class="seats-number">осталось 0 мест</div>
+                        </div>
+                        <!-- /.left-side -->
+                        <div  class="btn btn-primary btn-unactive">Все места проданы</div>
+                    </div>
+                    <!-- /.pair -->
+                </div>
+                <!-- /.foot -->
+            </div>
+            <!-- /.trip -->
+            <div class="trip unactive">
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/trips/jordan_1.jpg" alt="jordan">
                 </div>
@@ -102,11 +179,11 @@ get_header();
                        <div class="pair">
                            <div class="bold">Сложность</div>
                            <div class="stars-wrapper">
-                               <div class="count">3/5</div>
+                               <div class="count">2/5</div>
                                <ul class="stars">
                                    <li></li>
                                    <li></li>
-                                   <li></li>
+                                   <li class="gray"></li>
                                    <li class="gray"></li>
                                    <li class="gray"></li>
                                </ul>
@@ -128,7 +205,7 @@ get_header();
                        </div>
                        <!-- /.pair -->
                        <div class="pair">
-                           <div class="bold">Адреналин</div>
+                           <div class="bold">Удовольствие</div>
                            <div class="stars-wrapper">
                                 <div class="count">5/5</div>
                                <ul class="stars">
@@ -145,7 +222,6 @@ get_header();
                     <!-- /.raiting -->
                 </div>
                 <!-- /.body -->
-                </a>
 
                 <div class="foot">
                     <div class="pair">
@@ -163,11 +239,10 @@ get_header();
             <!-- /.trip -->
 
             <div class="trip unactive">
-                <a href="<?php echo get_home_url(null, 'iceland/'); ?>">
-                    <div class="img-wrapper">
-                        <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland.jpg" alt="iceland">
-                    </div>
-                    <!-- /.img-wrapper -->
+                <div class="img-wrapper">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland.jpg" alt="iceland">
+                </div>
+                <!-- /.img-wrapper -->
 
                 <div class="head">
                     <span class="date">4-8 марта 2020г. 5 дней.</span>
@@ -183,11 +258,11 @@ get_header();
                        <div class="pair">
                            <div class="bold">Сложность</div>
                            <div class="stars-wrapper">
-                               <div class="count">3/5</div>
+                               <div class="count">2/5</div>
                                <ul class="stars">
                                    <li></li>
                                    <li></li>
-                                   <li></li>
+                                   <li class="gray"></li>
                                    <li class="gray"></li>
                                    <li class="gray"></li>
                                </ul>
@@ -209,7 +284,7 @@ get_header();
                        </div>
                        <!-- /.pair -->
                        <div class="pair">
-                           <div class="bold">Адреналин</div>
+                           <div class="bold">Удовольствие</div>
                            <div class="stars-wrapper">
                                 <div class="count">5/5</div>
                                <ul class="stars">
@@ -226,7 +301,6 @@ get_header();
                     <!-- /.raiting -->
                 </div>
                 <!-- /.body -->
-                </a>
 
 
                 <div class="foot">
@@ -245,7 +319,6 @@ get_header();
             <!-- /.trip -->
 
             <div class="trip unactive">
-                <a href="<?php //echo get_home_url(null, '/'); ?>">
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/trips/switzerland_1.jpg" alt="switzerland">
                 </div>
@@ -291,7 +364,7 @@ get_header();
                        </div>
                        <!-- /.pair -->
                        <div class="pair">
-                           <div class="bold">Адреналин</div>
+                           <div class="bold">Удовольствие</div>
                            <div class="stars-wrapper">
                                 <div class="count">5/5</div>
                                <ul class="stars">
@@ -308,7 +381,6 @@ get_header();
                     <!-- /.raiting -->
                 </div>
                 <!-- /.body -->
-                </a>
 
                 <div class="foot">
                     <div class="pair">
@@ -326,7 +398,6 @@ get_header();
             <!-- /.trip -->
 
             <div class="trip unactive">
-                <a href="<?php //echo get_home_url(null, '/'); ?>">
                 <div class="img-wrapper">
                     <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/poster-section/iceland-2.jpg" alt="iceland">
                 </div>
@@ -371,7 +442,7 @@ get_header();
                        </div>
                        <!-- /.pair -->
                        <div class="pair">
-                           <div class="bold">Адреналин</div>
+                           <div class="bold">Удовольствие</div>
                            <div class="stars-wrapper">
                                 <div class="count">5/5</div>
                                <ul class="stars">
@@ -388,7 +459,6 @@ get_header();
                     <!-- /.raiting -->
                 </div>
                 <!-- /.body -->
-                </a>
 
                 <div class="foot">
                     <div class="pair">
@@ -430,11 +500,11 @@ get_header();
                        <div class="pair">
                            <div class="bold">Сложность</div>
                            <div class="stars-wrapper">
-                               <div class="count">3/5</div>
+                               <div class="count">2/5</div>
                                <ul class="stars">
                                    <li></li>
                                    <li></li>
-                                   <li></li>
+                                   <li class="gray"></li>
                                    <li class="gray"></li>
                                    <li class="gray"></li>
                                </ul>
@@ -456,7 +526,7 @@ get_header();
                        </div>
                        <!-- /.pair -->
                        <div class="pair">
-                           <div class="bold">Адреналин</div>
+                           <div class="bold">Удовольствие</div>
                            <div class="stars-wrapper">
                                 <div class="count">5/5</div>
                                <ul class="stars">
@@ -490,86 +560,6 @@ get_header();
             </div>
             <!-- /.trip -->
 
-            <div class="trip">
-                <a href="<?php //echo get_home_url(null, '/'); ?>">
-                <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/trips/iceland_1.jpg" alt="iceland">
-                </div>
-                <!-- /.img-wrapper -->
-
-                <div class="head">
-                    <span class="date">31 января - 5 февраля 2020г. 5 дней.</span>
-                    <!-- /.date -->
-                    <div class="h4">Исландия</div>
-                </div>
-                <!-- /.head -->
-
-                <div class="body">
-                    <div class="description">Охота на северное сияние. Самые сочные места. 1600 км на внедорожниках. Океан, ледники, вулканы. Питание, проживание, джипы - входят в стоимость.</div>
-
-                    <div class="raiting">
-                       <div class="pair">
-                           <div class="bold">Сложность</div>
-                           <div class="stars-wrapper">
-                               <div class="count">2/5</div>
-                               <ul class="stars">
-                                   <li></li>
-                                   <li></li>
-                                   <li class="gray"></li>
-                                   <li class="gray"></li>
-                                   <li class="gray"></li>
-                               </ul>
-                           </div>
-                       </div>
-                       <!-- /.pair -->
-                       <div class="pair">
-                           <div class="bold">Комфорт</div>
-                           <div class="stars-wrapper">
-                                <div class="count">4/5</div>
-                               <ul class="stars">
-                                   <li></li>
-                                   <li></li>
-                                   <li></li>
-                                   <li></li>
-                                   <li class="gray"></li>
-                               </ul>
-                           </div>
-                       </div>
-                       <!-- /.pair -->
-                       <div class="pair">
-                           <div class="bold">Адреналин</div>
-                           <div class="stars-wrapper">
-                                <div class="count">5/5</div>
-                               <ul class="stars">
-                                   <li></li>
-                                   <li></li>
-                                   <li></li>
-                                   <li></li>
-                                   <li></li>
-                               </ul>
-                           </div>
-                       </div>
-                       <!-- /.pair -->
-                    </div>
-                    <!-- /.raiting -->
-                </div>
-                <!-- /.body -->
-                </a>
-
-                <div class="foot">
-                    <div class="pair">
-                        <div class="left-side">
-                            <div class="price">790 €</div>
-                            <div class="seats-number">осталось 15 мест</div>
-                        </div>
-                        <!-- /.left-side -->
-                        <div data-fancybox data-src="#request-modal" class="btn btn-primary">Оставить заявку</div>
-                    </div>
-                    <!-- /.pair -->
-                </div>
-                <!-- /.foot -->
-            </div>
-            <!-- /.trip -->
         </div>
         <!-- /.trips -->
     </div>
@@ -586,20 +576,27 @@ get_header();
         <!-- /.section-title -->
 
         <div class="archive">
-            <div class="image-folder disabled"  data-aos="zoom-in-up" >
+            <div href="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_february_2019/iceland_01.jpg"
+                data-thumb="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_february_2019/thumbs/iceland_01.jpg"
+                data-fancybox="iceland_february_2019" 
+                data-caption="Исландия. Южное побережье."
+                class="image-folder" 
+                data-aos="zoom-in-up" 
+                data-thumbs='{"autoStart":true}'
+            >
                 <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_february_2019/iceland_00.jpg" alt="image">
                 </div>
                 <!-- /.img-wrapper -->
                 <div class="body">
                     <div class="pair">
                         <div class="title">
-                            <div class="date">Август 2019</div>
+                            <div class="date">Февраль 2019</div>
                             <div class="h4">Исландия. Южное побережье.</div>
                         </div>
                         <!-- /.title -->
                         <div class="phots-count">
-                            0 фото
+                            38 фото
                         </div>
                         <!-- /.phots-count -->
                     </div>
@@ -609,9 +606,16 @@ get_header();
             </div>
             <!-- /.image-folder -->
 
-            <div class="image-folder disabled" data-aos="zoom-in-up" >
+            <div href="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_september_2019/iceland_01.jpg"
+                data-thumb="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_september_2019/thumbs/iceland_01.jpg"
+                data-fancybox="iceland_september_2019" 
+                data-caption="Сентябрь. Исландия. Южное побережье."
+                class="image-folder" 
+                data-aos="zoom-in-up" 
+                data-thumbs='{"autoStart":true}'
+            >
                 <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_september_2019/iceland_00.jpg" alt="image">
                 </div>
                 <!-- /.img-wrapper -->
                 <div class="body">
@@ -622,7 +626,7 @@ get_header();
                         </div>
                         <!-- /.title -->
                         <div class="phots-count">
-                            0 фото
+                           23 фото
                         </div>
                         <!-- /.phots-count -->
                     </div>
@@ -636,13 +640,13 @@ get_header();
             <a href="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_october_2019/iceland_01.jpg"
                 data-thumb="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_october_2019/thumbs/iceland_01.jpg"
                 data-fancybox="iceland_october_2019" 
-                data-caption="Исландия. Южное побережье."
-                data-thumbs='{"autoStart":true}'
+                data-caption="Октябрь. Исландия. Южное побережье."
                 class="image-folder" 
                 data-aos="zoom-in-up" 
+                data-thumbs='{"autoStart":true}'
             >
                 <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_october_2019/iceland_00.jpg" alt="image">
                 </div>
                 <!-- /.img-wrapper -->
                 <div class="body">
@@ -663,9 +667,16 @@ get_header();
             </a>
             <!-- /.image-folder -->
 
-            <div class="image-folder disabled" data-aos="zoom-in-up" >
+            <div href="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_november_2019/iceland_01.jpg"
+                data-thumb="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_november_2019/thumbs/iceland_01.jpg"
+                data-fancybox="iceland_november_2019" 
+                data-caption="Октябрь. Исландия. Южное побережье."
+                class="image-folder" 
+                data-aos="zoom-in-up" 
+                data-thumbs='{"autoStart":true}'
+            >
                 <div class="img-wrapper">
-                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/image.jpg" alt="image">
+                    <img class="lazy" data-src="<?php bloginfo('template_url') ?>/src/img/gallery-section/iceland_november_2019/iceland_00.jpg" alt="image">
                 </div>
                 <!-- /.img-wrapper -->
                 <div class="body">
@@ -676,7 +687,7 @@ get_header();
                         </div>
                         <!-- /.title -->
                         <div class="phots-count">
-                            0 фото
+                            35 фото
                         </div>
                         <!-- /.phots-count -->
                     </div>
@@ -727,9 +738,9 @@ get_header();
                 <div class="social">
                     <img class="yellow-bubble" src="<?php bloginfo('template_url') ?>/src/img/about-section/bubble-yellow.svg" alt="bubble">
                     <div class="links-wrapper">
-                        <a href="<?=VK?>" target="_blank" class="vk"><img src="<?php bloginfo('template_url') ?>/src/img/footer/vk.svg" alt="vk"></a>
                         <a href="<?=INST?>" target="_blank" class="inst"><img src="<?php bloginfo('template_url') ?>/src/img/footer/inst.svg" alt="inst"></a>
                         <a href="<?=FACEBOOK?>" target="_blank" class="facebook"><img src="<?php bloginfo('template_url') ?>/src/img/footer/fb.svg" alt="facebook"></a>
+                        <a href="<?=VK?>" target="_blank" class="vk"><img src="<?php bloginfo('template_url') ?>/src/img/footer/vk.svg" alt="vk"></a>                       
                     </div>
                 </div>
             </div>
@@ -788,7 +799,7 @@ get_header();
             <!-- /.body -->
            <div class="foot">
                 <div class="h4">или напишите мне в телеграм</div>
-                <a href="<?=TELEGRAM_LINK?>" target="_blank" class="btn btn-telegram">Написать в телеграм</a>
+                <a href="<?=TELEGRAM_PROJECT_СHAT?>" target="_blank" class="btn btn-telegram">Общий чат проекта</a>
            </div>
            <!-- /.foot -->
         </div>
@@ -800,7 +811,7 @@ get_header();
 <div id="security" class="section">
     <div class="container">
         <div class="section-title">
-            <div class="h2 decorations security">Безопастность</div>
+            <div class="h2 decorations security">Безопасность</div>
             <img class="wall-text lazy" data-src="<?php bloginfo('template_url') ?>/src/img/titles/security.svg" alt="security">
         </div>
         <!-- /.section-title -->
@@ -814,7 +825,7 @@ get_header();
                     <!-- /.image -->
                     <div class="text">
                         <div class="h3">Подготовка</div>
-                        <p>К каждому путешествию мы готовимся тщательно. Перед отправкой я разошлю каждому список того, что важно и желательно взять. Помимо этого, вы расскажете мне о своих опасениях, предпочтениях, тревогах и я постараюсь их все учесть. Ну и главное, весь маршрут и все что с нами произойдет, пройдено не раз, а значит риск ошибки минимален.</p>
+                        <p>Тщательная подготовка к каждому путешествию – обязательный пункт. Я вышлю Вам список предметов и вещей, которые желательно взять с собой. Попрошу рассказать о своих опасениях, тревогах, предпочтениях. Поездка пройдет максимально комфортно, ведь мы будем готовы ко всему. А самое главное – маршрут пройден много раз, поэтому риск возникновения неприятных ситуаций минимален.</p>
                     </div>
                     <!-- /.text -->
                 </div>
@@ -826,7 +837,7 @@ get_header();
                     <!-- /.image -->
                     <div class="text">
                         <div class="h3">Преступность</div>
-                        <p>Исландия одна из самых безопасных стран мира. За последние 20 лет здесь произошло лишь одно серьезное преступление, после которого полиция страны попросила прощения у населения. Местное население крайне доброжелательно и открыто к туристам. Более душевных и милых людей вы врядли еще где-то встретите!))</p>
+                        <p>Исландия занимает 1 место в списке самых безопасных стран мира. У полиции минимум оружия и совсем мало работы. Местное население очень доброжелательно и открыто относится к туристам. Здесь живут приятные, душевные люди, с которыми всегда интересно пообщаться и провести время. </p>
                     </div>
                     <!-- /.text -->
                 </div>
@@ -838,7 +849,7 @@ get_header();
                     <!-- /.image -->
                     <div class="text">
                         <div class="h3">Язык</div>
-                        <p>Я свободно говорю по-английски, поэтому у вас попросту не возникнет такой ситуации, где бы вам понадобился язык. Но даже если такая ситуация возникнет, просто позвоните мне и я объясню собеседнику, что от него требуется. Местное население свободно говорит по-английски.</p>
+                        <p>Я свободно говорю по-английски, в Исландии тоже хорошо знают этот язык. Поэтому барьеров при общении не возникает. Вам необязательно учить распространенные фразы и слова, потому что я всегда помогу наладить связь, получить ответ на интересующий вопрос. Просто позвоните мне, и я объясню собеседнику, что от него требуется.</p>
                     </div>
                     <!-- /.text -->
                 </div>
@@ -853,7 +864,7 @@ get_header();
                     <!-- /.image -->
                     <div class="text">
                         <div class="h3">Волны</div>
-                        <p>Все наши туры проходят летом, так как именно в это время средний минимум температуры наиболее высокий и уровень осадков минимален. А это значит что на воде будет штиль и благоприятные условия для поиска китов. В случае непредвиденной ситуации лодка быстро вернется к берегу и пока море не успокоится мы никуда не поплывем.</p>
+                        <p>Мы организуем туры в летний период – именно в это время наиболее благоприятная температура, а уровень осадков минимален. На воде будет штиль, и мы с легкостью сможем заняться поиском китов – в такую погоду их найти проще. При возникновении непредвиденной ситуации лодка быстро вернется к берегу. Мы подождем, пока море успокоится, а после продолжим путешествие.</p>
                     </div>
                     <!-- /.text -->
                 </div>
@@ -865,7 +876,7 @@ get_header();
                     <!-- /.image -->
                     <div class="text">
                         <div class="h3">Опытный тур-лидер</div>
-                        <p>За моими плечами не одна страна, и я точно знаю, что можно делать, а что нельзя. Везде, где мы будем останавливаться, у меня есть контакты необходимого госпиталя, куда бы мы смогли добраться в кратчайшие сроки. Ну и не стоит забывать оформлять медицинскую страховку. Это еще один ключик к сохранности вашего здоровья.</p>
+                        <p>Я побывал во многих странах мира, получил колоссальный опыт. И точно знаю, что можно и нельзя делать. При необходимости получить медицинскую помощь сможет каждый. У меня есть контакты госпиталей, находящихся в тех регионах, где мы будем останавливаться. При этом не забывайте самостоятельно заботиться о здоровье и безопасности – всегда оформляйте медицинскую страховку. </p>
                     </div>
                     <!-- /.text -->
                 </div>
@@ -877,7 +888,7 @@ get_header();
                     <!-- /.image -->
                     <div class="text">
                         <div class="h3">Животные</div>
-                        <p>Исландия одна из немногих стран где нет хищных животных, змей или насекомых опасных для жизни. Максимум кого мы тут встретим это милые лошадки, безобидные киты и прекрасные тупики. Есть единственное исключение это норка, но случаев нападения этого пушистого животного зафиксировано не было!</p>
+                        <p>Путешествовать по Исландии безопасно, потому что здесь практически нет хищных животных, опасных змей и насекомых (обитает только норка, но она не нападает на людей). Есть возможность полюбоваться на очаровательных лошадок, удивительных китов, забавных тупиков.</p>
                     </div>
                     <!-- /.text -->
                 </div>
