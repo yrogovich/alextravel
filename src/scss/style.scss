@@ -187,6 +187,9 @@ img {
 
 header {
     padding-top: 2rem;
+    @include sm-block() {
+        padding-top: 1rem;
+    };
     .wave {
         width: 100%;
         position: absolute;
@@ -1173,7 +1176,7 @@ navbar {
     }
     .youtube {
         position: relative;
-        padding-top: 56.5%;
+        padding-top: 56.4%;
         @include xs(height, 190px);
         box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.35);
         border-radius: 1rem;
@@ -1947,15 +1950,16 @@ footer {
         width: 100%;
         background: transparent;
         border-top: 1px solid #9EC4F0;
-        padding: 1rem 0;
+        padding: 1rem 0 3rem;
         @include sm-block() {
             text-align: center;
-            padding-bottom: 10px;
+            padding-bottom: 1rem;
+            padding-top: 3rem;
             .mail {
                 border-bottom: 2px solid $white;
             }
             .title {
-                margin: 1rem 0 2rem 0;
+                display: none;
             }
             .messenger-wrapper {
                 justify-content: center;
@@ -2975,6 +2979,11 @@ article {
         li {
             border-bottom: 3px solid $white;
             display: inline-block;
+            transition: .3s;
+            &:hover {
+                color: $primary;
+                border: none;
+            }
         }
         a {
             display: block;
@@ -3014,8 +3023,11 @@ article {
             text-align: center;
             margin-bottom: -.5rem;
             @include xs-block() {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
+        }
+        @include xs-block() {
+            font-size: 2.8rem;
         }
     }
    
@@ -3025,7 +3037,8 @@ article {
         z-index: 999;
     }
     &.animate {
-        transition: .5s;
+        z-index: 999;
+        transition: .8s;
         opacity: 0;
     }
     @include xs-block() {
@@ -3049,6 +3062,10 @@ article {
 }
 
 // Utilities
+.disable-scroll {
+    height: 100%;
+    overflow: hidden;
+}
 .block {
     display: block;
 }

@@ -292,6 +292,12 @@ header {
   padding-top: 2rem;
 }
 
+@media screen and (max-width: 780px) {
+  header {
+    padding-top: 1rem;
+  }
+}
+
 header .wave {
   width: 100%;
   position: absolute;
@@ -1682,7 +1688,7 @@ navbar .messenger-wrapper .messengers {
 
 #reviews .youtube {
   position: relative;
-  padding-top: 56.5%;
+  padding-top: 56.4%;
   -webkit-box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.35);
           box-shadow: 0px 10px 20px rgba(155, 155, 155, 0.35);
   border-radius: 1rem;
@@ -2795,7 +2801,7 @@ footer.active-mobile-nav {
   width: 100%;
   background: transparent;
   border-top: 1px solid #9EC4F0;
-  padding: 1rem 0;
+  padding: 1rem 0 3rem;
   -webkit-animation: fade-in 1.5s;
           animation: fade-in 1.5s;
 }
@@ -2807,13 +2813,14 @@ footer.active-mobile-nav:before {
 @media screen and (max-width: 780px) {
   footer.active-mobile-nav {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
   }
   footer.active-mobile-nav .mail {
     border-bottom: 2px solid #fff;
   }
   footer.active-mobile-nav .title {
-    margin: 1rem 0 2rem 0;
+    display: none;
   }
   footer.active-mobile-nav .messenger-wrapper {
     -webkit-box-pack: center;
@@ -4365,6 +4372,13 @@ article {
 .mobile-menu .menu-wrapper li {
   border-bottom: 3px solid #fff;
   display: inline-block;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.mobile-menu .menu-wrapper li:hover {
+  color: #FFC700;
+  border: none;
 }
 
 .mobile-menu .menu-wrapper a {
@@ -4413,7 +4427,13 @@ article {
 
 @media screen and (max-width: 560px) {
   .mobile-menu .menu::before {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .mobile-menu .menu {
+    font-size: 2.8rem;
   }
 }
 
@@ -4423,8 +4443,9 @@ article {
 }
 
 .mobile-menu.animate {
-  -webkit-transition: .5s;
-  transition: .5s;
+  z-index: 999;
+  -webkit-transition: .8s;
+  transition: .8s;
   opacity: 0;
 }
 
@@ -4446,6 +4467,11 @@ article {
   .fancybox-show-thumbs .fancybox-inner {
     right: 0 !important;
   }
+}
+
+.disable-scroll {
+  height: 100%;
+  overflow: hidden;
 }
 
 .block {

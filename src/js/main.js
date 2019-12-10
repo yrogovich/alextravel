@@ -3,26 +3,45 @@
      * When DOM is ready
      */
     $(document).ready(function(){
-        $('.burger').click(function()  {
-            $('.mobile-menu').toggleClass('active');
-            $('footer').toggleClass('active-mobile-nav');
+        $('.burger').click(function()  {            
+            if($(this).hasClass('active')) {
+                showNav();
+            }
+            else {
+                hideNav()
+            }
         });
-        $('.mobile-menu').click(function() {
-            hideNav();
-        });
-        $('.mobile-menu .close').click(function() {
-            hideNav();
-        });
+
         function hideNav() {
             $('.mobile-menu').addClass('animate');
             $('footer').removeClass('active-mobile-nav');
+            $('html').removeClass('disable-scroll').removeAttr("style");
             setTimeout(function(){
                 $('.mobile-menu').removeClass('active animate');
                 $('.burger').removeClass('active');
-            },490);
+            },790);
+        }
+        function showNav() {
+            $('.mobile-menu').addClass('active');
+            $('footer').addClass('active-mobile-nav');
+            $('html').addClass('disable-scroll');
+            $('html').css('padding-right', getScrollWidth());
         }
 
+        function getScrollWidth() {
+            // создадим элемент с прокруткой
+            let div = document.createElement('div');
+            div.style.overflowY = 'scroll';
+            div.style.width = '50px';
+            div.style.height = '50px';
+            // мы должны вставить элемент в документ, иначе размеры будут равны 0
+            document.body.append(div);
+            let scrollWidth = div.offsetWidth - div.clientWidth;
 
+            div.remove();
+
+            return scrollWidth;
+        }
 
         try {
             // Step 1: Create jQuery plugin
@@ -342,8 +361,6 @@
             console.log(error);
         }
 
-
-      
     });
 })(jQuery); // <----- jQuery no conflict wrapper
 
