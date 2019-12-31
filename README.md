@@ -1,3 +1,3 @@
-WordPress template - "Авторские групповые туры по всему миру"
+Wordpress theme for Iceland trips
 ===
 Live site - http://alextravel.me/
